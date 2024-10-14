@@ -288,7 +288,7 @@ app.post("/newpassword", async (req, res) => {
             { $set: { password: "newpassword" } } // Replace "newpassword" as needed
         );
 
-        res.redirect("http://localhost:1000/");
+        res.redirect("https://exam-hz9u.onrender.com");
     } catch (error) {
         console.error(error);
         res.render("newpassword", { error: "An error occurred while updating the password." });
