@@ -266,32 +266,33 @@ app.post("/forgot", async (req, res) => {
 
 app.post("/newpassword", async (req, res) => {
     try {
-        let { email, book } = req.body;
-        let oldpassword = await signup.findOne({ email: email });
+        let { email, password } = req.body; // Ensure `password` is included in the request
+        let user = await signup.findOne({ email: email });
 
         // Check if the email exists
-        if (!oldpassword) {
+        if (!user) {
             return res.render("newpassword", { error: "Email not found." });
         }
 
-        let oldpass = oldpassword.password;
+        let oldpass = user.password;
 
         // Update the password history
         await enrol.updateOne(
             { email: email },
-            { $push: { passwordupdate: { $each: [{ oldpassword: oldpass, newpassword: "newpassword" }] } } }
+            { $push: { passwordupdate: { oldpassword: oldpass, newpassword: password } } } // Ensure `newpassword` is set from request
         );
 
-        // Assuming you want to update the password too
+        // Update the password
         await signup.updateOne(
             { email: email },
-            { $set: { password: "newpassword" } } // Replace "newpassword" as needed
+            { $set: { password: password } }
         );
 
-        res.redirect("https://exam-hz9u.onrender.com");
+        res.redirect("http://localhost:9999/login");
     } catch (error) {
         console.error(error);
         res.render("newpassword", { error: "An error occurred while updating the password." });
     }
 });
+
 
