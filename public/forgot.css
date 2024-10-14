@@ -16,6 +16,10 @@ body {
     text-align: center;
 }
 
+.error-message {
+    color: red;
+}
+
 h1 {
     margin-bottom: 20px;
     color: #fff;

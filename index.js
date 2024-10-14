@@ -220,12 +220,12 @@ app.post("/login", async (req, res) => {
 
         // If email not found
         if (!datamach) {
-            return res.render("login", { error: "Invalid email" });
+            return res.render("index", { error: "Invalid email" });
         }
 
         // If password is incorrect
         if (datamach.password !== password) {
-            return res.render("login", { error: "Incorrect password" });
+            return res.render("index", { error: "Incorrect password" });
         }
 
         res.redirect("/home");
@@ -288,7 +288,7 @@ app.post("/newpassword", async (req, res) => {
             { $set: { password: password } }
         );
 
-        res.redirect("http://localhost:9999/login");
+        res.redirect("https://exam-hz9u.onrender.com");
     } catch (error) {
         console.error(error);
         res.render("newpassword", { error: "An error occurred while updating the password." });
