@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matlab Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="matlab.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Matlab Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the output of the command "disp('Hello, World!')" in MATLAB?</p>
+            <input type="radio" name="q1" value="A"> <label>A) Hello, World!</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) 'Hello, World!'</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) Hello World!</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) No output</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which command is used to clear the command window in MATLAB?</p>
+            <input type="radio" name="q2" value="A"> <label>A) cls</label><br>
+            <input type="radio" name="q2" value="B"> <label>B) clear</label><br>
+            <input type="radio" name="q2" value="C"> <label>C) clc</label><br>
+            <input type="radio" name="q2" value="D"> <label>D) close</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>3. How do you create a matrix in MATLAB?</p>
+            <input type="radio" name="q3" value="A"> <label>A) A = [1, 2; 3, 4]</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) A = (1, 2; 3, 4)</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) A = {1, 2; 3, 4}</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) A = 1, 2; 3, 4</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>4. What function is used to calculate the size of an array in MATLAB?</p>
+            <input type="radio" name="q4" value="A"> <label>A) length()</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) size()</label><br>
+            <input type="radio" name="q4" value="C"> <label>C) numel()</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) count()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>5. What is the command to plot a graph in MATLAB?</p>
+            <input type="radio" name="q5" value="A"> <label>A) plot()</label><br>
+            <input type="radio" name="q5" value="B"> <label>B) graph()</label><br>
+            <input type="radio" name="q5" value="C"> <label>C) chart()</label><br>
+            <input type="radio" name="q5" value="D"> <label>D) figure()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>6. Which of the following is a valid way to create a for loop in MATLAB?</p>
+            <input type="radio" name="q6" value="A"> <label>A) for i = 1:10</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) for (i = 1; i <= 10)</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) loop i = 1 to 10</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) while i < 10</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>7. What is the command to define a function in MATLAB?</p>
+            <input type="radio" name="q7" value="A"> <label>A) function myFunction()</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) def myFunction()</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) func myFunction()</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) create myFunction()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>8. How do you concatenate two matrices A and B horizontally?</p>
+            <input type="radio" name="q8" value="A"> <label>A) A + B</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) [A B]</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) A & B</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) concat(A, B)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>9. What is the purpose of the 'clear' command in MATLAB?</p>
+            <input type="radio" name="q9" value="A"> <label>A) Clears the command window</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) Clears variables from memory</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) Clears plots</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) Clears the workspace</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>10. Which operator is used for element-wise multiplication in MATLAB?</p>
+            <input type="radio" name="q10" value="A"> <label>A) *</label><br>
+            <input type="radio" name="q10" value="B"> <label>B) .* </label><br>
+            <input type="radio" name="q10" value="C"> <label>C) .*</label><br>
+            <input type="radio" name="q10" value="D"> <label>D) /</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>11. How can you generate a random number between 0 and 1 in MATLAB?</p>
+            <input type="radio" name="q11" value="A"> <label>A) rand()</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) random()</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) randn()</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) rand(0, 1)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>12. What does the command 'subplot(2, 1, 1)' do?</p>
+            <input type="radio" name="q12" value="A"> <label>A) Creates a figure</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) Divides the plot into 2 rows and 1 column, and activates the first subplot</label><br>
+            <input type="radio" name="q12" value="C"> <label>C) Activates the second subplot</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) Merges plots</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>13. Which of the following is a valid MATLAB comment?</p>
+            <input type="radio" name="q13" value="A"> <label>A) % This is a comment</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) // This is a comment</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) /* This is a comment */</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) # This is a comment</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>14. How can you save variables to a .mat file in MATLAB?</p>
+            <input type="radio" name="q14" value="A"> <label>A) save('filename.mat')</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) save(filename)</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) export('filename.mat')</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) write('filename.mat')</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>15. What is the default data type of a variable in MATLAB?</p>
+            <input type="radio" name="q15" value="A"> <label>A) int</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) double</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) char</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) string</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>16. Which function is used to sort an array in MATLAB?</p>
+            <input type="radio" name="q16" value="A"> <label>A) order()</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) sort()</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) arrange()</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) organize()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>17. What is the command to create a 3x3 identity matrix in MATLAB?</p>
+            <input type="radio" name="q17" value="A"> <label>A) eye(3)</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) identity(3)</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) ones(3)</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) zeros(3)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>18. What command would you use to display the size of an array A?</p>
+            <input type="radio" name="q18" value="A"> <label>A) show(A.size)</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) length(A)</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) size(A)</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) dimensions(A)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>19. Which command is used to plot a 3D surface in MATLAB?</p>
+            <input type="radio" name="q19" value="A"> <label>A) surf()</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) plot3()</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) mesh()</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) graph3D()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>20. What does the 'clc' command do in MATLAB?</p>
+            <input type="radio" name="q20" value="A"> <label>A) Clears the command window</label><br>
+            <input type="radio" name="q20" value="B"> <label>B) Clears variables</label><br>
+            <input type="radio" name="q20" value="C"> <label>C) Clears the workspace</label><br>
+            <input type="radio" name="q20" value="D"> <label>D) Closes the figure</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>21. How do you generate a linearly spaced vector in MATLAB?</p>
+            <input type="radio" name="q21" value="A"> <label>A) linspace(start, end, num)</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) space(start, end, num)</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) range(start, end, num)</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) line(start, end, num)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>22. What function would you use to read a matrix from a text file in MATLAB?</p>
+            <input type="radio" name="q22" value="A"> <label>A) readmatrix()</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) load()</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) importdata()</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) csvread()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>23. Which of the following is a logical operator in MATLAB?</p>
+            <input type="radio" name="q23" value="A"> <label>A) &&</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) ||</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) !</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) All of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>24. How can you transpose a matrix A in MATLAB?</p>
+            <input type="radio" name="q24" value="A"> <label>A) A'</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) transpose(A)</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) A.T</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) All of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>25. Which command is used to plot multiple graphs in the same figure?</p>
+            <input type="radio" name="q25" value="A"> <label>A) hold on</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) plot multiple</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) overlay</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) combine plots</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>26. What does the command 'randn' generate in MATLAB?</p>
+            <input type="radio" name="q26" value="A"> <label>A) Random integers</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) Random numbers from a normal distribution</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) Random numbers from a uniform distribution</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) Random decimal numbers</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>27. What is the command to create a figure window in MATLAB?</p>
+            <input type="radio" name="q27" value="A"> <label>A) figure()</label><br>
+            <input type="radio" name="q27" value="B"> <label>B) newFigure()</label><br>
+            <input type="radio" name="q27" value="C"> <label>C) plotFigure()</label><br>
+            <input type="radio" name="q27" value="D"> <label>D) createFigure()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>28. Which of the following functions is used to calculate the mean of a matrix?</p>
+            <input type="radio" name="q28" value="A"> <label>A) avg()</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) mean()</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) average()</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) median()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>29. What command would you use to clear all variables from the workspace?</p>
+            <input type="radio" name="q29" value="A"> <label>A) clear all</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) clear</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) cls</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) reset</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>30. How can you create a string array in MATLAB?</p>
+            <input type="radio" name="q30" value="A"> <label>A) stringArray = ["Hello", "World"];</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) stringArray = {'Hello', 'World'};</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) stringArray = "Hello", "World";</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) stringArray = text("Hello", "World");</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. What does the 'max()' function return?</p>
+            <input type="radio" name="q31" value="A"> <label>A) Maximum value in an array</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) Minimum value in an array</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) Total number of elements</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>32. How can you create a logical array in MATLAB?</p>
+            <input type="radio" name="q32" value="A"> <label>A) logicalArray = [1, 0, 1];</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) logicalArray = [true, false, true];</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) logicalArray = {true, false};</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) logicalArray = (1, 0, 1);</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>33. Which function is used to find the unique elements in an array?</p>
+            <input type="radio" name="q33" value="A"> <label>A) unique()</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) distinct()</label><br>
+            <input type="radio" name="q33" value="C"> <label>C) uniqueElements()</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) findUnique()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>34. What is the command to create a scatter plot in MATLAB?</p>
+            <input type="radio" name="q34" value="A"> <label>A) scatter(x, y)</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) plot(x, y, 'o')</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) points(x, y)</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) plotScatter(x, y)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>35. What is the purpose of the 'fprintf' function?</p>
+            <input type="radio" name="q35" value="A"> <label>A) To display formatted text to the command window</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) To read formatted data from a file</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) To write unformatted data to a file</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) To create formatted text files</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>36. What does 'gca' return in MATLAB?</p>
+            <input type="radio" name="q36" value="A"> <label>A) Current axis</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) Current figure</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) Current plot</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) Current object</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which command can be used to run a script file in MATLAB?</p>
+            <input type="radio" name="q37" value="A"> <label>A) run script.m</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) script.m</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) execute script.m</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) load script.m</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>38. What is the result of the expression 'A(1, :)'?</p>
+            <input type="radio" name="q38" value="A"> <label>A) First row of matrix A</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) First column of matrix A</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) Last element of matrix A</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) All elements of matrix A</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>39. Which command is used to display the current working directory in MATLAB?</p>
+            <input type="radio" name="q39" value="A"> <label>A) pwd</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) dir</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) currentDir</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) getDir</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>40. What command would you use to plot a histogram in MATLAB?</p>
+            <input type="radio" name="q40" value="A"> <label>A) histogram(data)</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) bar(data)</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) plotHistogram(data)</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) hist(data)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>41. How do you find the size of the third dimension of a 3D matrix in MATLAB?</p>
+            <input type="radio" name="q41" value="A"> <label>A) size(A, 3)</label><br>
+            <input type="radio" name="q41" value="B"> <label>B) length(A, 3)</label><br>
+            <input type="radio" name="q41" value="C)> size(A)(3)</label><br>
+            <input type="radio" name="q41" value="D"> <label>D) dim(A, 3)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>42. What is the command to create a bar graph in MATLAB?</p>
+            <input type="radio" name="q42" value="A"> <label>A) bar(data)</label><br>
+            <input type="radio" name="q42" value="B"> <label>B) plotBar(data)</label><br>
+            <input type="radio" name="q42" value="C"> <label>C) barplot(data)</label><br>
+            <input type="radio" name="q42" value="D"> <label>D) histogram(data)</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>43. What does the 'std()' function return?</p>
+            <input type="radio" name="q43" value="A"> <label>A) Standard deviation</label><br>
+            <input type="radio" name="q43" value="B"> <label>B) Variance</label><br>
+            <input type="radio" name="q43" value="C"> <label>C) Mean</label><br>
+            <input type="radio" name="q43" value="D"> <label>D) Median</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>44. Which function is used to read a text file in MATLAB?</p>
+            <input type="radio" name="q44" value="A"> <label>A) readTextFile()</label><br>
+            <input type="radio" name="q44" value="B"> <label>B) textscan()</label><br>
+            <input type="radio" name="q44" value="C"> <label>C) importText()</label><br>
+            <input type="radio" name="q44" value="D"> <label>D) loadTextFile()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>45. What is the default figure type in MATLAB?</p>
+            <input type="radio" name="q45" value="A"> <label>A) 2D</label><br>
+            <input type="radio" name="q45" value="B"> <label>B) 3D</label><br>
+            <input type="radio" name="q45" value="C"> <label>C) 3D with surface</label><br>
+            <input type="radio" name="q45" value="D"> <label>D) 2D with surface</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>46. Which command is used to save a figure in MATLAB?</p>
+            <input type="radio" name="q46" value="A"> <label>A) savefig()</label><br>
+            <input type="radio" name="q46" value="B"> <label>B) saveas()</label><br>
+            <input type="radio" name="q46" value="C"> <label>C) exportfig()</label><br>
+            <input type="radio" name="q46" value="D"> <label>D) figsave()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>47. How do you create a cell array in MATLAB?</p>
+            <input type="radio" name="q47" value="A"> <label>A) cellArray = {1, 2, 3};</label><br>
+            <input type="radio" name="q47" value="B"> <label>B) cellArray = [1, 2, 3];</label><br>
+            <input type="radio" name="q47" value="C"> <label>C) cellArray = (1, 2, 3);</label><br>
+            <input type="radio" name="q47" value="D"> <label>D) cellArray = <1, 2, 3>;</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>48. Which function is used to get the current time in MATLAB?</p>
+            <input type="radio" name="q48" value="A"> <label>A) currentTime()</label><br>
+            <input type="radio" name="q48" value="B"> <label>B) now()</label><br>
+            <input type="radio" name="q48" value="C"> <label>C) time()</label><br>
+            <input type="radio" name="q48" value="D"> <label>D) getTime()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>49. What does the 'size()' function return?</p>
+            <input type="radio" name="q49" value="A"> <label>A) Dimensions of an array</label><br>
+            <input type="radio" name="q49" value="B"> <label>B) Total number of elements</label><br>
+            <input type="radio" name="q49" value="C"> <label>C) Maximum element</label><br>
+            <input type="radio" name="q49" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>50. What is the command to create a line plot in MATLAB?</p>
+            <input type="radio" name="q50" value="A"> <label>A) line(x, y)</label><br>
+            <input type="radio" name="q50" value="B"> <label>B) plot(x, y)</label><br>
+            <input type="radio" name="q50" value="C"> <label>C) draw(x, y)</label><br>
+            <input type="radio" name="q50" value="D"> <label>D) graph(x, y)</label>
+        </div>
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/matlab.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdevlopment Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="webdevlopment.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Webdevlopment Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What does HTML stand for?</p>
+            <label><input type="radio" name="q1" value="A"> A) Hyper Text Markup Language</label><br>
+            <label><input type="radio" name="q1" value="B"> B) High-Level Text Markup Language</label><br>
+            <label><input type="radio" name="q1" value="C"> C) Hyperlink and Text Markup Language</label><br>
+            <label><input type="radio" name="q1" value="D"> D) Hyper Tool Markup Language</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which HTML tag is used for creating a hyperlink?</p>
+            <label><input type="radio" name="q2" value="A"> A) &lt;link&gt;</label><br>
+            <label><input type="radio" name="q2" value="B"> B) &lt;a&gt;</label><br>
+            <label><input type="radio" name="q2" value="C"> C) &lt;href&gt;</label><br>
+            <label><input type="radio" name="q2" value="D"> D) &lt;url&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. What is the correct HTML element for inserting a line break?</p>
+            <label><input type="radio" name="q3" value="A"> A) &lt;break&gt;</label><br>
+            <label><input type="radio" name="q3" value="B"> B) &lt;br&gt;</label><br>
+            <label><input type="radio" name="q3" value="C"> C) &lt;lb&gt;</label><br>
+            <label><input type="radio" name="q3" value="D"> D) &lt;newline&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. Which of the following tags is used to create a list?</p>
+            <label><input type="radio" name="q4" value="A"> A) &lt;ol&gt;</label><br>
+            <label><input type="radio" name="q4" value="B"> B) &lt;list&gt;</label><br>
+            <label><input type="radio" name="q4" value="C"> C) &lt;li&gt;</label><br>
+            <label><input type="radio" name="q4" value="D"> D) &lt;item&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. Which attribute is used to specify the destination of a link?</p>
+            <label><input type="radio" name="q5" value="A"> A) link</label><br>
+            <label><input type="radio" name="q5" value="B"> B) src</label><br>
+            <label><input type="radio" name="q5" value="C"> C) href</label><br>
+            <label><input type="radio" name="q5" value="D"> D) url</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What does CSS stand for?</p>
+            <label><input type="radio" name="q6" value="A"> A) Creative Style Sheets</label><br>
+            <label><input type="radio" name="q6" value="B"> B) Cascading Style Sheets</label><br>
+            <label><input type="radio" name="q6" value="C"> C) Computer Style Sheets</label><br>
+            <label><input type="radio" name="q6" value="D"> D) Colorful Style Sheets</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. Which CSS property controls the text size?</p>
+            <label><input type="radio" name="q7" value="A"> A) text-size</label><br>
+            <label><input type="radio" name="q7" value="B"> B) font-size</label><br>
+            <label><input type="radio" name="q7" value="C"> C) size</label><br>
+            <label><input type="radio" name="q7" value="D"> D) text-style</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. How do you apply a style to an HTML element with an ID of "header"?</p>
+            <label><input type="radio" name="q8" value="A"> A) #header { ... }</label><br>
+            <label><input type="radio" name="q8" value="B"> B) .header { ... }</label><br>
+            <label><input type="radio" name="q8" value="C"> C) header { ... }</label><br>
+            <label><input type="radio" name="q8" value="D"> D) *header { ... }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. What is the correct CSS syntax for selecting all &lt;p&gt; elements?</p>
+            <label><input type="radio" name="q9" value="A"> A) p { ... }</label><br>
+            <label><input type="radio" name="q9" value="B"> B) #p { ... }</label><br>
+            <label><input type="radio" name="q9" value="C"> C) .p { ... }</label><br>
+            <label><input type="radio" name="q9" value="D"> D) *p { ... }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. Which property is used to change the background color?</p>
+            <label><input type="radio" name="q10" value="A"> A) color</label><br>
+            <label><input type="radio" name="q10" value="B"> B) bgcolor</label><br>
+            <label><input type="radio" name="q10" value="C"> C) background-color</label><br>
+            <label><input type="radio" name="q10" value="D"> D) background</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What does JavaScript primarily allow you to do?</p>
+            <label><input type="radio" name="q11" value="A"> A) Create static web pages</label><br>
+            <label><input type="radio" name="q11" value="B"> B) Add interactivity to web pages</label><br>
+            <label><input type="radio" name="q11" value="C"> C) Style web pages</label><br>
+            <label><input type="radio" name="q11" value="D"> D) Manage server-side operations</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. Which of the following is a valid way to declare a variable in JavaScript?</p>
+            <label><input type="radio" name="q12" value="A"> A) var myVariable;</label><br>
+            <label><input type="radio" name="q12" value="B"> B) variable myVariable;</label><br>
+            <label><input type="radio" name="q12" value="C"> C) declare myVariable;</label><br>
+            <label><input type="radio" name="q12" value="D"> D) myVariable: var;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. How do you create a function in JavaScript?</p>
+            <label><input type="radio" name="q13" value="A"> A) function myFunction() { ... }</label><br>
+            <label><input type="radio" name="q13" value="B"> B) func myFunction() { ... }</label><br>
+            <label><input type="radio" name="q13" value="C"> C) create myFunction() { ... }</label><br>
+            <label><input type="radio" name="q13" value="D"> D) define myFunction() { ... }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. Which operator is used to assign a value to a variable?</p>
+            <label><input type="radio" name="q14" value="A"> A) =</label><br>
+            <label><input type="radio" name="q14" value="B"> B) ==</label><br>
+            <label><input type="radio" name="q14" value="C"> C) :=</label><br>
+            <label><input type="radio" name="q14" value="D"> D) =&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. What is the correct way to write an array in JavaScript?</p>
+            <label><input type="radio" name="q15" value="A"> A) var colors = "red", "green", "blue";</label><br>
+            <label><input type="radio" name="q15" value="B"> B) var colors = (1:"red", 2:"green", 3:"blue");</label><br>
+            <label><input type="radio" name="q15" value="C"> C) var colors = ["red", "green", "blue"];</label><br>
+            <label><input type="radio" name="q15" value="D"> D) var colors = {red, green, blue};</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. What is the purpose of the &lt;meta&gt; tag in HTML?</p>
+            <label><input type="radio" name="q16" value="A"> A) To create a link to external resources</label><br>
+            <label><input type="radio" name="q16" value="B"> B) To provide metadata about the HTML document</label><br>
+            <label><input type="radio" name="q16" value="C"> C) To style the HTML document</label><br>
+            <label><input type="radio" name="q16" value="D"> D) To define the document type</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. Which of the following is a front-end framework?</p>
+            <label><input type="radio" name="q17" value="A"> A) Node.js</label><br>
+            <label><input type="radio" name="q17" value="B"> B) Django</label><br>
+            <label><input type="radio" name="q17" value="C"> C) React</label><br>
+            <label><input type="radio" name="q17" value="D"> D) Laravel</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. What is responsive web design?</p>
+            <label><input type="radio" name="q18" value="A"> A) Designing for mobile devices only</label><br>
+            <label><input type="radio" name="q18" value="B"> B) Ensuring the website looks good on all screen sizes</label><br>
+            <label><input type="radio" name="q18" value="C"> C) Creating different versions of a site for different browsers</label><br>
+            <label><input type="radio" name="q18" value="D"> D) Using only CSS for styling</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. Which of the following is a way to include CSS in an HTML document?</p>
+            <label><input type="radio" name="q19" value="A"> A) &lt;style src="styles.css"&gt;</label><br>
+            <label><input type="radio" name="q19" value="B"> B) &lt;link rel="stylesheet" href="styles.css"&gt;</label><br>
+            <label><input type="radio" name="q19" value="C"> C) &lt;css href="styles.css"&gt;</label><br>
+            <label><input type="radio" name="q19" value="D"> D) &lt;stylesheet src="styles.css"&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. What is the function of the &lt;script&gt; tag in HTML?</p>
+            <label><input type="radio" name="q20" value="A"> A) To add CSS</label><br>
+            <label><input type="radio" name="q20" value="B"> B) To include JavaScript</label><br>
+            <label><input type="radio" name="q20" value="C"> C) To create hyperlinks</label><br>
+            <label><input type="radio" name="q20" value="D"> D) To define styles</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. What does the `display: none;` CSS property do?</p>
+            <label><input type="radio" name="q21" value="A"> A) Hides the element but still takes up space</label><br>
+            <label><input type="radio" name="q21" value="B"> B) Hides the element and it doesn't take up space</label><br>
+            <label><input type="radio" name="q21" value="C"> C) Makes the element invisible</label><br>
+            <label><input type="radio" name="q21" value="D"> D) Removes the element from the DOM</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. Which method is used to select an element by its ID in JavaScript?</p>
+            <label><input type="radio" name="q22" value="A"> A) document.getElementById()</label><br>
+            <label><input type="radio" name="q22" value="B"> B) document.getElement()</label><br>
+            <label><input type="radio" name="q22" value="C"> C) document.querySelector()</label><br>
+            <label><input type="radio" name="q22" value="D"> D) document.selectById()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. In CSS, what does the z-index property control?</p>
+            <label><input type="radio" name="q23" value="A"> A) The order of elements in the DOM</label><br>
+            <label><input type="radio" name="q23" value="B"> B) The stacking order of elements</label><br>
+            <label><input type="radio" name="q23" value="C"> C) The font size of elements</label><br>
+            <label><input type="radio" name="q23" value="D"> D) The margin of elements</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. What is the purpose of the `alt` attribute in an &lt;img&gt; tag?</p>
+            <label><input type="radio" name="q24" value="A"> A) To define the image source</label><br>
+            <label><input type="radio" name="q24" value="B"> B) To provide alternative text for the image</label><br>
+            <label><input type="radio" name="q24" value="C"> C) To change the image size</label><br>
+            <label><input type="radio" name="q24" value="D"> D) To link to a webpage</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. What is the purpose of using AJAX in web development?</p>
+            <label><input type="radio" name="q25" value="A"> A) To create animations</label><br>
+            <label><input type="radio" name="q25" value="B"> B) To send and retrieve data asynchronously</label><br>
+            <label><input type="radio" name="q25" value="C"> C) To style web pages</label><br>
+            <label><input type="radio" name="q25" value="D"> D) To manage databases</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. Which of the following is a CSS preprocessor?</p>
+            <label><input type="radio" name="q26" value="A"> A) JavaScript</label><br>
+            <label><input type="radio" name="q26" value="B"> B) SASS</label><br>
+            <label><input type="radio" name="q26" value="C"> C) HTML</label><br>
+            <label><input type="radio" name="q26" value="D"> D) SQL</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. What is the function of a web server?</p>
+            <label><input type="radio" name="q27" value="A"> A) To store and serve web content</label><br>
+            <label><input type="radio" name="q27" value="B"> B) To design web pages</label><br>
+            <label><input type="radio" name="q27" value="C"> C) To manage client-side scripts</label><br>
+            <label><input type="radio" name="q27" value="D"> D) To process client requests only</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. What is the use of the `console.log()` method in JavaScript?</p>
+            <label><input type="radio" name="q28" value="A"> A) Logs errors to the console</label><br>
+            <label><input type="radio" name="q28" value="B"> B) Outputs messages to the web page</label><br>
+            <label><input type="radio" name="q28" value="C"> C) Displays messages in the console</label><br>
+            <label><input type="radio" name="q28" value="D"> D) Executes code in the console</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. Which HTML attribute specifies an image's width?</p>
+            <label><input type="radio" name="q29" value="A"> A) size</label><br>
+            <label><input type="radio" name="q29" value="B"> B) width</label><br>
+            <label><input type="radio" name="q29" value="C"> C) img-width</label><br>
+            <label><input type="radio" name="q29" value="D"> D) length</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. What is the purpose of the &lt;form&gt; element in HTML?</p>
+            <label><input type="radio" name="q30" value="A"> A) To create a navigation menu</label><br>
+            <label><input type="radio" name="q30" value="B"> B) To collect user input</label><br>
+            <label><input type="radio" name="q30" value="C"> C) To display images</label><br>
+            <label><input type="radio" name="q30" value="D"> D) To style content</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>31. In CSS, what does the `float` property do?</p>
+            <label><input type="radio" name="q31" value="A"> A) Moves elements left or right</label><br>
+            <label><input type="radio" name="q31" value="B"> B) Centers elements</label><br>
+            <label><input type="radio" name="q31" value="C"> C) Stacks elements vertically</label><br>
+            <label><input type="radio" name="q31" value="D"> D) Changes the display type</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. Which HTTP method is used to retrieve data from a server?</p>
+            <label><input type="radio" name="q32" value="A"> A) POST</label><br>
+            <label><input type="radio" name="q32" value="B"> B) PUT</label><br>
+            <label><input type="radio" name="q32" value="C"> C) GET</label><br>
+            <label><input type="radio" name="q32" value="D"> D) DELETE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. What is the purpose of the `data-*` attribute in HTML5?</p>
+            <label><input type="radio" name="q33" value="A"> A) To define styles</label><br>
+            <label><input type="radio" name="q33" value="B"> B) To store custom data</label><br>
+            <label><input type="radio" name="q33" value="C"> C) To create events</label><br>
+            <label><input type="radio" name="q33" value="D"> D) To link to scripts</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. Which of the following is NOT a JavaScript data type?</p>
+            <label><input type="radio" name="q34" value="A"> A) String</label><br>
+            <label><input type="radio" name="q34" value="B"> B) Number</label><br>
+            <label><input type="radio" name="q34" value="C"> C) Undefined</label><br>
+            <label><input type="radio" name="q34" value="D"> D) Character</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. What is the purpose of the `async` attribute in a &lt;script&gt; tag?</p>
+            <label><input type="radio" name="q35" value="A"> A) To load scripts in order</label><br>
+            <label><input type="radio" name="q35" value="B"> B) To load scripts asynchronously</label><br>
+            <label><input type="radio" name="q35" value="C"> C) To execute scripts immediately</label><br>
+            <label><input type="radio" name="q35" value="D"> D) To defer script execution</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. In CSS Grid, which property defines the number of columns?</p>
+            <label><input type="radio" name="q36" value="A"> A) grid-template-columns</label><br>
+            <label><input type="radio" name="q36" value="B"> B) columns</label><br>
+            <label><input type="radio" name="q36" value="C"> C) grid-columns</label><br>
+            <label><input type="radio" name="q36" value="D"> D) column-count</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which method can be used to convert a JSON string into a JavaScript object?</p>
+            <label><input type="radio" name="q37" value="A"> A) JSON.toObject()</label><br>
+            <label><input type="radio" name="q37" value="B"> B) JSON.parse()</label><br>
+            <label><input type="radio" name="q37" value="C"> C) JSON.stringify()</label><br>
+            <label><input type="radio" name="q37" value="D"> D) JSON.convert()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. What does SQL stand for?</p>
+            <label><input type="radio" name="q38" value="A"> A) Structured Query Language</label><br>
+            <label><input type="radio" name="q38" value="B"> B) Simple Query Language</label><br>
+            <label><input type="radio" name="q38" value="C"> C) Standard Query Language</label><br>
+            <label><input type="radio" name="q38" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. Which of the following is a SQL command to retrieve data?</p>
+            <label><input type="radio" name="q39" value="A"> A) GET</label><br>
+            <label><input type="radio" name="q39" value="B"> B) SELECT</label><br>
+            <label><input type="radio" name="q39" value="C"> C) FIND</label><br>
+            <label><input type="radio" name="q39" value="D"> D) RETRIEVE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What is the purpose of a database?</p>
+            <label><input type="radio" name="q40" value="A"> A) To store data</label><br>
+            <label><input type="radio" name="q40" value="B"> B) To process transactions</label><br>
+            <label><input type="radio" name="q40" value="C"> C) To perform calculations</label><br>
+            <label><input type="radio" name="q40" value="D"> D) To generate reports</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. Which of the following is a NoSQL database?</p>
+            <label><input type="radio" name="q41" value="A"> A) MySQL</label><br>
+            <label><input type="radio" name="q41" value="B"> B) PostgreSQL</label><br>
+            <label><input type="radio" name="q41" value="C"> C) MongoDB</label><br>
+            <label><input type="radio" name="q41" value="D"> D) SQLite</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. What is the purpose of indexing in a database?</p>
+            <label><input type="radio" name="q42" value="A"> A) To optimize data storage</label><br>
+            <label><input type="radio" name="q42" value="B"> B) To improve query performance</label><br>
+            <label><input type="radio" name="q42" value="C"> C) To maintain data integrity</label><br>
+            <label><input type="radio" name="q42" value="D"> D) To secure data</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. Which of the following is a version control system?</p>
+            <label><input type="radio" name="q43" value="A"> A) Git</label><br>
+            <label><input type="radio" name="q43" value="B"> B) GitHub</label><br>
+            <label><input type="radio" name="q43" value="C"> C) Bitbucket</label><br>
+            <label><input type="radio" name="q43" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. What is the primary purpose of Git?</p>
+            <label><input type="radio" name="q44" value="A"> A) To manage project documentation</label><br>
+            <label><input type="radio" name="q44" value="B"> B) To track changes in source code</label><br>
+            <label><input type="radio" name="q44" value="C"> C) To automate deployments</label><br>
+            <label><input type="radio" name="q44" value="D"> D) To create web applications</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. Which of the following is a popular CSS framework?</p>
+            <label><input type="radio" name="q45" value="A"> A) Bootstrap</label><br>
+            <label><input type="radio" name="q45" value="B"> B) React</label><br>
+            <label><input type="radio" name="q45" value="C"> C) Node.js</label><br>
+            <label><input type="radio" name="q45" value="D"> D) Django</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. What is the purpose of a content management system (CMS)?</p>
+            <label><input type="radio" name="q46" value="A"> A) To manage website content</label><br>
+            <label><input type="radio" name="q46" value="B"> B) To write code</label><br>
+            <label><input type="radio" name="q46" value="C"> C) To design graphics</label><br>
+            <label><input type="radio" name="q46" value="D"> D) To host websites</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. Which of the following is an example of a RESTful API?</p>
+            <label><input type="radio" name="q47" value="A"> A) SOAP</label><br>
+            <label><input type="radio" name="q47" value="B"> B) GraphQL</label><br>
+            <label><input type="radio" name="q47" value="C"> C) JSON-RPC</label><br>
+            <label><input type="radio" name="q47" value="D"> D) OpenWeatherMap API</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. What does API stand for?</p>
+            <label><input type="radio" name="q48" value="A"> A) Application Programming Interface</label><br>
+            <label><input type="radio" name="q48" value="B"> B) Automated Programming Interface</label><br>
+            <label><input type="radio" name="q48" value="C"> C) Application Process Integration</label><br>
+            <label><input type="radio" name="q48" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What is the purpose of the &lt;head&gt; section in an HTML document?</p>
+            <label><input type="radio" name="q49" value="A"> A) To display the main content</label><br>
+            <label><input type="radio" name="q49" value="B"> B) To define metadata and links to resources</label><br>
+            <label><input type="radio" name="q49" value="C"> C) To create navigation menus</label><br>
+            <label><input type="radio" name="q49" value="D"> D) To style the page</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. What is the purpose of using comments in JavaScript?</p>
+            <label><input type="radio" name="q50" value="A"> A) To make the code run faster</label><br>
+            <label><input type="radio" name="q50" value="B"> B) To explain and annotate the code</label><br>
+            <label><input type="radio" name="q50" value="C"> C) To remove code</label><br>
+            <label><input type="radio" name="q50" value="D"> D) To execute code</label>
+        </div>
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/webdevlopment.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

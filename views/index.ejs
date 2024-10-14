@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <!-- Sign In Screen -->
+    <div class="container">
+        <div class="screen" id="sign-in-screen">
+            <h1>Login</h1>
+            <form action="/login" method="post">
+                <!-- Display error message if exists -->
+                <% if (error) { %>
+                    <p class="error-message">
+                        <%= error %>
+                    </p>
+                    <% } %>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <a href="https://exam-6c8l.onrender.com/forgot" class="forgot-password">Forgot password?</a>
+                        <button type="submit" class="btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="https://exam-6c8l.onrender.com/signup">Sign up</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

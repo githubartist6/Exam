@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dart Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="dart.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Dart Quiz</h1>
+        <form id="quiz-form">
+            <div class="question" data-aos="zoom-in">
+                <p>1. What is the maximum score possible with a single dart?</p>
+                <input type="radio" name="q1" value="A"> <label>A) 50</label><br>
+                <input type="radio" name="q1" value="B"> <label>B) 60</label><br>
+                <input type="radio" name="q1" value="C"> <label>C) 100</label><br>
+                <input type="radio" name="q1" value="D"> <label>D) 180</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>2. How many points is the bullseye worth in standard darts?</p>
+                <input type="radio" name="q2" value="A"> <label>A) 25</label><br>
+                <input type="radio" name="q2" value="B"> <label>B) 50</label><br>
+                <input type="radio" name="q2" value="C"> <label>C) 100</label><br>
+                <input type="radio" name="q2" value="D"> <label>D) 75</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>3. What is the distance from the throwing line (oche) to the dartboard in professional play?</p>
+                <input type="radio" name="q3" value="A"> <label>A) 7 feet 6 inches</label><br>
+                <input type="radio" name="q3" value="B"> <label>B) 8 feet</label><br>
+                <input type="radio" name="q3" value="C"> <label>C) 9 feet</label><br>
+                <input type="radio" name="q3" value="D"> <label>D) 6 feet</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>4. In a game of 501, what must a player do to win?</p>
+                <input type="radio" name="q4" value="A"> <label>A) Score exactly 0</label><br>
+                <input type="radio" name="q4" value="B"> <label>B) Score 1 point</label><br>
+                <input type="radio" name="q4" value="C"> <label>C) Reach 501</label><br>
+                <input type="radio" name="q4" value="D"> <label>D) Hit the bullseye</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>5. How many sections does a standard dartboard have?</p>
+                <input type="radio" name="q5" value="A"> <label>A) 10</label><br>
+                <input type="radio" name="q5" value="B"> <label>B) 20</label><br>
+                <input type="radio" name="q5" value="C"> <label>C) 12</label><br>
+                <input type="radio" name="q5" value="D"> <label>D) 24</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>6. How many points is the outer bullseye worth?</p>
+                <input type="radio" name="q6" value="A"> <label>A) 25</label><br>
+                <input type="radio" name="q6" value="B"> <label>B) 50</label><br>
+                <input type="radio" name="q6" value="C"> <label>C) 75</label><br>
+                <input type="radio" name="q6" value="D"> <label>D) 100</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>7. What is the score if a player hits the triple 20?</p>
+                <input type="radio" name="q7" value="A"> <label>A) 20</label><br>
+                <input type="radio" name="q7" value="B"> <label>B) 40</label><br>
+                <input type="radio" name="q7" value="C"> <label>C) 60</label><br>
+                <input type="radio" name="q7" value="D"> <label>D) 80</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>8. If a player hits the single 5, what is their score?</p>
+                <input type="radio" name="q8" value="A"> <label>A) 5</label><br>
+                <input type="radio" name="q8" value="B"> <label>B) 10</label><br>
+                <input type="radio" name="q8" value="C"> <label>C) 15</label><br>
+                <input type="radio" name="q8" value="D"> <label>D) 20</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>9. How many points are awarded for a double 15?</p>
+                <input type="radio" name="q9" value="A"> <label>A) 15</label><br>
+                <input type="radio" name="q9" value="B"> <label>B) 30</label><br>
+                <input type="radio" name="q9" value="C"> <label>C) 45</label><br>
+                <input type="radio" name="q9" value="D"> <label>D) 60</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>10. What score is needed to win in a game of 301?</p>
+                <input type="radio" name="q10" value="A"> <label>A) 1</label><br>
+                <input type="radio" name="q10" value="B"> <label>B) 301</label><br>
+                <input type="radio" name="q10" value="C"> <label>C) 0</label><br>
+                <input type="radio" name="q10" value="D"> <label>D) 501</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>11. In which game do players take turns throwing three darts?</p>
+                <input type="radio" name="q11" value="A"> <label>A) 301</label><br>
+                <input type="radio" name="q11" value="B"> <label>B) Cricket</label><br>
+                <input type="radio" name="q11" value="C"> <label>C) 501</label><br>
+                <input type="radio" name="q11" value="D"> <label>D) All of the above</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>12. What does "checkout" mean in darts?</p>
+                <input type="radio" name="q12" value="A"> <label>A) To finish a game</label><br>
+                <input type="radio" name="q12" value="B"> <label>B) To score a double</label><br>
+                <input type="radio" name="q12" value="C"> <label>C) To hit a bullseye</label><br>
+                <input type="radio" name="q12" value="D"> <label>D) To score over 100</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>13. How many darts does a player throw in a single turn?</p>
+                <input type="radio" name="q13" value="A"> <label>A) 1</label><br>
+                <input type="radio" name="q13" value="B"> <label>B) 2</label><br>
+                <input type="radio" name="q13" value="C"> <label>C) 3</label><br>
+                <input type="radio" name="q13" value="D"> <label>D) 4</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>14. What is the purpose of "ton" in scoring?</p>
+                <input type="radio" name="q14" value="A"> <label>A) To indicate a score of 100</label><br>
+                <input type="radio" name="q14" value="B"> <label>B) To indicate a double</label><br>
+                <input type="radio" name="q14" value="C"> <label>C) To indicate a miss</label><br>
+                <input type="radio" name="q14" value="D"> <label>D) To indicate a bullseye</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>15. How is the first player to throw determined in a game?</p>
+                <input type="radio" name="q15" value="A"> <label>A) By drawing lots</label><br>
+                <input type="radio" name="q15" value="B"> <label>B) By throwing at the bullseye</label><br>
+                <input type="radio" name="q15" value="C"> <label>C) By age</label><br>
+                <input type="radio" name="q15" value="D"> <label>D) By coin toss</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>16. What is a "ton" in darts?</p>
+                <input type="radio" name="q16" value="A"> <label>A) 100 points</label><br>
+                <input type="radio" name="q16" value="B"> <label>B) A miss</label><br>
+                <input type="radio" name="q16" value="C"> <label>C) A double score</label><br>
+                <input type="radio" name="q16" value="D"> <label>D) A scoring term</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>17. What does the term "double out" refer to?</p>
+                <input type="radio" name="q17" value="A"> <label>A) Finishing the game with a double score</label><br>
+                <input type="radio" name="q17" value="B"> <label>B) Scoring a double on the first dart</label><br>
+                <input type="radio" name="q17" value="C"> <label>C) Hitting the bullseye twice</label><br>
+                <input type="radio" name="q17" value="D"> <label>D) Scoring over 100 points</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>18. What is the term for scoring exactly the amount needed to win?</p>
+                <input type="radio" name="q18" value="A"> <label>A) Checkout</label><br>
+                <input type="radio" name="q18" value="B"> <label>B) Double out</label><br>
+                <input type="radio" name="q18" value="C"> <label>C) Ton</label><br>
+                <input type="radio" name="q18" value="D"> <label>D) Finish</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>19. What does "straight in" mean in darts?</p>
+                <input type="radio" name="q19" value="A"> <label>A) Hitting the bullseye</label><br>
+                <input type="radio" name="q19" value="B"> <label>B) Scoring a single</label><br>
+                <input type="radio" name="q19" value="C"> <label>C) Finishing the game</label><br>
+                <input type="radio" name="q19" value="D"> <label>D) Hitting a double</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>20. What is a "Shanghai" in dart games?</p>
+                <input type="radio" name="q20" value="A"> <label>A) Hitting all numbers from 1 to 7</label><br>
+                <input type="radio" name="q20" value="B"> <label>B) Scoring a double</label><br>
+                <input type="radio" name="q20" value="C"> <label>C) Hitting a single, double, and triple of the same number</label><br>
+                <input type="radio" name="q20" value="D"> <label>D) Hitting the bullseye</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>21. Who is considered one of the greatest darts players of all time?</p>
+                <input type="radio" name="q21" value="A"> <label>A) Phil Taylor</label><br>
+                <input type="radio" name="q21" value="B"> <label>B) Eric Bristow</label><br>
+                <input type="radio" name="q21" value="C"> <label>C) Michael van Gerwen</label><br>
+                <input type="radio" name="q21" value="D"> <label>D) All of the above</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>22. Which country has produced the most world champions in darts?</p>
+                <input type="radio" name="q22" value="A"> <label>A) England</label><br>
+                <input type="radio" name="q22" value="B"> <label>B) Netherlands</label><br>
+                <input type="radio" name="q22" value="C"> <label>C) Scotland</label><br>
+                <input type="radio" name="q22" value="D"> <label>D) Australia</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>23. What year was the Professional Darts Corporation (PDC) founded?</p>
+                <input type="radio" name="q23" value="A"> <label>A) 1980</label><br>
+                <input type="radio" name="q23" value="B"> <label>B) 1993</label><br>
+                <input type="radio" name="q23" value="C"> <label>C) 2000</label><br>
+                <input type="radio" name="q23" value="D"> <label>D) 1990</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>24. Who won the first-ever PDC World Championship?</p>
+                <input type="radio" name="q24" value="A"> <label>A) Phil Taylor</label><br>
+                <input type="radio" name="q24" value="B"> <label>B) Dennis Priestley</label><br>
+                <input type="radio" name="q24" value="C"> <label>C) Eric Bristow</label><br>
+                <input type="radio" name="q24" value="D"> <label>D) John Lowe</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>25. Which player is known as "The Power"?</p>
+                <input type="radio" name="q25" value="A"> <label>A) Phil Taylor</label><br>
+                <input type="radio" name="q25" value="B"> <label>B) Michael van Gerwen</label><br>
+                <input type="radio" name="q25" value="C"> <label>C) Adrian Lewis</label><br>
+                <input type="radio" name="q25" value="D"> <label>D) Gary Anderson</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>26. What is the name of the tournament that determines the world champion in darts?</p>
+                <input type="radio" name="q26" value="A"> <label>A) World Matchplay</label><br>
+                <input type="radio" name="q26" value="B"> <label>B) World Darts Championship</label><br>
+                <input type="radio" name="q26" value="C"> <label>C) Grand Slam of Darts</label><br>
+                <input type="radio" name="q26" value="D"> <label>D) UK Open</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>27. In which city is the PDC World Championship held?</p>
+                <input type="radio" name="q27" value="A"> <label>A) London</label><br>
+                <input type="radio" name="q27" value="B"> <label>B) Birmingham</label><br>
+                <input type="radio" name="q27" value="C"> <label>C) Manchester</label><br>
+                <input type="radio" name="q27" value="D"> <label>D) Newcastle</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>28. How many players typically compete in the PDC World Championship?</p>
+                <input type="radio" name="q28" value="A"> <label>A) 64</label><br>
+                <input type="radio" name="q28" value="B"> <label>B) 96</label><br>
+                <input type="radio" name="q28" value="C"> <label>C) 128</label><br>
+                <input type="radio" name="q28" value="D"> <label>D) 32</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>29. What is the name of the first major darts tournament of the year?</p>
+                <input type="radio" name="q29" value="A"> <label>A) The Masters</label><br>
+                <input type="radio" name="q29" value="B"> <label>B) The World Championship</label><br>
+                <input type="radio" name="q29" value="C"> <label>C) The UK Open</label><br>
+                <input type="radio" name="q29" value="D"> <label>D) The Grand Slam</label>
+            </div>
+        
+            <div class="question" data-aos="zoom-in">
+                <p>30. What is the maximum number of points that can be scored in a single round of darts?</p>
+                <input type="radio" name="q30" value="A"> <label>A) 120</label><br>
+                <input type="radio" name="q30" value="B"> <label>B) 180</label><br>
+                <input type="radio" name="q30" value="C"> <label>C) 150</label><br>
+                <input type="radio" name="q30" value="D"> <label>D) 160</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>31. What does the term "leg" refer to in darts?</p>
+                <input type="radio" name="q31" value="A"> <label>A) A single game</label><br>
+                <input type="radio" name="q31" value="B"> <label>B) A round of darts</label><br>
+                <input type="radio" name="q31" value="C"> <label>C) A player's turn</label><br>
+                <input type="radio" name="q31" value="D"> <label>D) A scoring method</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>32. What does "hitting a 180" mean?</p>
+                <input type="radio" name="q32" value="A"> <label>A) Scoring 180 points in one turn</label><br>
+                <input type="radio" name="q32" value="B"> <label>B) Hitting the bullseye</label><br>
+                <input type="radio" name="q32" value="C"> <label>C) Scoring exactly 180 points</label><br>
+                <input type="radio" name="q32" value="D"> <label>D) Winning a game</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>33. What is the standard height of a dartboard from the ground?</p>
+                <input type="radio" name="q33" value="A"> <label>A) 5 feet 8 inches</label><br>
+                <input type="radio" name="q33" value="B"> <label>B) 5 feet 10 inches</label><br>
+                <input type="radio" name="q33" value="C"> <label>C) 6 feet</label><br>
+                <input type="radio" name="q33" value="D"> <label>D) 6 feet 6 inches</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>34. In which format do players score points in a game of darts?</p>
+                <input type="radio" name="q34" value="A"> <label>A) Cumulative</label><br>
+                <input type="radio" name="q34" value="B"> <label>B) Subtractive</label><br>
+                <input type="radio" name="q34" value="C"> <label>C) Binary</label><br>
+                <input type="radio" name="q34" value="D"> <label>D) Incremental</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>35. What does the term "score" refer to in darts?</p>
+                <input type="radio" name="q35" value="A"> <label>A) The total points achieved</label><br>
+                <input type="radio" name="q35" value="B"> <label>B) The number of darts thrown</label><br>
+                <input type="radio" name="q35" value="C"> <label>C) The game format</label><br>
+                <input type="radio" name="q35" value="D"> <label>D) The opponent's score</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>36. How is a "treble" scored in darts?</p>
+                <input type="radio" name="q36" value="A"> <label>A) Hitting the outer ring</label><br>
+                <input type="radio" name="q36" value="B"> <label>B) Hitting the inner ring</label><br>
+                <input type="radio" name="q36" value="C"> <label>C) Hitting the bullseye</label><br>
+                <input type="radio" name="q36" value="D"> <label>D) Hitting three darts on the same number</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>37. What is a "double" in darts?</p>
+                <input type="radio" name="q37" value="A"> <label>A) Scoring twice the points</label><br>
+                <input type="radio" name="q37" value="B"> <label>B) Hitting the double ring</label><br>
+                <input type="radio" name="q37" value="C"> <label>C) Scoring 100 points</label><br>
+                <input type="radio" name="q37" value="D"> <label>D) Hitting the bullseye</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>38. What does "nine-dart finish" mean?</p>
+                <input type="radio" name="q38" value="A"> <label>A) Winning with nine darts</label><br>
+                <input type="radio" name="q38" value="B"> <label>B) Completing a game in nine darts</label><br>
+                <input type="radio" name="q38" value="C"> <label>C) Scoring 180 points</label><br>
+                <input type="radio" name="q38" value="D"> <label>D) Hitting the bullseye nine times</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>39. What is the main objective in a game of darts?</p>
+                <input type="radio" name="q39" value="A"> <label>A) To score the most points</label><br>
+                <input type="radio" name="q39" value="B"> <label>B) To reach zero</label><br>
+                <input type="radio" name="q39" value="C"> <label>C) To hit the bullseye</label><br>
+                <input type="radio" name="q39" value="D"> <label>D) To finish with the highest score</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>40. What is a "misthrow" in darts?</p>
+                <input type="radio" name="q40" value="A"> <label>A) A score below 10</label><br>
+                <input type="radio" name="q40" value="B"> <label>B) A throw that misses the board</label><br>
+                <input type="radio" name="q40" value="C"> <label>C) A throw that lands outside the target</label><br>
+                <input type="radio" name="q40" value="D"> <label>D) A throw that doesn't count</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>41. What does "throwing for the bull" mean?</p>
+                <input type="radio" name="q41" value="A"> <label>A) Attempting to score a bullseye</label><br>
+                <input type="radio" name="q41" value="B"> <label>B) The first throw of the game</label><br>
+                <input type="radio" name="q41" value="C"> <label>C) Throwing a high score</label><br>
+                <input type="radio" name="q41" value="D"> <label>D) A practice throw</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>42. What is the purpose of the outer ring on a dartboard?</p>
+                <input type="radio" name="q42" value="A"> <label>A) To score 25 points</label><br>
+                <input type="radio" name="q42" value="B"> <label>B) To score double points</label><br>
+                <input type="radio" name="q42" value="C"> <label>C) To score 50 points</label><br>
+                <input type="radio" name="q42" value="D"> <label>D) To miss</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>43. What is a "dartboard cabinet"?</p>
+                <input type="radio" name="q43" value="A"> <label>A) A storage for darts</label><br>
+                <input type="radio" name="q43" value="B"> <label>B) A type of scoreboard</label><br>
+                <input type="radio" name="q43" value="C"> <label>C) A decorative cover for a dartboard</label><br>
+                <input type="radio" name="q43" value="D"> <label>D) A type of dart</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>44. How long is a standard dart?</p>
+                <input type="radio" name="q44" value="A"> <label>A) 5 to 6 inches</label><br>
+                <input type="radio" name="q44" value="B"> <label>B) 6 to 7 inches</label><br>
+                <input type="radio" name="q44" value="C"> <label>C) 7 to 8 inches</label><br>
+                <input type="radio" name="q44" value="D"> <label>D) 8 to 9 inches</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>45. What is a "barrel" in darts?</p>
+                <input type="radio" name="q45" value="A"> <label>A) The tip of the dart</label><br>
+                <input type="radio" name="q45" value="B"> <label>B) The part of the dart you grip</label><br>
+                <input type="radio" name="q45" value="C"> <label>C) The flights of the dart</label><br>
+                <input type="radio" name="q45" value="D"> <label>D) The shaft of the dart</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>46. What type of material is a professional dartboard typically made from?</p>
+                <input type="radio" name="q46" value="A"> <label>A) Cork</label><br>
+                <input type="radio" name="q46" value="B"> <label>B) Wood</label><br>
+                <input type="radio" name="q46" value="C"> <label>C) Sisal</label><br>
+                <input type="radio" name="q46" value="D"> <label>D) Plastic</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>47. What is the weight range for standard darts?</p>
+                <input type="radio" name="q47" value="A"> <label>A) 10 to 15 grams</label><br>
+                <input type="radio" name="q47" value="B"> <label>B) 15 to 25 grams</label><br>
+                <input type="radio" name="q47" value="C"> <label>C) 25 to 35 grams</label><br>
+                <input type="radio" name="q47" value="D"> <label>D) 35 to 45 grams</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>48. How is the game of "501" played?</p>
+                <input type="radio" name="q48" value="A"> <label>A) Players start at 501 and subtract their scores</label><br>
+                <input type="radio" name="q48" value="B"> <label>B) Players add to 501 to win</label><br>
+                <input type="radio" name="q48" value="C"> <label>C) Players score points in increments of 501</label><br>
+                <input type="radio" name="q48" value="D"> <label>D) Players throw 501 darts</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>49. What is the bullseye worth in most games?</p>
+                <input type="radio" name="q49" value="A"> <label>A) 25 points</label><br>
+                <input type="radio" name="q49" value="B"> <label>B) 50 points</label><br>
+                <input type="radio" name="q49" value="C"> <label>C) 100 points</label><br>
+                <input type="radio" name="q49" value="D"> <label>D) 200 points</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>50. In darts, what is the term for a player who is on the verge of winning?</p>
+                <input type="radio" name="q50" value="A"> <label>A) On the finish</label><br>
+                <input type="radio" name="q50" value="B"> <label>B) Double trouble</label><br>
+                <input type="radio" name="q50" value="C"> <label>C) Game point</label><br>
+                <input type="radio" name="q50" value="D"> <label>D) Match point</label>
+            </div>
+            
+
+
+            
+            <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+    <script src="/java/dart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

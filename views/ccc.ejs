@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="ccc.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>C++ Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the output of <code>cout << 5 + 10 * 2;</code>?</p>
+            <input type="radio" name="q1" value="A"> <label>A) 25</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) 20</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) 15</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) 10</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which of the following is a valid declaration of a pointer?</p>
+            <input type="radio" name="q2" value="A"> <label>A) <code>int* p;</code></label><br>
+            <input type="radio" name="q2" value="B"> <label>B) <code>int p*;</code></label><br>
+            <input type="radio" name="q2" value="C"> <label>C) <code>int p;</code></label><br>
+            <input type="radio" name="q2" value="D"> <label>D) <code>p int;</code></label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. What keyword is used to define a function in C++?</p>
+            <input type="radio" name="q3" value="A"> <label>A) define</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) function</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) fn</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. Which operator is used for scope resolution?</p>
+            <input type="radio" name="q4" value="A"> <label>A) .</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) -></label><br>
+            <input type="radio" name="q4" value="C"> <label>C) ::</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) ::=</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. What is the correct way to declare a constant in C++?</p>
+            <input type="radio" name="q5" value="A"> <label>A) <code>const int x = 10;</code></label><br>
+            <input type="radio" name="q5" value="B"> <label>B) <code>constant int x = 10;</code></label><br>
+            <input type="radio" name="q5" value="C"> <label>C) <code>int const x = 10;</code></label><br>
+            <input type="radio" name="q5" value="D"> <label>D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What will be the output of the following code?</p>
+            <pre><code>int a = 10;
+        if (a > 5) {
+            cout << "Greater";
+        } else {
+            cout << "Smaller";
+        }</code></pre>
+            <input type="radio" name="q6" value="A"> <label>A) Greater</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) Smaller</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) 10</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. Which of the following is not a valid C++ data type?</p>
+            <input type="radio" name="q7" value="A"> <label>A) int</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) float</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) char</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) real</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. What does the new keyword do in C++?</p>
+            <input type="radio" name="q8" value="A"> <label>A) Declares a variable</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) Allocates memory</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) Initializes a variable</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) Deletes a variable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. What is the size of int in C++ on most platforms?</p>
+            <input type="radio" name="q9" value="A"> <label>A) 2 bytes</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) 4 bytes</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) 8 bytes</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) Depends on the platform</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. Which of the following is used to include a header file in C++?</p>
+            <input type="radio" name="q10" value="A"> <label>A) <code>#include &lt;file&gt;</code></label><br>
+            <input type="radio" name="q10" value="B"> <label>B) <code>import file;</code></label><br>
+            <input type="radio" name="q10" value="C"> <label>C) <code>include file;</code></label><br>
+            <input type="radio" name="q10" value="D"> <label>D) <code>using file;</code></label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What is a destructor in C++?</p>
+            <input type="radio" name="q11" value="A"> <label>A) A method to initialize an object</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) A method to delete an object</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) A method to create a variable</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. Which of the following is an example of encapsulation?</p>
+            <input type="radio" name="q12" value="A"> <label>A) Using public variables</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) Hiding the data members of a class</label><br>
+            <input type="radio" name="q12" value="C"> <label>C) Inheriting from a base class</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. What does the virtual keyword signify?</p>
+            <input type="radio" name="q13" value="A"> <label>A) The function can be overridden</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) The function cannot be overridden</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) The function is private</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) The function is static</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. How do you access members of a class?</p>
+            <input type="radio" name="q14" value="A"> <label>A) . operator</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) -> operator</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) :: operator</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. What will be the output of this code?</p>
+            <pre><code>int x = 10;
+        int& ref = x;
+        ref++;
+        cout << x;</code></pre>
+            <input type="radio" name="q15" value="A"> <label>A) 10</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) 11</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. Which of the following is true about constructors?</p>
+            <input type="radio" name="q16" value="A"> <label>A) They have return types</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) They can be overloaded</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) They are called explicitly</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) They are private by default</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. Which loop is guaranteed to execute at least once?</p>
+            <input type="radio" name="q17" value="A"> <label>A) for loop</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) while loop</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) do-while loop</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. What will the following code print?</p>
+            <pre><code>for (int i = 0; i < 5; i++) {
+            if (i == 3) continue;
+            cout << i << " ";
+        }</code></pre>
+            <input type="radio" name="q18" value="A"> <label>A) 0 1 2 3 4</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) 0 1 2 4</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) 1 2 3 4</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) 0 1 2</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is the purpose of the this pointer?</p>
+            <input type="radio" name="q19" value="A"> <label>A) It points to the base class</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) It points to the current object</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) It points to the previous object</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. Which of the following is a correct syntax to create an object?</p>
+            <input type="radio" name="q20" value="A"> <label>A) <code>ClassName obj;</code></label><br>
+            <input type="radio" name="q20" value="B"> <label>B) <code>obj ClassName;</code></label><br>
+            <input type="radio" name="q20" value="C"> <label>C) <code>new ClassName obj;</code></label><br>
+            <input type="radio" name="q20" value="D"> <label>D) <code>ClassName new obj;</code></label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. What is the purpose of the friend keyword?</p>
+            <input type="radio" name="q21" value="A"> <label>A) To make a function a member of the class</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) To allow access to private members of a class</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) To inherit from another class</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. What is a pure virtual function?</p>
+            <input type="radio" name="q22" value="A"> <label>A) A function with no implementation</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) A function with implementation</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) A function that cannot be overridden</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. What does the static keyword do in C++?</p>
+            <input type="radio" name="q23" value="A"> <label>A) Limits the scope of a variable</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) Allocates memory at compile time</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) Creates a global variable</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. Which of the following is a feature of OOP?</p>
+            <input type="radio" name="q24" value="A"> <label>A) Encapsulation</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) Inheritance</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) Polymorphism</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. What will be the output of the following code?</p>
+            <pre><code>int a = 5, b = 10;
+        cout << (a > b ? a : b);</code></pre>
+            <input type="radio" name="q25" value="A"> <label>A) 5</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) 10</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. Which operator is used to allocate memory dynamically?</p>
+            <input type="radio" name="q26" value="A"> <label>A) malloc</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) new</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) alloc</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. How do you declare a multi-dimensional array?</p>
+            <input type="radio" name="q27" value="A"> <label>A) <code>int arr[3][4];</code></label><br>
+            <input type="radio" name="q27" value="B"> <label>B) <code>int arr[3, 4];</code></label><br>
+            <input type="radio" name="q27" value="C"> <label>C) <code>int arr{3}{4};</code></label><br>
+            <input type="radio" name="q27" value="D"> <label>D) <code>int arr(3)(4);</code></label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. Which keyword is used to handle exceptions in C++?</p>
+            <input type="radio" name="q28" value="A"> <label>A) try</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) catch</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) throw</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. What is the purpose of the #define directive?</p>
+            <input type="radio" name="q29" value="A"> <label>A) To define constants</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) To define macros</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. What will be the output of this code?</p>
+            <pre><code>int arr[3] = {1, 2, 3};
+        cout << arr[1];</code></pre>
+            <input type="radio" name="q30" value="A"> <label>A) 1</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) 3</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. What is the default value of a local variable in C++?</p>
+            <input type="radio" name="q31" value="A"> <label>A) 0</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) Undefined</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) NULL</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) Empty</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. Which of the following is not a feature of C++?</p>
+            <input type="radio" name="q32" value="A"> <label>A) Encapsulation</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) Inheritance</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) Recursion</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) Polymorphism</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. Which of the following operators cannot be overloaded?</p>
+            <input type="radio" name="q33" value="A"> <label>A) +</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) ++</label><br>
+            <input type="radio" name="q33" value="C"> <label>C) ::</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) ==</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. What is the output of the following code?</p>
+            <pre><code>int a = 5;
+        cout << ++a;</code></pre>
+            <input type="radio" name="q34" value="A"> <label>A) 5</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) 6</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. Which of the following is a valid way to initialize an array?</p>
+            <input type="radio" name="q35" value="A"> <label>A) int arr[5] = {1, 2, 3};</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) int arr(5) = {1, 2, 3};</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) int arr[] = {1, 2, 3};</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) int arr{1, 2, 3};</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. Which function is used to free dynamically allocated memory?</p>
+            <input type="radio" name="q36" value="A"> <label>A) delete</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) free</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) remove</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which keyword is used to define a class in C++?</p>
+            <input type="radio" name="q37" value="A"> <label>A) class</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) structure</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) object</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. What is the purpose of the 'friend' function?</p>
+            <input type="radio" name="q38" value="A"> <label>A) To allow private access</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) To create inheritance</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) To allow public access</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. Which of the following is a type of constructor?</p>
+            <input type="radio" name="q39" value="A"> <label>A) Default constructor</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) Parameterized constructor</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) Copy constructor</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What will the following code output?</p>
+            <pre><code>int a = 5;
+        int b = a++;
+        cout << b;</code></pre>
+            <input type="radio" name="q40" value="A"> <label>A) 5</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) 6</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. What is the result of the expression 5 == 5?</p>
+            <input type="radio" name="q41" value="A"> <label>A) true</label><br>
+            <input type="radio" name="q41" value="B"> <label>B) false</label><br>
+            <input type="radio" name="q41" value="C"> <label>C) 1</label><br>
+            <input type="radio" name="q41" value="D"> <label>D) 0</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. What does the 'virtual' keyword do in a function declaration?</p>
+            <input type="radio" name="q42" value="A"> <label>A) It makes the function private</label><br>
+            <input type="radio" name="q42" value="B"> <label>B) It allows function overriding</label><br>
+            <input type="radio" name="q42" value="C"> <label>C) It creates a static function</label><br>
+            <input type="radio" name="q42" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. What is the scope of a global variable?</p>
+            <input type="radio" name="q43" value="A"> <label>A) Within the function</label><br>
+            <input type="radio" name="q43" value="B"> <label>B) Throughout the program</label><br>
+            <input type="radio" name="q43" value="C"> <label>C) Within the class</label><br>
+            <input type="radio" name="q43" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. Which of the following keywords is used for exception handling?</p>
+            <input type="radio" name="q44" value="A"> <label>A) try</label><br>
+            <input type="radio" name="q44" value="B"> <label>B) catch</label><br>
+            <input type="radio" name="q44" value="C"> <label>C) throw</label><br>
+            <input type="radio" name="q44" value="D">  <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. What is the purpose of the 'static' keyword?</p>
+            <input type="radio" name="q45" value="A"> <label>A) To allocate memory dynamically</label><br>
+            <input type="radio" name="q45" value="B"> <label>B) To limit the scope of a variable</label><br>
+            <input type="radio" name="q45" value="C"> <label>C) To define a constant</label><br>
+            <input type="radio" name="q45" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. What will be the output of the following code?</p>
+            <pre><code>int x = 10;
+        x += 5;
+        cout << x;</code></pre>
+            <input type="radio" name="q46" value="A"> <label>A) 10</label><br>
+            <input type="radio" name="q46" value="B"> <label>B) 15</label><br>
+            <input type="radio" name="q46" value="C"> <label>C) 5</label><br>
+            <input type="radio" name="q46" value="D"> <label>D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. Which of the following is not an access specifier?</p>
+            <input type="radio" name="q47" value="A"> <label>A) private</label><br>
+            <input type="radio" name="q47" value="B"> <label>B) protected</label><br>
+            <input type="radio" name="q47" value="C"> <label>C) public</label><br>
+            <input type="radio" name="q47" value="D"> <label>D) friend</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. What does the 'sizeof' operator return?</p>
+            <input type="radio" name="q48" value="A"> <label>A) The size of a variable in bytes</label><br>
+            <input type="radio" name="q48" value="B"> <label>B) The size of an array</label><br>
+            <input type="radio" name="q48" value="C"> <label>C) The memory address of a variable</label><br>
+            <input type="radio" name="q48" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. Which of the following is true about destructors?</p>
+            <input type="radio" name="q49" value="A"> <label>A) They have a return type</label><br>
+            <input type="radio" name="q49" value="B"> <label>B) They can be overloaded</label><br>
+            <input type="radio" name="q49" value="C"> <label>C) They are called automatically</label><br>
+            <input type="radio" name="q49" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. What is the purpose of the 'volatile' keyword?</p>
+            <input type="radio" name="q50" value="A"> <label>A) To prevent compiler optimization</label><br>
+            <input type="radio" name="q50" value="B"> <label>B) To define constant variables</label><br>
+            <input type="radio" name="q50" value="C"> <label>C) To create global variables</label><br>
+            <input type="radio" name="q50" value="D"> <label>D) None of the above</label>
+        </div>
+        
+
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/ccc.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

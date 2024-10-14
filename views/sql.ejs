@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sql Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="sql.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Sql Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What does SQL stand for?</p>
+            <label><input type="radio" name="q1" value="A"> A) Structured Query Language</label><br>
+            <label><input type="radio" name="q1" value="B"> B) Simple Query Language</label><br>
+            <label><input type="radio" name="q1" value="C"> C) Standard Query Language</label><br>
+            <label><input type="radio" name="q1" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which SQL statement is used to extract data from a database?</p>
+            <label><input type="radio" name="q2" value="A"> A) GET</label><br>
+            <label><input type="radio" name="q2" value="B"> B) SELECT</label><br>
+            <label><input type="radio" name="q2" value="C"> C) EXTRACT</label><br>
+            <label><input type="radio" name="q2" value="D"> D) FETCH</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. Which SQL keyword is used to create a new table?</p>
+            <label><input type="radio" name="q3" value="A"> A) NEW TABLE</label><br>
+            <label><input type="radio" name="q3" value="B"> B) CREATE TABLE</label><br>
+            <label><input type="radio" name="q3" value="C"> C) ADD TABLE</label><br>
+            <label><input type="radio" name="q3" value="D"> D) INSERT TABLE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. What is the correct SQL syntax to update a record in a table?</p>
+            <label><input type="radio" name="q4" value="A"> A) UPDATE table_name SET column1 = value1 WHERE condition;</label><br>
+            <label><input type="radio" name="q4" value="B"> B) MODIFY table_name SET column1 = value1 WHERE condition;</label><br>
+            <label><input type="radio" name="q4" value="C"> C) CHANGE table_name SET column1 = value1 WHERE condition;</label><br>
+            <label><input type="radio" name="q4" value="D"> D) EDIT table_name SET column1 = value1 WHERE condition;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. Which SQL clause is used to filter records?</p>
+            <label><input type="radio" name="q5" value="A"> A) ORDER BY</label><br>
+            <label><input type="radio" name="q5" value="B"> B) WHERE</label><br>
+            <label><input type="radio" name="q5" value="C"> C) GROUP BY</label><br>
+            <label><input type="radio" name="q5" value="D"> D) HAVING</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What is the purpose of the GROUP BY clause?</p>
+            <label><input type="radio" name="q6" value="A"> A) To aggregate data</label><br>
+            <label><input type="radio" name="q6" value="B"> B) To filter data</label><br>
+            <label><input type="radio" name="q6" value="C"> C) To sort data</label><br>
+            <label><input type="radio" name="q6" value="D"> D) To join tables</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. What is the default sorting order of the ORDER BY clause?</p>
+            <label><input type="radio" name="q7" value="A"> A) Ascending</label><br>
+            <label><input type="radio" name="q7" value="B"> B) Descending</label><br>
+            <label><input type="radio" name="q7" value="C"> C) Random</label><br>
+            <label><input type="radio" name="q7" value="D"> D) No order</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. Which function is used to count the number of rows in a table?</p>
+            <label><input type="radio" name="q8" value="A"> A) COUNT()</label><br>
+            <label><input type="radio" name="q8" value="B"> B) SUM()</label><br>
+            <label><input type="radio" name="q8" value="C"> C) TOTAL()</label><br>
+            <label><input type="radio" name="q8" value="D"> D) ROWS()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. Which SQL statement is used to delete a record from a table?</p>
+            <label><input type="radio" name="q9" value="A"> A) REMOVE</label><br>
+            <label><input type="radio" name="q9" value="B"> B) DELETE</label><br>
+            <label><input type="radio" name="q9" value="C"> C) DROP</label><br>
+            <label><input type="radio" name="q9" value="D"> D) ERASE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. What is the purpose of the PRIMARY KEY constraint?</p>
+            <label><input type="radio" name="q10" value="A"> A) To ensure all values in a column are unique</label><br>
+            <label><input type="radio" name="q10" value="B"> B) To allow NULL values</label><br>
+            <label><input type="radio" name="q10" value="C"> C) To link tables</label><br>
+            <label><input type="radio" name="q10" value="D"> D) To define a data type</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What is a JOIN in SQL?</p>
+            <label><input type="radio" name="q11" value="A"> A) A method to combine rows from two or more tables</label><br>
+            <label><input type="radio" name="q11" value="B"> B) A way to insert data into a table</label><br>
+            <label><input type="radio" name="q11" value="C"> C) A command to delete data</label><br>
+            <label><input type="radio" name="q11" value="D"> D) A function to count records</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. Which SQL statement is used to create a database?</p>
+            <label><input type="radio" name="q12" value="A"> A) CREATE DATABASE database_name;</label><br>
+            <label><input type="radio" name="q12" value="B"> B) MAKE DATABASE database_name;</label><br>
+            <label><input type="radio" name="q12" value="C"> C) NEW DATABASE database_name;</label><br>
+            <label><input type="radio" name="q12" value="D"> D) DATABASE database_name;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. Which SQL function is used to get the highest value in a column?</p>
+            <label><input type="radio" name="q13" value="A"> A) MAX()</label><br>
+            <label><input type="radio" name="q13" value="B"> B) HIGH()</label><br>
+            <label><input type="radio" name="q13" value="C"> C) TOP()</label><br>
+            <label><input type="radio" name="q13" value="D"> D) LARGE()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. What does the DISTINCT keyword do in SQL?</p>
+            <label><input type="radio" name="q14" value="A"> A) Removes duplicate records</label><br>
+            <label><input type="radio" name="q14" value="B"> B) Sorts records</label><br>
+            <label><input type="radio" name="q14" value="C"> C) Counts records</label><br>
+            <label><input type="radio" name="q14" value="D"> D) Limits the number of records</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. Which SQL clause is used to specify the number of records to return?</p>
+            <label><input type="radio" name="q15" value="A"> A) LIMIT</label><br>
+            <label><input type="radio" name="q15" value="B"> B) TOP</label><br>
+            <label><input type="radio" name="q15" value="C"> C) COUNT</label><br>
+            <label><input type="radio" name="q15" value="D"> D) NUMBER</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. What is the purpose of the FOREIGN KEY constraint?</p>
+            <label><input type="radio" name="q16" value="A"> A) To ensure data integrity</label><br>
+            <label><input type="radio" name="q16" value="B"> B) To allow duplicate values</label><br>
+            <label><input type="radio" name="q16" value="C"> C) To index data</label><br>
+            <label><input type="radio" name="q16" value="D"> B) To define a default value</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. What is an SQL view?</p>
+            <label><input type="radio" name="q17" value="A"> A) A virtual table</label><br>
+            <label><input type="radio" name="q17" value="B"> B) A physical table</label><br>
+            <label><input type="radio" name="q17" value="C"> C) A command to create a table</label><br>
+            <label><input type="radio" name="q17" value="D"> D) A method to delete records</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. Which SQL command is used to grant privileges to a user?</p>
+            <label><input type="radio" name="q18" value="A"> A) ALLOW</label><br>
+            <label><input type="radio" name="q18" value="B"> B) GRANT</label><br>
+            <label><input type="radio" name="q18" value="C"> C) PERMIT</label><br>
+            <label><input type="radio" name="q18" value="D"> D) AUTHORIZE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is a subquery?</p>
+            <label><input type="radio" name="q19" value="A"> A) A query within another query</label><br>
+            <label><input type="radio" name="q19" value="B"> B) A query that returns all records</label><br>
+            <label><input type="radio" name="q19" value="C"> C) A type of JOIN</label><br>
+            <label><input type="radio" name="q19" value="D"> D) A command to delete data</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. Which SQL statement is used to modify the structure of a database?</p>
+            <label><input type="radio" name="q20" value="A"> A) ALTER</label><br>
+            <label><input type="radio" name="q20" value="B"> B) CHANGE</label><br>
+            <label><input type="radio" name="q20" value="C"> C) MODIFY</label><br>
+            <label><input type="radio" name="q20" value="D"> D) UPDATE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. What is the purpose of the SQL INSERT statement?</p>
+            <label><input type="radio" name="q21" value="A"> A) To add new records to a table</label><br>
+            <label><input type="radio" name="q21" value="B"> B) To update existing records</label><br>
+            <label><input type="radio" name="q21" value="C"> C) To delete records</label><br>
+            <label><input type="radio" name="q21" value="D"> D) To create a new table</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. Which operator is used to search for a specified pattern in a column?</p>
+            <label><input type="radio" name="q22" value="A"> A) LIKE</label><br>
+            <label><input type="radio" name="q22" value="B"> B) MATCH</label><br>
+            <label><input type="radio" name="q22" value="C"> C) FIND</label><br>
+            <label><input type="radio" name="q22" value="D"> D) SEARCH</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. What is the purpose of the SQL HAVING clause?</p>
+            <label><input type="radio" name="q23" value="A"> A) To filter groups of records</label><br>
+            <label><input type="radio" name="q23" value="B"> B) To filter individual records</label><br>
+            <label><input type="radio" name="q23" value="C"> C) To sort records</label><br>
+            <label><input type="radio" name="q23" value="D"> D) To create a new table</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. Which command is used to remove a table from a database?</p>
+            <label><input type="radio" name="q24" value="A"> A) DELETE TABLE</label><br>
+            <label><input type="radio" name="q24" value="B"> B) DROP TABLE</label><br>
+            <label><input type="radio" name="q24" value="C"> C) REMOVE TABLE</label><br>
+            <label><input type="radio" name="q24" value="D"> D) CLEAR TABLE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. What does the SQL UNION operator do?</p>
+            <label><input type="radio" name="q25" value="A"> A) Combines the result set of two or more SELECT statements</label><br>
+            <label><input type="radio" name="q25" value="B"> B) Subtracts one result set from another</label><br>
+            <label><input type="radio" name="q25" value="C"> C) Joins tables</label><br>
+            <label><input type="radio" name="q25" value="D"> D) Filters records</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. Which SQL function is used to calculate the average value of a numeric column?</p>
+            <label><input type="radio" name="q26" value="A"> A) AVG()</label><br>
+            <label><input type="radio" name="q26" value="B"> B) MEAN()</label><br>
+            <label><input type="radio" name="q26" value="C"> C) AVERAGE()</label><br>
+            <label><input type="radio" name="q26" value="D"> D) SUM()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. What is the purpose of the SQL TRUNCATE command?</p>
+            <label><input type="radio" name="q27" value="A"> A) To delete all records from a table</label><br>
+            <label><input type="radio" name="q27" value="B"> B) To delete a specific record</label><br>
+            <label><input type="radio" name="q27" value="C"> C) To remove a table</label><br>
+            <label><input type="radio" name="q27" value="D"> D) To drop a database</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. What is a data dictionary in SQL?</p>
+            <label><input type="radio" name="q28" value="A"> A) A collection of metadata about the database</label><br>
+            <label><input type="radio" name="q28" value="B"> B) A table containing user data</label><br>
+            <label><input type="radio" name="q28" value="C"> C) A command to create a database</label><br>
+            <label><input type="radio" name="q28" value="D"> D) A type of JOIN</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. Which SQL keyword is used to retrieve a unique value from a column?</p>
+            <label><input type="radio" name="q29" value="A"> A) UNIQUE</label><br>
+            <label><input type="radio" name="q29" value="B"> B) DISTINCT</label><br>
+            <label><input type="radio" name="q29" value="C"> C) SINGLE</label><br>
+            <label><input type="radio" name="q29" value="D"> D) DIFFERENT</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. What is a database management system (DBMS)?</p>
+            <label><input type="radio" name="q30" value="A"> A) A software for managing databases</label><br>
+            <label><input type="radio" name="q30" value="B"> B) A type of SQL command</label><br>
+            <label><input type="radio" name="q30" value="C"> C) A method for data storage</label><br>
+            <label><input type="radio" name="q30" value="D"> D) A programming language</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. Which SQL keyword is used to prevent duplicate records in a query result?</p>
+            <label><input type="radio" name="q31" value="A"> A) UNIQUE</label><br>
+            <label><input type="radio" name="q31" value="B"> B) DISTINCT</label><br>
+            <label><input type="radio" name="q31" value="C"> C) DIFFERENT</label><br>
+            <label><input type="radio" name="q31" value="D"> D) SINGLE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. What does the SQL COALESCE function do?</p>
+            <label><input type="radio" name="q32" value="A"> A) Returns the first non-null value</label><br>
+            <label><input type="radio" name="q32" value="B"> B) Returns the maximum value</label><br>
+            <label><input type="radio" name="q32" value="C"> C) Returns the average value</label><br>
+            <label><input type="radio" name="q32" value="D"> D) Returns the minimum value</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. Which SQL clause is used to filter records after grouping?</p>
+            <label><input type="radio" name="q33" value="A"> A) WHERE</label><br>
+            <label><input type="radio" name="q33" value="B"> B) HAVING</label><br>
+            <label><input type="radio" name="q33" value="C"> C) GROUP BY</label><br>
+            <label><input type="radio" name="q33" value="D"> D) FILTER</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. What SQL function is used to count the number of rows in a table?</p>
+            <label><input type="radio" name="q34" value="A"> A) COUNT()</label><br>
+            <label><input type="radio" name="q34" value="B"> B) SUM()</label><br>
+            <label><input type="radio" name="q34" value="C"> B) TOTAL()</label><br>
+            <label><input type="radio" name="q34" value="D"> D) NUMBERS()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. Which command is used to modify existing records in a table?</p>
+            <label><input type="radio" name="q35" value="A"> A) UPDATE</label><br>
+            <label><input type="radio" name="q35" value="B"> B) MODIFY</label><br>
+            <label><input type="radio" name="q35" value="C"> C) CHANGE</label><br>
+            <label><input type="radio" name="q35" value="D"> D) EDIT</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. What is the default sorting order in SQL?</p>
+            <label><input type="radio" name="q36" value="A"> A) ASC</label><br>
+            <label><input type="radio" name="q36" value="B"> B) DESC</label><br>
+            <label><input type="radio" name="q36" value="C"> C) RANDOM</label><br>
+            <label><input type="radio" name="q36" value="D"> D) NONE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which SQL statement is used to retrieve data from a database?</p>
+            <label><input type="radio" name="q37" value="A"> A) SELECT</label><br>
+            <label><input type="radio" name="q37" value="B"> B) GET</label><br>
+            <label><input type="radio" name="q37" value="C"> C) FETCH</label><br>
+            <label><input type="radio" name="q37" value="D"> D) RETRIEVE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. What does the SQL INNER JOIN do?</p>
+            <label><input type="radio" name="q38" value="A"> A) Returns records that have matching values in both tables</label><br>
+            <label><input type="radio" name="q38" value="B"> B) Returns all records from both tables</label><br>
+            <label><input type="radio" name="q38" value="C"> C) Returns all records from one table</label><br>
+            <label><input type="radio" name="q38" value="D"> D) Returns records that do not match</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. Which keyword is used to specify a pattern in a LIKE clause?</p>
+            <label><input type="radio" name="q39" value="A"> A) %</label><br>
+            <label><input type="radio" name="q39" value="B"> B) *</label><br>
+            <label><input type="radio" name="q39" value="C"> C) ?</label><br>
+            <label><input type="radio" name="q39" value="D"> D) &</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What does the SQL NULL value represent?</p>
+            <label><input type="radio" name="q40" value="A"> A) A missing or undefined value</label><br>
+            <label><input type="radio" name="q40" value="B"> B) A zero value</label><br>
+            <label><input type="radio" name="q40" value="C"> C) A blank string</label><br>
+            <label><input type="radio" name="q40" value="D"> D) A default value</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. Which SQL function is used to find the maximum value in a column?</p>
+            <label><input type="radio" name="q41" value="A"> A) MAX()</label><br>
+            <label><input type="radio" name="q41" value="B"> B) HIGH()</label><br>
+            <label><input type="radio" name="q41" value="C"> C) TOP()</label><br>
+            <label><input type="radio" name="q41" value="D"> D) LARGE()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. What SQL statement is used to create a new table?</p>
+            <label><input type="radio" name="q42" value="A"> A) CREATE TABLE</label><br>
+            <label><input type="radio" name="q42" value="B"> B) NEW TABLE</label><br>
+            <label><input type="radio" name="q42" value="C"> C) MAKE TABLE</label><br>
+            <label><input type="radio" name="q42" value="D"> D) ADD TABLE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. What is the purpose of the SQL GROUP BY clause?</p>
+            <label><input type="radio" name="q43" value="A"> A) To aggregate data</label><br>
+            <label><input type="radio" name="q43" value="B"> B) To filter data</label><br>
+            <label><input type="radio" name="q43" value="C"> C) To join tables</label><br>
+            <label><input type="radio" name="q43" value="D"> D) To sort data</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. Which SQL statement is used to delete data from a table?</p>
+            <label><input type="radio" name="q44" value="A"> A) REMOVE</label><br>
+            <label><input type="radio" name="q44" value="B"> B) DELETE</label><br>
+            <label><input type="radio" name="q44" value="C"> C) DROP</label><br>
+            <label><input type="radio" name="q44" value="D"> D) CLEAR</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. What SQL keyword is used to update the data in a specific column?</p>
+            <label><input type="radio" name="q45" value="A"> A) SET</label><br>
+            <label><input type="radio" name="q45" value="B"> B) MODIFY</label><br>
+            <label><input type="radio" name="q45" value="C"> C) CHANGE</label><br>
+            <label><input type="radio" name="q45" value="D"> D) ALTER</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. What is the main purpose of a foreign key?</p>
+            <label><input type="radio" name="q46" value="A"> A) To create a relationship between tables</label><br>
+            <label><input type="radio" name="q46" value="B"> B) To store large data</label><br>
+            <label><input type="radio" name="q46" value="C"> C) To speed up queries</label><br>
+            <label><input type="radio" name="q46" value="D"> D) To restrict data types</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. Which SQL command is used to remove a table from a database?</p>
+            <label><input type="radio" name="q47" value="A"> A) DELETE TABLE</label><br>
+            <label><input type="radio" name="q47" value="B"> B) DROP TABLE</label><br>
+            <label><input type="radio" name="q47" value="C"> C) REMOVE TABLE</label><br>
+            <label><input type="radio" name="q47" value="D"> D) CLEAR TABLE</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. What is an index in SQL?</p>
+            <label><input type="radio" name="q48" value="A"> A) A performance optimization tool</label><br>
+            <label><input type="radio" name="q48" value="B"> B) A data type</label><br>
+            <label><input type="radio" name="q48" value="C"> C) A constraint</label><br>
+            <label><input type="radio" name="q48" value="D"> D) A storage method</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What SQL function is used to calculate the average of a numeric column?</p>
+            <label><input type="radio" name="q49" value="A"> A) AVG()</label><br>
+            <label><input type="radio" name="q49" value="B"> B) MEAN()</label><br>
+            <label><input type="radio" name="q49" value="C"> C) MEDIAN()</label><br>
+            <label><input type="radio" name="q49" value="D"> D) TOTAL()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. Which SQL statement is used to retrieve unique values from a column?</p>
+            <label><input type="radio" name="q50" value="A"> A) DISTINCT</label><br>
+            <label><input type="radio" name="q50" value="B"> B) UNIQUE</label><br>
+            <label><input type="radio" name="q50" value="C"> C) DIFFERENT</label><br>
+            <label><input type="radio" name="q50" value="D"> D) SINGLE</label>
+        </div>
+        
+
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/sql.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="react.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>React Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is React?</p>
+            <label><input type="radio" name="q1" value="A"> A) A library for building user interfaces</label><br>
+            <label><input type="radio" name="q1" value="B"> B) A full-fledged framework</label><br>
+            <label><input type="radio" name="q1" value="C"> C) A database</label><br>
+            <label><input type="radio" name="q1" value="D"> D) A programming language</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. What is the virtual DOM?</p>
+            <label><input type="radio" name="q2" value="A"> A) A direct representation of the DOM</label><br>
+            <label><input type="radio" name="q2" value="B"> B) A lightweight copy of the real DOM</label><br>
+            <label><input type="radio" name="q2" value="C"> C) The actual DOM</label><br>
+            <label><input type="radio" name="q2" value="D"> D) A way to create server-side rendering</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. Which of the following is used to manage state in a React component?</p>
+            <label><input type="radio" name="q3" value="A"> A) useState</label><br>
+            <label><input type="radio" name="q3" value="B"> B) useEffect</label><br>
+            <label><input type="radio" name="q3" value="C"> C) useReducer</label><br>
+            <label><input type="radio" name="q3" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. What is JSX?</p>
+            <label><input type="radio" name="q4" value="A"> A) A JavaScript extension for writing HTML</label><br>
+            <label><input type="radio" name="q4" value="B"> B) A special type of JSON</label><br>
+            <label><input type="radio" name="q4" value="C"> C) A way to handle styles in React</label><br>
+            <label><input type="radio" name="q4" value="D"> D) A tool for managing application state</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. How do you pass data from a parent component to a child component?</p>
+            <label><input type="radio" name="q5" value="A"> A) Using props</label><br>
+            <label><input type="radio" name="q5" value="B"> B) Using state</label><br>
+            <label><input type="radio" name="q5" value="C"> C) Using context</label><br>
+            <label><input type="radio" name="q5" value="D"> D) Using events</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What is the purpose of useEffect?</p>
+            <label><input type="radio" name="q6" value="A"> A) To manage local component state</label><br>
+            <label><input type="radio" name="q6" value="B"> B) To perform side effects in function components</label><br>
+            <label><input type="radio" name="q6" value="C"> C) To render UI</label><br>
+            <label><input type="radio" name="q6" value="D"> D) To optimize performance</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. Which lifecycle method is called when a component is mounted?</p>
+            <label><input type="radio" name="q7" value="A"> A) componentDidUpdate</label><br>
+            <label><input type="radio" name="q7" value="B"> B) componentDidMount</label><br>
+            <label><input type="radio" name="q7" value="C"> C) componentWillUnmount</label><br>
+            <label><input type="radio" name="q7" value="D"> D) componentWillReceiveProps</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. What hook would you use for memoizing a function?</p>
+            <label><input type="radio" name="q8" value="A"> A) useMemo</label><br>
+            <label><input type="radio" name="q8" value="B"> B) useCallback</label><br>
+            <label><input type="radio" name="q8" value="C"> C) useEffect</label><br>
+            <label><input type="radio" name="q8" value="D"> D) useRef</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. What is the default export of a React component file?</p>
+            <label><input type="radio" name="q9" value="A"> A) The component itself</label><br>
+            <label><input type="radio" name="q9" value="B"> B) The component's props</label><br>
+            <label><input type="radio" name="q9" value="C"> C) The component's state</label><br>
+            <label><input type="radio" name="q9" value="D"> D) The component's methods</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. Which of the following is a way to handle forms in React?</p>
+            <label><input type="radio" name="q10" value="A"> A) Controlled components</label><br>
+            <label><input type="radio" name="q10" value="B"> B) Uncontrolled components</label><br>
+            <label><input type="radio" name="q10" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q10" value="D"> D) Neither A nor B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What does the useReducer hook do?</p>
+            <label><input type="radio" name="q11" value="A"> A) It manages state with a reducer function</label><br>
+            <label><input type="radio" name="q11" value="B"> B) It performs side effects</label><br>
+            <label><input type="radio" name="q11" value="C"> C) It creates a context</label><br>
+            <label><input type="radio" name="q11" value="D"> D) It optimizes performance</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. How can you optimize performance in a React application?</p>
+            <label><input type="radio" name="q12" value="A"> A) Using React.memo</label><br>
+            <label><input type="radio" name="q12" value="B"> B) Using useCallback</label><br>
+            <label><input type="radio" name="q12" value="C"> C) Lazy loading components</label><br>
+            <label><input type="radio" name="q12" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. What is Prop drilling?</p>
+            <label><input type="radio" name="q13" value="A"> A) Passing props from parent to child components</label><br>
+            <label><input type="radio" name="q13" value="B"> B) A method of state management</label><br>
+            <label><input type="radio" name="q13" value="C"> C) A way to handle component lifecycle</label><br>
+            <label><input type="radio" name="q13" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. What is context in React?</p>
+            <label><input type="radio" name="q14" value="A"> A) A way to pass data through the component tree without props</label><br>
+            <label><input type="radio" name="q14" value="B"> B) A method for managing state</label><br>
+            <label><input type="radio" name="q14" value="C"> C) A hook for lifecycle management</label><br>
+            <label><input type="radio" name="q14" value="D"> D) A performance optimization tool</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. What is the purpose of the key prop in a list of elements?</p>
+            <label><input type="radio" name="q15" value="A"> A) To uniquely identify elements</label><br>
+            <label><input type="radio" name="q15" value="B"> B) To optimize rendering</label><br>
+            <label><input type="radio" name="q15" value="C"> C) To manage state</label><br>
+            <label><input type="radio" name="q15" value="D"> D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. How do you handle errors in a React component?</p>
+            <label><input type="radio" name="q16" value="A"> A) Using error boundaries</label><br>
+            <label><input type="radio" name="q16" value="B"> B) Using try-catch blocks</label><br>
+            <label><input type="radio" name="q16" value="C"> C) Using lifecycle methods</label><br>
+            <label><input type="radio" name="q16" value="D"> D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. What does the `useRef` hook return?</p>
+            <label><input type="radio" name="q17" value="A"> A) A mutable object which holds a `.current` property</label><br>
+            <label><input type="radio" name="q17" value="B"> B) A function to update state</label><br>
+            <label><input type="radio" name="q17" value="C"> C) A method for side effects</label><br>
+            <label><input type="radio" name="q17" value="D"> D) A component's props</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. What is a higher-order component (HOC)?</p>
+            <label><input type="radio" name="q18" value="A"> A) A component that renders another component</label><br>
+            <label><input type="radio" name="q18" value="B"> B) A way to manage global state</label><br>
+            <label><input type="radio" name="q18" value="C"> C) A method to handle lifecycle events</label><br>
+            <label><input type="radio" name="q18" value="D"> D) A function that takes a component and returns a new component</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is the purpose of the `React.Fragment`?</p>
+            <label><input type="radio" name="q19" value="A"> A) To group a list of children without adding extra nodes to the DOM</label><br>
+            <label><input type="radio" name="q19" value="B"> B) To create a new context</label><br>
+            <label><input type="radio" name="q19" value="C"> C) To optimize rendering</label><br>
+            <label><input type="radio" name="q19" value="D"> D) To manage state</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. What is a controlled component?</p>
+            <label><input type="radio" name="q20" value="A"> A) A component that renders based on its own internal state</label><br>
+            <label><input type="radio" name="q20" value="B"> B) A component whose value is controlled by React</label><br>
+            <label><input type="radio" name="q20" value="C"> C) A component that cannot be changed</label><br>
+            <label><input type="radio" name="q20" value="D"> D) A component that uses context</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>21. What does the term "props" stand for?</p>
+            <label><input type="radio" name="q1" value="A"> A) Properties</label><br>
+            <label><input type="radio" name="q1" value="B"> B) Processes</label><br>
+            <label><input type="radio" name="q1" value="C"> C) Prototypes</label><br>
+            <label><input type="radio" name="q1" value="D"> D) Propositions</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. What is the purpose of the shouldComponentUpdate lifecycle method?</p>
+            <label><input type="radio" name="q2" value="A"> A) To prevent unnecessary re-renders</label><br>
+            <label><input type="radio" name="q2" value="B"> B) To perform actions before a component mounts</label><br>
+            <label><input type="radio" name="q2" value="C"> C) To fetch data</label><br>
+            <label><input type="radio" name="q2" value="D"> D) To update state</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. Which hook would you use to access the previous state in a functional component?</p>
+            <label><input type="radio" name="q3" value="A"> A) usePrevious</label><br>
+            <label><input type="radio" name="q3" value="B"> B) useRef</label><br>
+            <label><input type="radio" name="q3" value="C"> C) useEffect</label><br>
+            <label><input type="radio" name="q3" value="D"> D) useState</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. What does the useContext hook do?</p>
+            <label><input type="radio" name="q4" value="A"> A) Creates a new context</label><br>
+            <label><input type="radio" name="q4" value="B"> B) Consumes context</label><br>
+            <label><input type="radio" name="q4" value="C"> C) Provides context</label><br>
+            <label><input type="radio" name="q4" value="D"> D) Updates context</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. What is the default value of state when using useState?</p>
+            <label><input type="radio" name="q5" value="A"> A) null</label><br>
+            <label><input type="radio" name="q5" value="B"> B) undefined</label><br>
+            <label><input type="radio" name="q5" value="C"> C) Initial value provided in useState</label><br>
+            <label><input type="radio" name="q5" value="D"> D) An empty object</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. How do you prevent a component from re-rendering in React?</p>
+            <label><input type="radio" name="q6" value="A"> A) By using shouldComponentUpdate</label><br>
+            <label><input type="radio" name="q6" value="B"> B) By using React.memo</label><br>
+            <label><input type="radio" name="q6" value="C"> C) By using useMemo</label><br>
+            <label><input type="radio" name="q6" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. What does the useLayoutEffect hook do?</p>
+            <label><input type="radio" name="q7" value="A"> A) Runs asynchronously after DOM mutations</label><br>
+            <label><input type="radio" name="q7" value="B"> B) Runs synchronously after all DOM mutations</label><br>
+            <label><input type="radio" name="q7" value="C"> C) Manages component state</label><br>
+            <label><input type="radio" name="q7" value="D"> D) Performs side effects in class components</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. Which method is called just before a component is removed from the DOM?</p>
+            <label><input type="radio" name="q8" value="A"> A) componentWillUnmount</label><br>
+            <label><input type="radio" name="q8" value="B"> B) componentDidUpdate</label><br>
+            <label><input type="radio" name="q8" value="C"> C) componentDidMount</label><br>
+            <label><input type="radio" name="q8" value="D"> D) componentWillReceiveProps</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. What is the purpose of the React.StrictMode?</p>
+            <label><input type="radio" name="q9" value="A"> A) To optimize performance</label><br>
+            <label><input type="radio" name="q9" value="B"> B) To highlight potential problems in an application</label><br>
+            <label><input type="radio" name="q9" value="C"> C) To manage state</label><br>
+            <label><input type="radio" name="q9" value="D"> D) To enhance the rendering of components</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. How can you handle multiple inputs in a single React component?</p>
+            <label><input type="radio" name="q10" value="A"> A) Using an array</label><br>
+            <label><input type="radio" name="q10" value="B"> B) Using an object to manage state</label><br>
+            <label><input type="radio" name="q10" value="C"> C) By creating multiple state variables</label><br>
+            <label><input type="radio" name="q10" value="D"> D) Using props only</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>31. What is the main purpose of keys in React lists?</p>
+            <label><input type="radio" name="q11" value="A"> A) To uniquely identify list items for efficient updates</label><br>
+            <label><input type="radio" name="q11" value="B"> B) To create dynamic styles</label><br>
+            <label><input type="radio" name="q11" value="C"> C) To bind events</label><br>
+            <label><input type="radio" name="q11" value="D"> D) To manage state</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. How can you trigger a re-render of a component?</p>
+            <label><input type="radio" name="q12" value="A"> A) By changing state</label><br>
+            <label><input type="radio" name="q12" value="B"> B) By changing props</label><br>
+            <label><input type="radio" name="q12" value="C"> C) By using forceUpdate</label><br>
+            <label><input type="radio" name="q12" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. What is the purpose of the React Router library?</p>
+            <label><input type="radio" name="q13" value="A"> A) To manage component state</label><br>
+            <label><input type="radio" name="q13" value="B"> B) To handle routing in React applications</label><br>
+            <label><input type="radio" name="q13" value="C"> C) To optimize performance</label><br>
+            <label><input type="radio" name="q13" value="D"> D) To create forms</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. What is the purpose of the React.useDebugValue hook?</p>
+            <label><input type="radio" name="q14" value="A"> A) To display a label in React DevTools</label><br>
+            <label><input type="radio" name="q14" value="B"> B) To log errors</label><br>
+            <label><input type="radio" name="q14" value="C"> C) To manage component state</label><br>
+            <label><input type="radio" name="q14" value="D"> D) To optimize rendering</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. What is the difference between a functional component and a class component?</p>
+            <label><input type="radio" name="q15" value="A"> A) Functional components cannot have state; class components can</label><br>
+            <label><input type="radio" name="q15" value="B"> B) Functional components are always faster</label><br>
+            <label><input type="radio" name="q15" value="C"> C) Class components cannot use hooks</label><br>
+            <label><input type="radio" name="q15" value="D"> D) There is no difference</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. What does the term "lifting state up" refer to?</p>
+            <label><input type="radio" name="q16" value="A"> A) Moving state to the parent component</label><br>
+            <label><input type="radio" name="q16" value="B"> B) Using context API</label><br>
+            <label><input type="radio" name="q16" value="C"> C) Storing state in a global store</label><br>
+            <label><input type="radio" name="q16" value="D"> D) Using local storage</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. What are React hooks?</p>
+            <label><input type="radio" name="q17" value="A"> A) Functions that let you use state and other React features in functional components</label><br>
+            <label><input type="radio" name="q17" value="B"> B) A way to create class components</label><br>
+            <label><input type="radio" name="q17" value="C"> C) A method for handling events</label><br>
+            <label><input type="radio" name="q17" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. Which of the following can be used as a React component?</p>
+            <label><input type="radio" name="q18" value="A"> A) Function</label><br>
+            <label><input type="radio" name="q18" value="B"> B) Class</label><br>
+            <label><input type="radio" name="q18" value="C"> C) Pure function</label><br>
+            <label><input type="radio" name="q18" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. What does the render method of a class component return?</p>
+            <label><input type="radio" name="q19" value="A"> A) JSX</label><br>
+            <label><input type="radio" name="q19" value="B"> B) A string</label><br>
+            <label><input type="radio" name="q19" value="C"> C) A React element</label><br>
+            <label><input type="radio" name="q19" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What is a controlled component?</p>
+            <label><input type="radio" name="q20" value="A"> A) A component that renders based on its own internal state</label><br>
+            <label><input type="radio" name="q20" value="B"> B) A component whose value is controlled by React</label><br>
+            <label><input type="radio" name="q20" value="C"> C) A component that cannot be changed</label><br>
+            <label><input type="radio" name="q20" value="D"> D) A component that uses context</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. What does the term "Reconciliation" refer to in React?</p>
+            <label><input type="radio" name="q21" value="A"> A) The process of rendering elements</label><br>
+            <label><input type="radio" name="q21" value="B"> B) The process of comparing the old and new virtual DOM</label><br>
+            <label><input type="radio" name="q21" value="C"> C) The process of updating state</label><br>
+            <label><input type="radio" name="q21" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. What is a portal in React?</p>
+            <label><input type="radio" name="q22" value="A"> A) A way to manage global state</label><br>
+            <label><input type="radio" name="q22" value="B"> B) A way to render children into a DOM node that exists outside the parent component</label><br>
+            <label><input type="radio" name="q22" value="C"> C) A performance optimization technique</label><br>
+            <label><input type="radio" name="q22" value="D"> D) A method for handling forms</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. What is the purpose of the componentDidCatch method?</p>
+            <label><input type="radio" name="q23" value="A"> A) To handle errors in the component tree</label><br>
+            <label><input type="radio" name="q23" value="B"> B) To perform side effects</label><br>
+            <label><input type="radio" name="q23" value="C"> C) To manage state</label><br>
+            <label><input type="radio" name="q23" value="D"> D) To optimize performance</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. What is a "dumb" component?</p>
+            <label><input type="radio" name="q24" value="A"> A) A component that manages its own state</label><br>
+            <label><input type="radio" name="q24" value="B"> B) A component that only receives props and does not manage its own state</label><br>
+            <label><input type="radio" name="q24" value="C"> C) A component that handles routing</label><br>
+            <label><input type="radio" name="q24" value="D"> D) A performance optimization component</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. What does the term "component composition" refer to?</p>
+            <label><input type="radio" name="q25" value="A"> A) Combining multiple components into one</label><br>
+            <label><input type="radio" name="q25" value="B"> B) Creating a higher-order component</label><br>
+            <label><input type="radio" name="q25" value="C"> C) Nesting components within each other</label><br>
+            <label><input type="radio" name="q25" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. Which of the following is true about React?</p>
+            <label><input type="radio" name="q26" value="A"> A) React is a framework.</label><br>
+            <label><input type="radio" name="q26" value="B"> B) React is maintained by Google.</label><br>
+            <label><input type="radio" name="q26" value="C"> C) React uses a virtual DOM.</label><br>
+            <label><input type="radio" name="q26" value="D"> D) React does not allow component reuse.</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. How do you handle default props in a functional component?</p>
+            <label><input type="radio" name="q27" value="A"> A) Using defaultProps property</label><br>
+            <label><input type="radio" name="q27" value="B"> B) Using useDefaultProps hook</label><br>
+            <label><input type="radio" name="q27" value="C"> C) By setting default values in the function parameters</label><br>
+            <label><input type="radio" name="q27" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. What is a controlled input?</p>
+            <label><input type="radio" name="q28" value="A"> A) An input that is controlled by the DOM</label><br>
+            <label><input type="radio" name="q28" value="B"> B) An input whose value is controlled by React state</label><br>
+            <label><input type="radio" name="q28" value="C"> C) An input that cannot be edited</label><br>
+            <label><input type="radio" name="q28" value="D"> D) An input that uses context</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What is a "pure" component?</p>
+            <label><input type="radio" name="q29" value="A"> A) A component that always renders the same output for the same state and props</label><br>
+            <label><input type="radio" name="q29" value="B"> B) A component that does not have any side effects</label><br>
+            <label><input type="radio" name="q29" value="C"> C) A component that uses context</label><br>
+            <label><input type="radio" name="q29" value="D"> D) A component that manages its own state</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. How do you handle asynchronous code in a functional component?</p>
+            <label><input type="radio" name="q30" value="A"> A) Using promises</label><br>
+            <label><input type="radio" name="q30" value="B"> B) Using async/await in useEffect</label><br>
+            <label><input type="radio" name="q30" value="C"> C) Using setTimeout</label><br>
+            <label><input type="radio" name="q30" value="D"> D) All of the above</label>
+        </div>
+        
+
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/react.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

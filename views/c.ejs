@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="c.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>C Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the size of an integer in C?</p>
+            <input type="radio" name="q1" value="A"> <label>A) 2 bytes</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) 4 bytes</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) 8 bytes</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) Depends on the compiler</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which of the following is not a valid variable name in C?</p>
+            <input type="radio" name="q2" value="A"> <label>A) _variable</label><br>
+            <input type="radio" name="q2" value="B"> <label>B) 2ndVariable</label><br>
+            <input type="radio" name="q2" value="C"> <label>C) variableName</label><br>
+            <input type="radio" name="q2" value="D"> <label>D) variable-name</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>3. Which of the following operators has the highest precedence?</p>
+            <input type="radio" name="q3" value="A"> <label>A) +</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) *</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) /</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) -</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>4. What will the following code print? <code>printf("%d", 5 + 10 * 2);</code></p>
+            <input type="radio" name="q4" value="A"> <label>A) 25</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) 20</label><br>
+            <input type="radio" name="q4" value="C"> <label>C) 15</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) 10</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>5. What is the output of this code? <code>printf("%d", sizeof(char));</code></p>
+            <input type="radio" name="q5" value="A"> <label>A) 1</label><br>
+            <input type="radio" name="q5" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q5" value="C"> <label>C) 4</label><br>
+            <input type="radio" name="q5" value="D"> <label>D) 8</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>6. Which of the following is the correct way to declare a pointer in C?</p>
+            <input type="radio" name="q6" value="A"> <label>A) int* ptr;</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) ptr int*;</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) int ptr*;</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) *int ptr;</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>7. How do you include a standard library in C?</p>
+            <input type="radio" name="q7" value="A"> <label>A) include &lt;stdio.h&gt;</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) #include &lt;stdio.h&gt;</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) import &lt;stdio.h&gt;</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) using &lt;stdio.h&gt;</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>8. What will be the output of the following code? <code>int a = 5, b = 10; printf("%d", a > b ? a : b);</code></p>
+            <input type="radio" name="q8" value="A"> <label>A) 5</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) 10</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) true</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) false</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>9. Which function is used to allocate memory dynamically?</p>
+            <input type="radio" name="q9" value="A"> <label>A) malloc()</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) calloc()</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) realloc()</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) All of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>10. What is the value of x after the following code executes? <code>int x = 10; x += 5;</code></p>
+            <input type="radio" name="q10" value="A"> <label>A) 5</label><br>
+            <input type="radio" name="q10" value="B"> <label>B) 10</label><br>
+            <input type="radio" name="q10" value="C"> <label>C) 15</label><br>
+            <input type="radio" name="q10" value="D"> <label>D) 20</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>11. In C, what does break do in a loop?</p>
+            <input type="radio" name="q11" value="A"> <label>A) Exits the loop</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) Skips to the next iteration</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) Exits the program</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) Stops the compiler</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>12. Which of the following is a valid C comment?</p>
+            <input type="radio" name="q12" value="A"> <label>A) // This is a comment</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) /* This is a comment */</label><br>
+            <input type="radio" name="q12" value="C"> <label>C) # This is a comment</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) A and B</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>13. What is the output of the following code? <code>int i; for (i = 0; i < 3; i++) { printf("%d ", i); }</code></p>
+            <input type="radio" name="q13" value="A"> <label>A) 0 1 2</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) 1 2 3</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) 0 1 2 3</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) 0 1 2 2</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>14. What keyword is used to define a function in C?</p>
+            <input type="radio" name="q14" value="A"> <label>A) func</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) define</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) void</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) function</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>15. Which of the following data types can be used to create a function returning a pointer?</p>
+            <input type="radio" name="q15" value="A"> <label>A) int</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) float</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) char</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) All of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>16. What is the correct syntax to create a structure in C?</p>
+            <input type="radio" name="q16" value="A"> <label>A) struct myStruct {};</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) struct myStruct;</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) myStruct struct {};</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) All of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>17. What does the sizeof operator return?</p>
+            <input type="radio" name="q17" value="A"> <label>A) The number of elements in an array</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) The total size of a data type in bytes</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) The address of a variable</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) The length of a string</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>18. What is the output of the following code? <code>int a = 5; printf("%d", a++);</code></p>
+            <input type="radio" name="q18" value="A"> <label>A) 4</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) 5</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) 6</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) Compilation error</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>19. Which of the following functions is used to read a string from the user?</p>
+            <input type="radio" name="q19" value="A"> <label>A) get()</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) gets()</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) read()</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) input()</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>20. Which of the following correctly declares an array of integers?</p>
+            <input type="radio" name="q20" value="A"> <label>A) int array[10];</label><br>
+            <input type="radio" name="q20" value="B"> <label>B) array int[10];</label><br>
+            <input type="radio" name="q20" value="C"> <label>C) int[10] array;</label><br>
+            <input type="radio" name="q20" value="D"> <label>D) int array(10);</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>21. How many times will the loop run in the following code? <code>for (int i = 0; i < 5; i++);</code></p>
+            <input type="radio" name="q21" value="A"> <label>A) 4</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) 5</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) Infinite</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) None of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>22. What is the output of this code? <code>printf("%c", 65);</code></p>
+            <input type="radio" name="q22" value="A"> <label>A) A</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) 65</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) a</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) Compilation error</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>23. What is the purpose of the return statement in a function?</p>
+            <input type="radio" name="q23" value="A"> <label>A) It terminates the program</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) It returns a value from the function</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) It pauses execution</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) It defines a function</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>24. Which of the following is a loop structure in C?</p>
+            <input type="radio" name="q24" value="A"> <label>A) for</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) while</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) do-while</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) All of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>25. Which of the following correctly initializes a pointer?</p>
+            <input type="radio" name="q25" value="A"> <label>A) int *ptr = NULL;</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) int ptr* = NULL;</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) ptr int* = NULL;</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) NULL = int *ptr;</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>26. What is the output of the following code? <code>printf("%d", 10 / 3);</code></p>
+            <input type="radio" name="q26" value="A"> <label>A) 3</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) 3.333</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) 3.0</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) 3.5</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>27. How do you declare a constant in C?</p>
+            <input type="radio" name="q27" value="A"> <label>A) const int x = 10;</label><br>
+            <input type="radio" name="q27" value="B"> <label>B) #define x 10</label><br>
+            <input type="radio" name="q27" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q27" value="D"> <label>D) None of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>28. Which of the following functions can be used to compare two strings?</p>
+            <input type="radio" name="q28" value="A"> <label>A) compare()</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) strcmp()</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) strcmpi()</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) All of the above</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>29. What is the purpose of the main function in a C program?</p>
+            <input type="radio" name="q29" value="A"> <label>A) To execute the program</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) To define variables</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) To include libraries</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) To declare functions</label>
+        </div>
+    
+        <div class="question" data-aos="zoom-in">
+            <p>30. Which operator is used to access a member of a structure?</p>
+            <input type="radio" name="q30" value="A"> <label>A) . (dot operator)</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) -> (arrow operator)</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. Which of the following is a valid C declaration?</p>
+            <input type="radio" name="q31" value="A"> <label>A) int 1x;</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) int x1;</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) int x-y;</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) int &x;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. What is the purpose of the header file stdlib.h?</p>
+            <input type="radio" name="q32" value="A"> <label>A) Input/output functions</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) Memory allocation</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) String manipulation</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. What will be the output of this code? <code>printf("%d", 5 == 5);</code></p>
+            <input type="radio" name="q33" value="A"> <label>A) 0</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) 1</label><br>
+            <input type="radio" name="q33" value="C"> <label>C) true</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) false</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. Which of the following is a valid way to declare a constant in C?</p>
+            <input type="radio" name="q34" value="A"> <label>A) #define PI 3.14</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) const float PI = 3.14;</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. What is the output of this code? <code>printf("%d", 10 - 3 * 2);</code></p>
+            <input type="radio" name="q35" value="A"> <label>A) 4</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) 7</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) 1</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) 8</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. What does the `continue` statement do in a loop?</p>
+            <input type="radio" name="q36" value="A"> <label>A) Breaks the loop</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) Skips the current iteration</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) Exits the program</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which of the following is used for type casting in C?</p>
+            <input type="radio" name="q37" value="A"> <label>A) (type)</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) type()</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) cast(type)</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) type cast</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. What will be the output of this code? <code>printf("%d", (2 & 3));</code></p>
+            <input type="radio" name="q38" value="A"> <label>A) 0</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) 1</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) 2</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) 3</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. Which of the following is a logical operator in C?</p>
+            <input type="radio" name="q39" value="A"> <label>A) &</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) ||</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) ^</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) %</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What does the `sizeof` operator return for a pointer?</p>
+            <input type="radio" name="q40" value="A"> <label>A) 4</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) 8</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) Depends on the architecture</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. What will be the result of the expression <code>!(5 > 3)</code>?</p>
+            <input type="radio" name="q41" value="A"> <label>A) 0</label><br>
+            <input type="radio" name="q41" value="B"> <label>B) 1</label><br>
+            <input type="radio" name="q41" value="C"> <label>C) true</label><br>
+            <input type="radio" name="q41" value="D"> <label>D) false</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. Which function is used to allocate memory dynamically?</p>
+            <input type="radio" name="q42" value="A"> <label>A) malloc()</label><br>
+            <input type="radio" name="q42" value="B"> <label>B) calloc()</label><br>
+            <input type="radio" name="q42" value="C"> <label>C) realloc()</label><br>
+            <input type="radio" name="q42" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. What is the output of the following code? <code>printf("%d", (5 / 2) + (5 % 2));</code></p>
+            <input type="radio" name="q43" value="A"> <label>A) 2</label><br>
+            <input type="radio" name="q43" value="B"> <label>B) 3</label><br>
+            <input type="radio" name="q43" value="C"> <label>C) 4</label><br>
+            <input type="radio" name="q43" value="D"> <label>D) 5</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. Which of the following is not a valid pointer declaration?</p>
+            <input type="radio" name="q44" value="A"> <label>A) int *ptr;</label><br>
+            <input type="radio" name="q44" value="B"> <label>B) float *ptr;</label><br>
+            <input type="radio" name="q44" value="C"> <label>C) char ptr*;</label><br>
+            <input type="radio" name="q44" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. What is the purpose of the `static` keyword in C?</p>
+            <input type="radio" name="q45" value="A"> <label>A) To define a global variable</label><br>
+            <input type="radio" name="q45" value="B"> <label>B) To limit the visibility of a variable</label><br>
+            <input type="radio" name="q45" value="C"> <label>C) To define a local variable</label><br>
+            <input type="radio" name="q45" value="D"> <label>D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. What will happen if you forget to return a value in a non-void function?</p>
+            <input type="radio" name="q46" value="A"> <label>A) Compilation error</label><br>
+            <input type="radio" name="q46" value="B"> <label>B) Undefined behavior</label><br>
+            <input type="radio" name="q46" value="C"> <label>C) Program crashes</label><br>
+            <input type="radio" name="q46" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. Which of the following is the correct way to declare a multi-dimensional array?</p>
+            <input type="radio" name="q47" value="A"> <label>A) int arr[10][10];</label><br>
+            <input type="radio" name="q47" value="B"> <label>B) int arr(10, 10);</label><br>
+            <input type="radio" name="q47" value="C"> <label>C) int arr{10, 10};</label><br>
+            <input type="radio" name="q47" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. Which of the following can be used to represent a string in C?</p>
+            <input type="radio" name="q48" value="A"> <label>A) char[]</label><br>
+            <input type="radio" name="q48" value="B"> <label>B) char*</label><br>
+            <input type="radio" name="q48" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q48" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What does the `sizeof` operator return when applied to an array?</p>
+            <input type="radio" name="q49" value="A"> <label>A) The number of elements</label><br>
+            <input type="radio" name="q49" value="B"> <label>B) The total size in bytes</label><br>
+            <input type="radio" name="q49" value="C"> <label>C) The address of the first element</label><br>
+            <input type="radio" name="q49" value="D"> <label>D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. What is the output of the following code? <code>printf("%c", 'A' + 1);</code></p>
+            <input type="radio" name="q50" value="A"> <label>A) A</label><br>
+            <input type="radio" name="q50" value="B"> <label>B) B</label><br>
+            <input type="radio" name="q50" value="C"> <label>C) C</label><br>
+            <input type="radio" name="q50" value="D"> <label>D) Compilation error</label>
+        </div>
+        
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/c.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

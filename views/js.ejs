@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="js.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Js Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the correct way to declare a variable in JavaScript?</p>
+            <label><input type="radio" name="q1" value="A"> A) var myVar</label><br>
+            <label><input type="radio" name="q1" value="B"> B) variable myVar</label><br>
+            <label><input type="radio" name="q1" value="C"> C) let myVar</label><br>
+            <label><input type="radio" name="q1" value="D"> D) Both A and C</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which symbol is used for comments in JavaScript?</p>
+            <label><input type="radio" name="q2" value="A"> A) //</label><br>
+            <label><input type="radio" name="q2" value="B"> B) #</label><br>
+            <label><input type="radio" name="q2" value="C"> C) /* */</label><br>
+            <label><input type="radio" name="q2" value="D"> D) Both A and C</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>3. Which method is used to convert a string to a number?</p>
+            <label><input type="radio" name="q3" value="A"> A) Number()</label><br>
+            <label><input type="radio" name="q3" value="B"> B) parseInt()</label><br>
+            <label><input type="radio" name="q3" value="C"> C) parseFloat()</label><br>
+            <label><input type="radio" name="q3" value="D"> D) All of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>4. What will `typeof NaN` return?</p>
+            <label><input type="radio" name="q4" value="A"> A) "number"</label><br>
+            <label><input type="radio" name="q4" value="B"> B) "NaN"</label><br>
+            <label><input type="radio" name="q4" value="C"> C) "undefined"</label><br>
+            <label><input type="radio" name="q4" value="D"> D) "object"</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>5. Which of the following is not a primitive data type in JavaScript?</p>
+            <label><input type="radio" name="q5" value="A"> A) String</label><br>
+            <label><input type="radio" name="q5" value="B"> B) Number</label><br>
+            <label><input type="radio" name="q5" value="C"> C) Object</label><br>
+            <label><input type="radio" name="q5" value="D"> D) Boolean</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>6. How do you create a function in JavaScript?</p>
+            <label><input type="radio" name="q6" value="A"> A) function myFunction() { }</label><br>
+            <label><input type="radio" name="q6" value="B"> B) function:myFunction() { }</label><br>
+            <label><input type="radio" name="q6" value="C"> C) create myFunction() { }</label><br>
+            <label><input type="radio" name="q6" value="D"> D) myFunction() = function { }</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>7. How do you call a function named "myFunction"?</p>
+            <label><input type="radio" name="q7" value="A"> A) call myFunction()</label><br>
+            <label><input type="radio" name="q7" value="B"> B) myFunction()</label><br>
+            <label><input type="radio" name="q7" value="C"> C) call function myFunction()</label><br>
+            <label><input type="radio" name="q7" value="D"> D) myFunction.call()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>8. What is the correct syntax for referring to an external script called "script.js"?</p>
+            <label><input type="radio" name="q8" value="A"> A) <script src="script.js"></script></label><br>
+            <label><input type="radio" name="q8" value="B"> B) <script href="script.js"></script></label><br>
+            <label><input type="radio" name="q8" value="C"> C) <script ref="script.js"></script></label><br>
+            <label><input type="radio" name="q8" value="D"> D) <script file="script.js"></script></label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>9. Which method is used to remove the last element from an array?</p>
+            <label><input type="radio" name="q9" value="A"> A) pop()</label><br>
+            <label><input type="radio" name="q9" value="B"> B) shift()</label><br>
+            <label><input type="radio" name="q9" value="C"> C) delete()</label><br>
+            <label><input type="radio" name="q9" value="D"> D) slice()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>10. How do you write an if statement in JavaScript?</p>
+            <label><input type="radio" name="q10" value="A"> A) if (i == 5) </label><br>
+            <label><input type="radio" name="q10" value="B"> B) if i = 5 then</label><br>
+            <label><input type="radio" name="q10" value="C"> C) if i == 5</label><br>
+            <label><input type="radio" name="q10" value="D"> D) if (i = 5) </label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>11. Which of the following is a way to create an object in JavaScript?</p>
+            <label><input type="radio" name="q11" value="A"> A) var obj = {};</label><br>
+            <label><input type="radio" name="q11" value="B"> B) var obj = new Object();</label><br>
+            <label><input type="radio" name="q11" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q11" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>12. What is the output of `console.log(typeof null);`?</p>
+            <label><input type="radio" name="q12" value="A"> A) "object"</label><br>
+            <label><input type="radio" name="q12" value="B"> B) "null"</label><br>
+            <label><input type="radio" name="q12" value="C"> C) "undefined"</label><br>
+            <label><input type="radio" name="q12" value="D"> D) "number"</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>13. Which operator is used to assign a value to a variable?</p>
+            <label><input type="radio" name="q13" value="A"> A) -</label><br>
+            <label><input type="radio" name="q13" value="B"> B) =</label><br>
+            <label><input type="radio" name="q13" value="C"> C) *</label><br>
+            <label><input type="radio" name="q13" value="D"> D) +</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>14. How do you check if a variable is an array?</p>
+            <label><input type="radio" name="q14" value="A"> A) Array.isArray(variable)</label><br>
+            <label><input type="radio" name="q14" value="B"> B) variable.isArray()</label><br>
+            <label><input type="radio" name="q14" value="C"> C) variable instanceof Array</label><br>
+            <label><input type="radio" name="q14" value="D"> D) Both A and C</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>15. What is the output of `console.log(1 + '1');`?</p>
+            <label><input type="radio" name="q15" value="A"> A) 2</label><br>
+            <label><input type="radio" name="q15" value="B"> B) "11"</label><br>
+            <label><input type="radio" name="q15" value="C"> C) "2"</label><br>
+            <label><input type="radio" name="q15" value="D"> D) NaN</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>16. How do you create a new array in JavaScript?</p>
+            <label><input type="radio" name="q16" value="A"> A) var myArray = [];</label><br>
+            <label><input type="radio" name="q16" value="B"> B) var myArray = new Array();</label><br>
+            <label><input type="radio" name="q16" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q16" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>17. Which method is used to find the index of an element in an array?</p>
+            <label><input type="radio" name="q17" value="A"> A) indexOf()</label><br>
+            <label><input type="radio" name="q17" value="B"> B) findIndex()</label><br>
+            <label><input type="radio" name="q17" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q17" value="D"> D) getIndex()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>18. What is the output of `console.log(2 + '2');`?</p>
+            <label><input type="radio" name="q18" value="A"> A) 4</label><br>
+            <label><input type="radio" name="q18" value="B"> B) "22"</label><br>
+            <label><input type="radio" name="q18" value="C"> C) "4"</label><br>
+            <label><input type="radio" name="q18" value="D"> D) 2</label><br>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>19. How do you declare a constant in JavaScript?</p>
+            <label><input type="radio" name="q19" value="A"> A) const myConst;</label><br>
+            <label><input type="radio" name="q19" value="B"> B) let myConst = 5;</label><br>
+            <label><input type="radio" name="q19" value="C"> C) var myConst = 5;</label><br>
+            <label><input type="radio" name="q19" value="D"> D) constant myConst = 5;</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>20. Which method is used to add an element to the end of an array?</p>
+            <label><input type="radio" name="q20" value="A"> A) push()</label><br>
+            <label><input type="radio" name="q20" value="B"> B) unshift()</label><br>
+            <label><input type="radio" name="q20" value="C"> C) append()</label><br>
+            <label><input type="radio" name="q20" value="D"> D) add()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>21. What does JSON stand for?</p>
+            <label><input type="radio" name="q21" value="A"> A) JavaScript Object Notation</label><br>
+            <label><input type="radio" name="q21" value="B"> B) JavaScript Object Notation Syntax</label><br>
+            <label><input type="radio" name="q21" value="C"> C) JavaScript Online Notation</label><br>
+            <label><input type="radio" name="q21" value="D"> D) Java Source Object Notation</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>22. How do you convert an object to a JSON string?</p>
+            <label><input type="radio" name="q22" value="A"> A) JSON.parse()</label><br>
+            <label><input type="radio" name="q22" value="B"> B) JSON.stringify()</label><br>
+            <label><input type="radio" name="q22" value="C"> C) Object.toJSON()</label><br>
+            <label><input type="radio" name="q22" value="D"> D) Object.toJSONString()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>23. Which method is used to parse a JSON string?</p>
+            <label><input type="radio" name="q23" value="A"> A) JSON.stringify()</label><br>
+            <label><input type="radio" name="q23" value="B"> B) JSON.parse()</label><br>
+            <label><input type="radio" name="q23" value="C"> C) Object.parse()</label><br>
+            <label><input type="radio" name="q23" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>24. What will `console.log(5 == '5');` output?</p>
+            <label><input type="radio" name="q24" value="A"> A) true</label><br>
+            <label><input type="radio" name="q24" value="B"> B) false</label><br>
+            <label><input type="radio" name="q24" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q24" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>25. Which method is used to sort an array?</p>
+            <label><input type="radio" name="q25" value="A"> A) sort()</label><br>
+            <label><input type="radio" name="q25" value="B"> B) order()</label><br>
+            <label><input type="radio" name="q25" value="C"> C) arrange()</label><br>
+            <label><input type="radio" name="q25" value="D"> D) sequence()</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>26. What is the output of `console.log(5 === '5');`?</p>
+            <label><input type="radio" name="q26" value="A"> A) true</label><br>
+            <label><input type="radio" name="q26" value="B"> B) false</label><br>
+            <label><input type="radio" name="q26" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q26" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>27. What will `typeof []` return?</p>
+            <label><input type="radio" name="q27" value="A"> A) "array"</label><br>
+            <label><input type="radio" name="q27" value="B"> B) "object"</label><br>
+            <label><input type="radio" name="q27" value="C"> C) "undefined"</label><br>
+            <label><input type="radio" name="q27" value="D"> D) "null"</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>28. How do you create a new object in JavaScript?</p>
+            <label><input type="radio" name="q28" value="A"> A) var myObj = {};</label><br>
+            <label><input type="radio" name="q28" value="B"> B) var myObj = new Object();</label><br>
+            <label><input type="radio" name="q28" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q28" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>29. How do you access an object property?</p>
+            <label><input type="radio" name="q29" value="A"> A) myObj.property</label><br>
+            <label><input type="radio" name="q29" value="B"> B) myObj['property']</label><br>
+            <label><input type="radio" name="q29" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q29" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>30. What is the output of `console.log(!!0);`?</p>
+            <label><input type="radio" name="q30" value="A"> A) true</label><br>
+            <label><input type="radio" name="q30" value="B"> B) false</label><br>
+            <label><input type="radio" name="q30" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q30" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. Which of the following will create a promise?</p>
+            <label><input type="radio" name="q31" value="A"> A) new Promise()</label><br>
+            <label><input type="radio" name="q31" value="B"> B) create Promise()</label><br>
+            <label><input type="radio" name="q31" value="C"> C) new AsyncPromise()</label><br>
+            <label><input type="radio" name="q31" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>32. How do you resolve a promise?</p>
+            <label><input type="radio" name="q32" value="A"> A) promise.resolve()</label><br>
+            <label><input type="radio" name="q32" value="B"> B) resolve(promise)</label><br>
+            <label><input type="radio" name="q32" value="C"> C) Promise.then()</label><br>
+            <label><input type="radio" name="q32" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>33. What is the purpose of async/await in JavaScript?</p>
+            <label><input type="radio" name="q33" value="A"> A) To handle synchronous operations</label><br>
+            <label><input type="radio" name="q33" value="B"> B) To simplify asynchronous code</label><br>
+            <label><input type="radio" name="q33" value="C"> C) To create parallel processing</label><br>
+            <label><input type="radio" name="q33" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>34. Which of the following is a JavaScript framework?</p>
+            <label><input type="radio" name="q34" value="A"> A) Angular</label><br>
+            <label><input type="radio" name="q34" value="B"> B) React</label><br>
+            <label><input type="radio" name="q34" value="C"> C) Vue</label><br>
+            <label><input type="radio" name="q34" value="D"> D) All of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>35. What is the output of `console.log(2 == '2');`?</p>
+            <label><input type="radio" name="q35" value="A"> A) true</label><br>
+            <label><input type="radio" name="q35" value="B"> B) false</label><br>
+            <label><input type="radio" name="q35" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q35" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>36. What is a closure in JavaScript?</p>
+            <label><input type="radio" name="q36" value="A"> A) A function inside another function</label><br>
+            <label><input type="radio" name="q36" value="B"> B) A function that retains access to its lexical scope</label><br>
+            <label><input type="radio" name="q36" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q36" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>37. What will `console.log(1 == true);` output?</p>
+            <label><input type="radio" name="q37" value="A"> A) true</label><br>
+            <label><input type="radio" name="q37" value="B"> B) false</label><br>
+            <label><input type="radio" name="q37" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q37" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>38. How do you declare an array in JavaScript?</p>
+            <label><input type="radio" name="q38" value="A"> A) var myArray = [];</label><br>
+            <label><input type="radio" name="q38" value="B"> B) var myArray = new Array();</label><br>
+            <label><input type="radio" name="q38" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q38" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>39. What does the `this` keyword refer to in JavaScript?</p>
+            <label><input type="radio" name="q39" value="A"> A) The global object</label><br>
+            <label><input type="radio" name="q39" value="B"> B) The current object</label><br>
+            <label><input type="radio" name="q39" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q39" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>40. What is the output of `console.log(0 == false);`?</p>
+            <label><input type="radio" name="q40" value="A"> A) true</label><br>
+            <label><input type="radio" name="q40" value="B"> B) false</label><br>
+            <label><input type="radio" name="q40" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q40" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>41. How do you handle exceptions in JavaScript?</p>
+            <label><input type="radio" name="q41" value="A"> A) try...catch</label><br>
+            <label><input type="radio" name="q41" value="B"> B) catch...try</label><br>
+            <label><input type="radio" name="q41" value="C"> C) handle...error</label><br>
+            <label><input type="radio" name="q41" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>42. Which of the following is used for asynchronous operations?</p>
+            <label><input type="radio" name="q42" value="A"> A) callbacks</label><br>
+            <label><input type="radio" name="q42" value="B"> B) promises</label><br>
+            <label><input type="radio" name="q42" value="C"> C) async/await</label><br>
+            <label><input type="radio" name="q42" value="D"> D) All of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>43. How do you create a class in JavaScript?</p>
+            <label><input type="radio" name="q43" value="A"> A) class MyClass { }</label><br>
+            <label><input type="radio" name="q43" value="B"> B) create class MyClass { }</label><br>
+            <label><input type="radio" name="q43" value="C"> C) function MyClass() { }</label><br>
+            <label><input type="radio" name="q43" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>44. What is the output of `console.log(typeof function(){});`?</p>
+            <label><input type="radio" name="q44" value="A"> A) "function"</label><br>
+            <label><input type="radio" name="q44" value="B"> B) "object"</label><br>
+            <label><input type="radio" name="q44" value="C"> C) "undefined"</label><br>
+            <label><input type="radio" name="q44" value="D"> D) "null"</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>45. What does the `bind()` method do?</p>
+            <label><input type="radio" name="q45" value="A"> A) Creates a new function with a specific `this` value</label><br>
+            <label><input type="radio" name="q45" value="B"> B) Binds a function to an object</label><br>
+            <label><input type="radio" name="q45" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q45" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>46. How do you create a set in JavaScript?</p>
+            <label><input type="radio" name="q46" value="A"> A) var mySet = new Set();</label><br>
+            <label><input type="radio" name="q46" value="B"> B) var mySet = {}; </label><br>
+            <label><input type="radio" name="q46" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q46" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>47. Which of the following is used to remove duplicates from an array?</p>
+            <label><input type="radio" name="q47" value="A"> A) filter()</label><br>
+            <label><input type="radio" name="q47" value="B"> B) map()</label><br>
+            <label><input type="radio" name="q47" value="C"> C) Set</label><br>
+            <label><input type="radio" name="q47" value="D"> D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>48. What is the output of `console.log(1 == '1');`?</p>
+            <label><input type="radio" name="q48" value="A"> A) true</label><br>
+            <label><input type="radio" name="q48" value="B"> B) false</label><br>
+            <label><input type="radio" name="q48" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q48" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>49. What will `console.log(5 !== '5');` output?</p>
+            <label><input type="radio" name="q49" value="A"> A) true</label><br>
+            <label><input type="radio" name="q49" value="B"> B) false</label><br>
+            <label><input type="radio" name="q49" value="C"> C) NaN</label><br>
+            <label><input type="radio" name="q49" value="D"> D) error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>50. What is the purpose of the `return` statement in a function?</p>
+            <label><input type="radio" name="q50" value="A"> A) To exit the function</label><br>
+            <label><input type="radio" name="q50" value="B"> B) To send a value back to the caller</label><br>
+            <label><input type="radio" name="q50" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q50" value="D"> D) None of the above</label>
+        </div>
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/js.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

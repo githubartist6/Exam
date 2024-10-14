@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="ruby.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Ruby Quiz</h1>
+    <form id="quiz-form">
+        <div class="quiz-form">
+
+            <div class="question" data-aos="zoom-in">
+                <p>1. What is Ruby?</p>
+                <label><input type="radio" name="q1" value="A"> A) A database</label><br>
+                <label><input type="radio" name="q1" value="B"> B) A programming language</label><br>
+                <label><input type="radio" name="q1" value="C"> C) A web server</label><br>
+                <label><input type="radio" name="q1" value="D"> D) An operating system</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>2. How do you create a new array in Ruby?</p>
+                <label><input type="radio" name="q2" value="A"> A) array = new Array()</label><br>
+                <label><input type="radio" name="q2" value="B"> B) array = []</label><br>
+                <label><input type="radio" name="q2" value="C"> C) array = Array.new</label><br>
+                <label><input type="radio" name="q2" value="D"> D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>3. What is the output of <code>puts "Hello" + " World"</code>?</p>
+                <label><input type="radio" name="q3" value="A"> A) Hello World</label><br>
+                <label><input type="radio" name="q3" value="B"> B) HelloWorld</label><br>
+                <label><input type="radio" name="q3" value="C"> C) Hello World</label><br>
+                <label><input type="radio" name="q3" value="D"> D) "Hello World"</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>4. Which method can be used to check if a string contains a substring?</p>
+                <label><input type="radio" name="q4" value="A"> A) include?</label><br>
+                <label><input type="radio" name="q4" value="B"> B) exists?</label><br>
+                <label><input type="radio" name="q4" value="C"> C) contains?</label><br>
+                <label><input type="radio" name="q4" value="D"> D) has?</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>5. What will <code>5.class</code> return?</p>
+                <label><input type="radio" name="q5" value="A"> A) Integer</label><br>
+                <label><input type="radio" name="q5" value="B"> B) Float</label><br>
+                <label><input type="radio" name="q5" value="C"> C) Fixnum</label><br>
+                <label><input type="radio" name="q5" value="D"> D) Numeric</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>6. How do you define a method in Ruby?</p>
+                <label><input type="radio" name="q6" value="A"> A) def method_name</label><br>
+                <label><input type="radio" name="q6" value="B"> B) method method_name</label><br>
+                <label><input type="radio" name="q6" value="C"> C) function method_name</label><br>
+                <label><input type="radio" name="q6" value="D"> D) create method_name</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>7. What is the purpose of the <code>self</code> keyword in Ruby?</p>
+                <label><input type="radio" name="q7" value="A"> A) To refer to the current object</label><br>
+                <label><input type="radio" name="q7" value="B"> B) To create a new class</label><br>
+                <label><input type="radio" name="q7" value="C"> C) To define a global variable</label><br>
+                <label><input type="radio" name="q7" value="D"> D) To return from a method</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>8. Which of the following is a way to create a hash?</p>
+                <label><input type="radio" name="q8" value="A"> A) <code>hash = { key: 'value' }</code></label><br>
+                <label><input type="radio" name="q8" value="B"> B) <code>hash = Hash.new</code></label><br>
+                <label><input type="radio" name="q8" value="C"> C) <code>hash = [:key => 'value']</code></label><br>
+                <label><input type="radio" name="q8" value="D"> D) Both A and B</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>9. What does the <code>each</code> method do?</p>
+                <label><input type="radio" name="q9" value="A"> A) Iterates over a collection</label><br>
+                <label><input type="radio" name="q9" value="B"> B) Returns the first element of a collection</label><br>
+                <label><input type="radio" name="q9" value="C"> C) Sorts a collection</label><br>
+                <label><input type="radio" name="q9" value="D"> D) Filters a collection</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>10. What is the difference between <code>nil</code> and <code>false</code> in Ruby?</p>
+                <label><input type="radio" name="q10" value="A"> A) Both are the same</label><br>
+                <label><input type="radio" name="q10" value="B"> B) <code>nil</code> is an object while <code>false</code> is a boolean</label><br>
+                <label><input type="radio" name="q10" value="C"> C) <code>false</code> is an object while <code>nil</code> is a boolean</label><br>
+                <label><input type="radio" name="q10" value="D"> D) They are both false values</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>11. How do you raise an exception in Ruby?</p>
+                <label><input type="radio" name="q11" value="A"> A) throw Exception</label><br>
+                <label><input type="radio" name="q11" value="B"> B) raise Exception</label><br>
+                <label><input type="radio" name="q11" value="C"> C) error Exception</label><br>
+                <label><input type="radio" name="q11" value="D"> D) fail Exception</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>12. What is the purpose of <code>attr_accessor</code>?</p>
+                <label><input type="radio" name="q12" value="A"> A) To define instance methods</label><br>
+                <label><input type="radio" name="q12" value="B"> B) To create getter and setter methods for instance variables</label><br>
+                <label><input type="radio" name="q12" value="C"> C) To allow inheritance</label><br>
+                <label><input type="radio" name="q12" value="D"> D) To manage modules</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>13. Which of the following statements creates a new class?</p>
+                <label><input type="radio" name="q13" value="A"> A) class ClassName</label><br>
+                <label><input type="radio" name="q13" value="B"> B) new ClassName</label><br>
+                <label><input type="radio" name="q13" value="C"> C) create ClassName</label><br>
+                <label><input type="radio" name="q13" value="D"> D) define ClassName</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>14. How can you define a default value for a method parameter?</p>
+                <label><input type="radio" name="q14" value="A"> A) <code>def method_name(param = default_value)</code></label><br>
+                <label><input type="radio" name="q14" value="B"> B) <code>def method_name(param: default_value)</code></label><br>
+                <label><input type="radio" name="q14" value="C"> C) <code>def method_name(param, default_value)</code></label><br>
+                <label><input type="radio" name="q14" value="D"> D) Both A and B</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>15. What is the output of <code>[1, 2, 3].map { |x| x * 2 }</code>?</p>
+                <label><input type="radio" name="q15" value="A"> A) [2, 4, 6]</label><br>
+                <label><input type="radio" name="q15" value="B"> B) [1, 2, 3]</label><br>
+                <label><input type="radio" name="q15" value="C"> C) 6</label><br>
+                <label><input type="radio" name="q15" value="D"> D) 1, 2, 3</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>16. Which operator is used to concatenate strings in Ruby?</p>
+                <label><input type="radio" name="q16" value="A"> A) &</label><br>
+                <label><input type="radio" name="q16" value="B"> B) +</label><br>
+                <label><input type="radio" name="q16" value="C"> C) .concat</label><br>
+                <label><input type="radio" name="q16" value="D"> D) <<</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>17. What does the <code>freeze</code> method do to an object?</p>
+                <label><input type="radio" name="q17" value="A"> A) Makes it immutable</label><br>
+                <label><input type="radio" name="q17" value="B"> B) Stops the program</label><br>
+                <label><input type="radio" name="q17" value="C"> C) Pauses execution</label><br>
+                <label><input type="radio" name="q17" value="D"> D) Clears the object</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>18. How can you open a file in Ruby?</p>
+                <label><input type="radio" name="q18" value="A"> A) <code>File.open('filename.txt')</code></label><br>
+                <label><input type="radio" name="q18" value="B"> B) <code>open('filename.txt')</code></label><br>
+                <label><input type="radio" name="q18" value="C"> C) <code>File.new('filename.txt')</code></label><br>
+                <label><input type="radio" name="q18" value="D"> D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>19. What is the purpose of the <code>unless</code> keyword in Ruby?</p>
+                <label><input type="radio" name="q19" value="A"> A) To execute a block if a condition is true</label><br>
+                <label><input type="radio" name="q19" value="B"> B) To execute a block unless a condition is true</label><br>
+                <label><input type="radio" name="q19" value="C"> C) To define a loop</label><br>
+                <label><input type="radio" name="q19" value="D"> D) To handle exceptions</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>20. What will the following code output? <code>5.times { |i| print i }</code></p>
+                <label><input type="radio" name="q20" value="A"> A) 01234</label><br>
+                <label><input type="radio" name="q20" value="B"> B) 12345</label><br>
+                <label><input type="radio" name="q20" value="C"> C) 012345</label><br>
+                <label><input type="radio" name="q20" value="D"> D) 54321</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>21. What does the term "props" stand for?</p>
+                <label><input type="radio" name="q21" value="A"> A) Properties</label><br>
+                <label><input type="radio" name="q21" value="B"> B) Processes</label><br>
+                <label><input type="radio" name="q21" value="C"> C) Prototypes</label><br>
+                <label><input type="radio" name="q21" value="D"> D) Propositions</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>22. What is the purpose of the <code>initialize</code> method in Ruby?</p>
+                <label><input type="radio" name="q22" value="A"> A) To create a new object</label><br>
+                <label><input type="radio" name="q22" value="B"> B) To define a class</label><br>
+                <label><input type="radio" name="q22" value="C"> C) To set up initial values for instance variables</label><br>
+                <label><input type="radio" name="q22" value="D"> D) To call a method</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>23. What does the <code>require</code> keyword do in Ruby?</p>
+                <label><input type="radio" name="q23" value="A"> A) Loads a library or file</label><br>
+                <label><input type="radio" name="q23" value="B"> B) Creates a new class</label><br>
+                <label><input type="radio" name="q23" value="C"> C) Defines a method</label><br>
+                <label><input type="radio" name="q23" value="D"> D) Outputs text to the console</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>24. What is the default return value of a method in Ruby?</p>
+                <label><input type="radio" name="q24" value="A"> A) nil</label><br>
+                <label><input type="radio" name="q24" value="B"> B) false</label><br>
+                <label><input type="radio" name="q24" value="C"> C) true</label><br>
+                <label><input type="radio" name="q24" value="D"> D) 0</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>25. Which of the following is a valid way to create a symbol?</p>
+                <label><input type="radio" name="q25" value="A"> A) <code>:my_symbol</code></label><br>
+                <label><input type="radio" name="q25" value="B"> B) <code>Symbol.new("my_symbol")</code></label><br>
+                <label><input type="radio" name="q25" value="C"> C) <code>"my_symbol".to_sym</code></label><br>
+                <label><input type="radio" name="q25" value="D"> D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>26. What does the <code>self</code> keyword represent in a class?</p>
+                <label><input type="radio" name="q26" value="A"> A) The current class</label><br>
+                <label><input type="radio" name="q26" value="B"> B) The current instance</label><br>
+                <label><input type="radio" name="q26" value="C"> C) The superclass</label><br>
+                <label><input type="radio" name="q26" value="D"> D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>27. How can you handle exceptions in Ruby?</p>
+                <label><input type="radio" name="q27" value="A"> A) <code>try...catch</code></label><br>
+                <label><input type="radio" name="q27" value="B"> B) <code>begin...rescue</code></label><br>
+                <label><input type="radio" name="q27" value="C"> C) <code>throw...catch</code></label><br>
+                <label><input type="radio" name="q27" value="D"> D) <code>handle...error</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>28. What does the <code>clone</code> method do?</p>
+                <label><input type="radio" name="q28" value="A"> A) Creates a shallow copy of an object</label><br>
+                <label><input type="radio" name="q28" value="B"> B) Creates a deep copy of an object</label><br>
+                <label><input type="radio" name="q28" value="C"> C) Duplicates an object</label><br>
+                <label><input type="radio" name="q28" value="D"> D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>29. Which operator is used for safe navigation in Ruby?</p>
+                <label><input type="radio" name="q29" value="A"> A) &.</label><br>
+                <label><input type="radio" name="q29" value="B"> B) ?.</label><br>
+                <label><input type="radio" name="q29" value="C"> C) !.</label><br>
+                <label><input type="radio" name="q29" value="D"> D) ..</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>30. What is a block in Ruby?</p>
+                <label><input type="radio" name="q30" value="A"> A) A piece of code that can accept parameters</label><br>
+                <label><input type="radio" name="q30" value="B"> B) A loop construct</label><br>
+                <label><input type="radio" name="q30" value="C"> C) A data structure</label><br>
+                <label><input type="radio" name="q30" value="D"> D) A reserved keyword</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>31. How do you create a new thread in Ruby?</p>
+                <label><input type="radio" name="q31" value="A"> A) <code>Thread.new { code }</code></label><br>
+                <label><input type="radio" name="q31" value="B"> B) <code>Thread.start { code }</code></label><br>
+                <label><input type="radio" name="q31" value="C"> C) Both A and B</label><br>
+                <label><input type="radio" name="q31" value="D"> D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>32. Which method can be used to check the length of a string?</p>
+                <label><input type="radio" name="q32" value="A"> A) <code>length</code></label><br>
+                <label><input type="radio" name="q32" value="B"> B) <code>size</code></label><br>
+                <label><input type="radio" name="q32" value="C"> C) <code>count</code></label><br>
+                <label><input type="radio" name="q32" value="D"> D) Both A and B</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>33. What method would you use to find the index of an element in an array?</p>
+                <label><input type="radio" name="q33" value="A"> A) <code>index</code></label><br>
+                <label><input type="radio" name="q33" value="B"> B) <code>find_index</code></label><br>
+                <label><input type="radio" name="q33" value="C"> C) <code>position</code></label><br>
+                <label><input type="radio" name="q33" value="D"> D) Both A and B</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>34. Which method checks if an array includes a certain element?</p>
+                <label><input type="radio" name="q34" value="A"> A) <code>include?</code></label><br>
+                <label><input type="radio" name="q34" value="B"> B) <code>exists?</code></label><br>
+                <label><input type="radio" name="q34" value="C"> C) <code>has?</code></label><br>
+                <label><input type="radio" name="q34" value="D"> D) <code>contains?</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>35. How can you create a range excluding the last number?</p>
+                <label><input type="radio" name="q35" value="A"> A) <code>1..10</code></label><br>
+                <label><input type="radio" name="q35" value="B"> B) <code>1...10</code></label><br>
+                <label><input type="radio" name="q35" value="C"> C) <code>Range.new(1, 10, true)</code></label><br>
+                <label><input type="radio" name="q35" value="D"> D) <code>Range.new(1, 10, false)</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>36. What is the difference between <code>==</code> and <code>===</code> in Ruby?</p>
+                <label><input type="radio" name="q36" value="A"> A) No difference</label><br>
+                <label><input type="radio" name="q36" value="B"> B) <code>===</code> is used for case equality</label><br>
+                <label><input type="radio" name="q36" value="C"> C) <code>==</code> checks for type</label><br>
+                <label><input type="radio" name="q36" value="D"> D) Both B and C</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>37. Which keyword is used to define a private method?</p>
+                <label><input type="radio" name="q37" value="A"> A) <code>private</code></label><br>
+                <label><input type="radio" name="q37" value="B"> B) <code>protected</code></label><br>
+                <label><input type="radio" name="q37" value="C"> C) <code>hidden</code></label><br>
+                <label><input type="radio" name="q37" value="D"> D) <code>internal</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>38. What method can be used to remove the last element of an array?</p>
+                <label><input type="radio" name="q38" value="A"> A) <code>pop</code></label><br>
+                <label><input type="radio" name="q38" value="B"> B) <code>shift</code></label><br>
+                <label><input type="radio" name="q38" value="C"> C) <code>delete</code></label><br>
+                <label><input type="radio" name="q38" value="D"> D) <code>remove</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>39. How do you define a class in Ruby?</p>
+                <label><input type="radio" name="q39" value="A"> A) <code>class ClassName</code></label><br>
+                <label><input type="radio" name="q39" value="B"> B) <code>define ClassName</code></label><br>
+                <label><input type="radio" name="q39" value="C"> C) <code>create ClassName</code></label><br>
+                <label><input type="radio" name="q39" value="D"> D) <code>module ClassName</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>40. Which method converts a string to lowercase?</p>
+                <label><input type="radio" name="q40" value="A"> A) <code>downcase</code></label><br>
+                <label><input type="radio" name="q40" value="B"> B) <code>lowercase</code></label><br>
+                <label><input type="radio" name="q40" value="C"> C) <code>to_lower</code></label><br>
+                <label><input type="radio" name="q40" value="D"> D) <code>down</code></label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>41. What does the <code>attr_accessor</code> method do in Ruby?</p>
+                <label><input type="radio" name="q41" value="A"> A) Creates getter and setter methods</label><br>
+                <label><input type="radio" name="q41" value="B"> B) Creates only a getter method</label><br>
+                <label><input type="radio" name="q41" value="C"> C) Creates only a setter method</label><br>
+                <label><input type="radio" name="q41" value="D"> D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>42. Which method is used to convert a string to an integer?</p>
+                <label><input type="radio" name="q42" value="A"> A) <code>to_i</code></label><br>
+                <label><input type="radio" name="q42" value="B"> B) <code>parse_int</code></label><br>
+                <label><input type="radio" name="q42" value="C"> C) <code>int</code></label><br>
+                <label><input type="radio" name="q42" value="D"> D) <code>integerify</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>43. What keyword is used to define a module in Ruby?</p>
+                <label><input type="radio" name="q43" value="A"> A) <code>module</code></label><br>
+                <label><input type="radio" name="q43" value="B"> B) <code>namespace</code></label><br>
+                <label><input type="radio" name="q43" value="C"> C) <code>class</code></label><br>
+                <label><input type="radio" name="q43" value="D"> B) <code>define</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>44. How do you iterate over an array in Ruby?</p>
+                <label><input type="radio" name="q44" value="A"> A) <code>for each</code></label><br>
+                <label><input type="radio" name="q44" value="B"> B) <code>each</code></label><br>
+                <label><input type="radio" name="q44" value="C"> C) <code>loop</code></label><br>
+                <label><input type="radio" name="q44" value="D"> D) <code>map</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>45. What is the purpose of the <code>initialize</code> method in a Ruby class?</p>
+                <label><input type="radio" name="q45" value="A"> A) It is used to create class methods</label><br>
+                <label><input type="radio" name="q45" value="B"> B) It initializes instance variables</label><br>
+                <label><input type="radio" name="q45" value="C"> C) It handles exceptions</label><br>
+                <label><input type="radio" name="q45" value="D"> D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>46. Which operator is used for string concatenation in Ruby?</p>
+                <label><input type="radio" name="q46" value="A"> A) +</label><br>
+                <label><input type="radio" name="q46" value="B"> B) &</label><br>
+                <label><input type="radio" name="q46" value="C"> C) <<</label><br>
+                <label><input type="radio" name="q46" value="D"> D) Both A and C</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>47. How can you read a file in Ruby?</p>
+                <label><input type="radio" name="q47" value="A"> A) <code>File.read</code></label><br>
+                <label><input type="radio" name="q47" value="B"> B) <code>File.open</code></label><br>
+                <label><input type="radio" name="q47" value="C"> C) Both A and B</label><br>
+                <label><input type="radio" name="q47" value="D"> D) <code>File.get</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>48. What method can be used to sort an array?</p>
+                <label><input type="radio" name="q48" value="A"> A) <code>sort</code></label><br>
+                <label><input type="radio" name="q48" value="B"> B) <code>order</code></label><br>
+                <label><input type="radio" name="q48" value="C"> C) <code>arrange</code></label><br>
+                <label><input type="radio" name="q48" value="D"> D) <code>sequence</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>49. Which keyword is used to include a module in a class?</p>
+                <label><input type="radio" name="q49" value="A"> A) <code>include</code></label><br>
+                <label><input type="radio" name="q49" value="B"> B) <code>extend</code></label><br>
+                <label><input type="radio" name="q49" value="C"> C) <code>require</code></label><br>
+                <label><input type="radio" name="q49" value="D"> D) <code>import</code></label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>50. What does the <code>yield</code> keyword do in Ruby?</p>
+                <label><input type="radio" name="q50" value="A"> A) It returns a value from a method</label><br>
+                <label><input type="radio" name="q50" value="B"> B) It passes control from a method to a block</label><br>
+                <label><input type="radio" name="q50" value="C"> C) It raises an exception</label><br>
+                <label><input type="radio" name="q50" value="D"> D) It defines a method</label>
+            </div>
+            
+            
+
+            
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+</div>
+
+
+    <script src="/java/ruby.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+<h1>CSS Quiz</h1>
+<form id="quiz-form">
+    <div class="question" data-aos="zoom-in">
+        <p>1. What does CSS stand for?</p>
+        <label><input type="radio" name="q1" value="A"> A) Computer Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="B"> B) Creative Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="C"> C) Cascading Style Sheets</label><br>
+        <label><input type="radio" name="q1" value="D"> D) Colorful Style Sheets</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>2. Which property is used to change the text color of an element?</p>
+        <label><input type="radio" name="q2" value="A"> A) text-color</label><br>
+        <label><input type="radio" name="q2" value="B"> B) color</label><br>
+        <label><input type="radio" name="q2" value="C"> C) font-color</label><br>
+        <label><input type="radio" name="q2" value="D"> D) background-color</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>3. How do you apply a CSS style to an HTML element with a specific ID?</p>
+        <label><input type="radio" name="q3" value="A"> A) .idname { }</label><br>
+        <label><input type="radio" name="q3" value="B"> B) #idname { }</label><br>
+        <label><input type="radio" name="q3" value="C"> C) *idname { }</label><br>
+        <label><input type="radio" name="q3" value="D"> D) idname { }</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>4. What is the correct way to add a comment in CSS?</p>
+        <label><input type="radio" name="q4" value="A"> A) This is a comment</label><br>
+        <label><input type="radio" name="q4" value="B"> B) // This is a comment</label><br>
+        <label><input type="radio" name="q4" value="C"> C) /* This is a comment */</label><br>
+        <label><input type="radio" name="q4" value="D"> D) ** This is a comment **</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>5. Which property controls the spacing between lines of text?</p>
+        <label><input type="radio" name="q5" value="A"> A) line-height</label><br>
+        <label><input type="radio" name="q5" value="B"> B) spacing</label><br>
+        <label><input type="radio" name="q5" value="C"> C) text-spacing</label><br>
+        <label><input type="radio" name="q5" value="D"> D) paragraph-spacing</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>6. What is the default value of the display property for a div element?</p>
+        <label><input type="radio" name="q6" value="A"> A) block</label><br>
+        <label><input type="radio" name="q6" value="B"> B) inline</label><br>
+        <label><input type="radio" name="q6" value="C"> C) inline-block</label><br>
+        <label><input type="radio" name="q6" value="D"> D) flex</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>7. Which property is used to set the width of an element?</p>
+        <label><input type="radio" name="q7" value="A"> A) width</label><br>
+        <label><input type="radio" name="q7" value="B"> B) size</label><br>
+        <label><input type="radio" name="q7" value="C"> C) length</label><br>
+        <label><input type="radio" name="q7" value="D"> D) dimension</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>8. How do you create a class selector in CSS?</p>
+        <label><input type="radio" name="q8" value="A"> A) .classname { }</label><br>
+        <label><input type="radio" name="q8" value="B"> B) #classname { }</label><br>
+        <label><input type="radio" name="q8" value="C"> C) *classname { }</label><br>
+        <label><input type="radio" name="q8" value="D"> D) classname { }</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>9. What value of the position property will position an element relative to its normal position?</p>
+        <label><input type="radio" name="q9" value="A"> A) static</label><br>
+        <label><input type="radio" name="q9" value="B"> B) relative</label><br>
+        <label><input type="radio" name="q9" value="C"> C) absolute</label><br>
+        <label><input type="radio" name="q9" value="D"> D) fixed</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>10. How do you make a list display as inline items?</p>
+        <label><input type="radio" name="q10" value="A"> A) list-style: inline;</label><br>
+        <label><input type="radio" name="q10" value="B"> B) display: inline;</label><br>
+        <label><input type="radio" name="q10" value="C"> C) display: inline-block;</label><br>
+        <label><input type="radio" name="q10" value="D"> D) Both B and C</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>11. Which CSS property is used to control the text size?</p>
+        <label><input type="radio" name="q11" value="A"> A) font-size</label><br>
+        <label><input type="radio" name="q11" value="B"> B) text-size</label><br>
+        <label><input type="radio" name="q11" value="C"> C) size</label><br>
+        <label><input type="radio" name="q11" value="D"> D) text-style</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>12. How can you make a background image not repeat?</p>
+        <label><input type="radio" name="q12" value="A"> A) background-repeat: no-repeat;</label><br>
+        <label><input type="radio" name="q12" value="B"> B) background-image: no-repeat;</label><br>
+        <label><input type="radio" name="q12" value="C"> C) background: no-repeat;</label><br>
+        <label><input type="radio" name="q12" value="D"> D) background-size: no-repeat;</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>13. What does the float property do?</p>
+        <label><input type="radio" name="q13" value="A"> A) It makes elements align next to each other.</label><br>
+        <label><input type="radio" name="q13" value="B"> B) It adds a floating effect to elements.</label><br>
+        <label><input type="radio" name="q13" value="C"> C) It centers an element.</label><br>
+        <label><input type="radio" name="q13" value="D"> D) It creates transparency.</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>14. Which property is used to set the opacity of an element?</p>
+        <label><input type="radio" name="q14" value="A"> A) opacity</label><br>
+        <label><input type="radio" name="q14" value="B"> B) transparency</label><br>
+        <label><input type="radio" name="q14" value="C"> C) alpha</label><br>
+        <label><input type="radio" name="q14" value="D"> D) visibility</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>15. What unit is used for relative font sizing?</p>
+        <label><input type="radio" name="q15" value="A"> A) px</label><br>
+        <label><input type="radio" name="q15" value="B"> B) em</label><br>
+        <label><input type="radio" name="q15" value="C"> C) pt</label><br>
+        <label><input type="radio" name="q15" value="D"> D) in</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>16. Which property would you use to change the cursor to a pointer?</p>
+        <label><input type="radio" name="q16" value="A"> A) cursor: pointer;</label><br>
+        <label><input type="radio" name="q16" value="B"> B) cursor: hand;</label><br>
+        <label><input type="radio" name="q16" value="C"> C) mouse: pointer;</label><br>
+        <label><input type="radio" name="q16" value="D"> D) pointer: cursor;</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>17. How do you specify multiple CSS classes on a single HTML element?</p>
+        <label><input type="radio" name="q17" value="A"> A) class1 class2</label><br>
+        <label><input type="radio" name="q17" value="B"> B) class1,class2</label><br>
+        <label><input type="radio" name="q17" value="C"> C) class="class1 class2"</label><br>
+        <label><input type="radio" name="q17" value="D"> D) class="class1,class2"</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>18. What does the z-index property control?</p>
+        <label><input type="radio" name="q18" value="A"> A) The width of an element</label><br>
+        <label><input type="radio" name="q18" value="B"> B) The stacking order of elements</label><br>
+        <label><input type="radio" name="q18" value="C"> C) The visibility of elements</label><br>
+        <label><input type="radio" name="q18" value="D"> D) The color of elements</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>19. Which property is used to create rounded corners on an element?</p>
+        <label><input type="radio" name="q19" value="A"> A) border-radius</label><br>
+        <label><input type="radio" name="q19" value="B"> B) corner-radius</label><br>
+        <label><input type="radio" name="q19" value="C"> C) round-corners</label><br>
+        <label><input type="radio" name="q19" value="D"> D) border-curvature</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>20. How do you center a block element horizontally?</p>
+        <label><input type="radio" name="q20" value="A"> A) margin: auto;</label><br>
+        <label><input type="radio" name="q20" value="B"> B) text-align: center;</label><br>
+        <label><input type="radio" name="q20" value="C"> C) position: center;</label><br>
+        <label><input type="radio" name="q20" value="D"> D) padding: auto;</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>21. What does the 'box-sizing' property do?</p>
+        <label><input type="radio" name="q21" value="A"> A) It controls the size of the content box.</label><br>
+        <label><input type="radio" name="q21" value="B"> B) It allows for box shadows.</label><br>
+        <label><input type="radio" name="q21" value="C"> C) It determines how the width and height of an element are calculated.</label><br>
+        <label><input type="radio" name="q21" value="D"> D) It changes the layout mode.</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>22. How can you apply a style to all h1 elements on a page?</p>
+        <label><input type="radio" name="q22" value="A"> A) h1 { }</label><br>
+        <label><input type="radio" name="q22" value="B"> B) .h1 { }</label><br>
+        <label><input type="radio" name="q22" value="C"> C) #h1 { }</label><br>
+        <label><input type="radio" name="q22" value="D"> D) *h1 { }</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>23. Which CSS property can be used to add space around elements?</p>
+        <label><input type="radio" name="q23" value="A"> A) padding</label><br>
+        <label><input type="radio" name="q23" value="B"> B) margin</label><br>
+        <label><input type="radio" name="q23" value="C"> C) space</label><br>
+        <label><input type="radio" name="q23" value="D"> D) both A and B</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>24. Which property is used to change the font of an element?</p>
+        <label><input type="radio" name="q24" value="A"> A) font-family</label><br>
+        <label><input type="radio" name="q24" value="B"> B) font-style</label><br>
+        <label><input type="radio" name="q24" value="C"> C) text-font</label><br>
+        <label><input type="radio" name="q24" value="D"> D) font-change</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>25. What is the purpose of the 'clear' property?</p>
+        <label><input type="radio" name="q25" value="A"> A) To prevent floating elements from affecting the layout.</label><br>
+        <label><input type="radio" name="q25" value="B"> B) To add a shadow effect.</label><br>
+        <label><input type="radio" name="q25" value="C"> C) To set the opacity of an element.</label><br>
+        <label><input type="radio" name="q25" value="D"> D) to change the background color</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>26. Which of the following is a CSS framework?</p>
+        <label><input type="radio" name="q26" value="A"> A) Bootstrap</label><br>
+        <label><input type="radio" name="q26" value="B"> B) jQuery</label><br>
+        <label><input type="radio" name="q26" value="C"> C) Node.js</label><br>
+        <label><input type="radio" name="q26" value="D"> D) Angular</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>27. Which of the following is NOT a valid CSS unit?</p>
+        <label><input type="radio" name="q27" value="A"> A) px</label><br>
+        <label><input type="radio" name="q27" value="B"> B) em</label><br>
+        <label><input type="radio" name="q27" value="C"> C) rem</label><br>
+        <label><input type="radio" name="q27" value="D"> D) percentage%</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>28. How can you import a Google Font into your CSS?</p>
+        <label><input type="radio" name="q28" value="A"> A) @import url('font-url');</label><br>
+        <label><input type="radio" name="q28" value="B"> B) import-font('font-url');</label><br>
+        <label><input type="radio" name="q28" value="C"> C) link-font('font-url');</label><br>
+        <label><input type="radio" name="q28" value="D"> D) @font-face { }</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>29. What is the purpose of the 'flex' property?</p>
+        <label><input type="radio" name="q29" value="A"> A) To create a flexible layout.</label><br>
+        <label><input type="radio" name="q29" value="B"> B) To adjust the size of the font.</label><br>
+        <label><input type="radio" name="q29" value="C"> C) To change the opacity of an element.</label><br>
+        <label><input type="radio" name="q29" value="D"> D) to define a border</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>30. What property controls the display of an element in a grid layout?</p>
+        <label><input type="radio" name="q30" value="A"> A) display: grid;</label><br>
+        <label><input type="radio" name="q30" value="B"> B) grid: true;</label><br>
+        <label><input type="radio" name="q30" value="C"> C) grid-layout: yes;</label><br>
+        <label><input type="radio" name="q30" value="D"> D) display: block;</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>31. What is the purpose of the 'transition' property?</p>
+        <label><input type="radio" name="q31" value="A"> A) To animate changes to CSS properties.</label><br>
+        <label><input type="radio" name="q31" value="B"> B) To control the duration of animations.</label><br>
+        <label><input type="radio" name="q31" value="C"> C) To change the layout of elements.</label><br>
+        <label><input type="radio" name="q31" value="D"> D) to apply filters</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>32. Which CSS property is used to create a shadow effect on text?</p>
+        <label><input type="radio" name="q32" value="A"> A) text-shadow</label><br>
+        <label><input type="radio" name="q32" value="B"> B) shadow-text</label><br>
+        <label><input type="radio" name="q32" value="C"> C) box-shadow</label><br>
+        <label><input type="radio" name="q32" value="D"> D) filter</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>33. Which of the following is used for responsive design?</p>
+        <label><input type="radio" name="q33" value="A"> A) media queries</label><br>
+        <label><input type="radio" name="q33" value="B"> B) flexbox</label><br>
+        <label><input type="radio" name="q33" value="C"> C) grid</label><br>
+        <label><input type="radio" name="q33" value="D"> D) all of the above</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>34. Which property is used to change the alignment of text?</p>
+        <label><input type="radio" name="q34" value="A"> A) text-align</label><br>
+        <label><input type="radio" name="q34" value="B"> B) text-position</label><br>
+        <label><input type="radio" name="q34" value="C"> C) text-style</label><br>
+        <label><input type="radio" name="q34" value="D"> D) alignment</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>35. What is the purpose of the 'overflow' property?</p>
+        <label><input type="radio" name="q35" value="A"> A) To hide or show overflowed content.</label><br>
+        <label><input type="radio" name="q35" value="B"> B) To control the display of the scrollbar.</label><br>
+        <label><input type="radio" name="q35" value="C"> C) To set the opacity of an element.</label><br>
+        <label><input type="radio" name="q35" value="D">) to change the background</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>36. How do you make a list display with bullets in CSS?</p>
+        <label><input type="radio" name="q36" value="A"> A) list-style-type: bullet;</label><br>
+        <label><input type="radio" name="q36" value="B"> B) list-style: bullet;</label><br>
+        <label><input type="radio" name="q36" value="C"> C) list-type: bullet;</label><br>
+        <label><input type="radio" name="q36" value="D"> D) bullet: list-type;</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>37. Which of the following is a CSS selector?</p>
+        <label><input type="radio" name="q37" value="A"> A) .classname</label><br>
+        <label><input type="radio" name="q37" value="B"> B) #idname</label><br>
+        <label><input type="radio" name="q37" value="C"> C) Both A and B</label><br>
+        <label><input type="radio" name="q37" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>38. How can you apply multiple styles to an element in CSS?</p>
+        <label><input type="radio" name="q38" value="A"> A) Separate styles with a comma.</label><br>
+        <label><input type="radio" name="q38" value="B"> B) Use semicolons.</label><br>
+        <label><input type="radio" name="q38" value="C"> C) Use a single class name.</label><br>
+        <label><input type="radio" name="q38" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>39. What does the 'display' property control?</p>
+        <label><input type="radio" name="q39" value="A"> A) The layout of an element.</label><br>
+        <label><input type="radio" name="q39" value="B"> B) The visibility of an element.</label><br>
+        <label><input type="radio" name="q39" value="C"> C) The size of an element.</label><br>
+        <label><input type="radio" name="q39" value="D"> D) all of the above</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>40. Which CSS property is used to control the animation speed?</p>
+        <label><input type="radio" name="q40" value="A"> A) animation-duration</label><br>
+        <label><input type="radio" name="q40" value="B"> B) animation-speed</label><br>
+        <label><input type="radio" name="q40" value="C"> C) speed</label><br>
+        <label><input type="radio" name="q40" value="D"> D) duration</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>41. What does the 'flex-direction' property define?</p>
+        <label><input type="radio" name="q41" value="A"> A) The direction of the flex items.</label><br>
+        <label><input type="radio" name="q41" value="B"> B) The order of the flex items.</label><br>
+        <label><input type="radio" name="q41" value="C"> C) The size of the flex items.</label><br>
+        <label><input type="radio" name="q41" value="D"> D) all of the above</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>42. Which property is used to add a border around an element?</p>
+        <label><input type="radio" name="q42" value="A"> A) border</label><br>
+        <label><input type="radio" name="q42" value="B"> B) border-style</label><br>
+        <label><input type="radio" name="q42" value="C"> C) border-width</label><br>
+        <label><input type="radio" name="q42" value="D"> D) all of the above</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>43. What is the purpose of the 'visibility' property?</p>
+        <label><input type="radio" name="q43" value="A"> A) To hide or show an element.</label><br>
+        <label><input type="radio" name="q43" value="B"> B) To control the opacity of an element.</label><br>
+        <label><input type="radio" name="q43" value="C"> C) To change the background color.</label><br>
+        <label><input type="radio" name="q43" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>44. Which property is used to create space between the border and content of an element?</p>
+        <label><input type="radio" name="q44" value="A"> A) margin</label><br>
+        <label><input type="radio" name="q44" value="B"> B) padding</label><br>
+        <label><input type="radio" name="q44" value="C"> C) spacing</label><br>
+        <label><input type="radio" name="q44" value="D"> D) border-spacing</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>45. What does the 'min-width' property do?</p>
+        <label><input type="radio" name="q45" value="A"> A) It sets the minimum width of an element.</label><br>
+        <label><input type="radio" name="q45" value="B"> B) It sets the maximum width of an element.</label><br>
+        <label><input type="radio" name="q45" value="C"> C) It controls the height of an element.</label><br>
+        <label><input type="radio" name="q45" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>46. Which property is used to set the background color of an element?</p>
+        <label><input type="radio" name="q46" value="A"> A) background-color</label><br>
+        <label><input type="radio" name="q46" value="B"> B) color</label><br>
+        <label><input type="radio" name="q46" value="C"> C) bg-color</label><br>
+        <label><input type="radio" name="q46" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>47. What does the 'position' property control?</p>
+        <label><input type="radio" name="q47" value="A"> A) The positioning method of an element.</label><br>
+        <label><input type="radio" name="q47" value="B"> B) The visibility of an element.</label><br>
+        <label><input type="radio" name="q47" value="C"> C) The opacity of an element.</label><br>
+        <label><input type="radio" name="q47" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>48. Which property is used to change the font size of an element?</p>
+        <label><input type="radio" name="q48" value="A"> A) font-size</label><br>
+        <label><input type="radio" name="q48" value="B"> B) text-size</label><br>
+        <label><input type="radio" name="q48" value="C"> C) size</label><br>
+        <label><input type="radio" name="q48" value="D"> D) font-style</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>49. What does the 'opacity' property control?</p>
+        <label><input type="radio" name="q49" value="A"> A) The transparency level of an element.</label><br>
+        <label><input type="radio" name="q49" value="B"> B) The color of an element.</label><br>
+        <label><input type="radio" name="q49" value="C"> C) The visibility of an element.</label><br>
+        <label><input type="radio" name="q49" value="D"> D) none</label>
+    </div>
+    
+    <div class="question" data-aos="zoom-in">
+        <p>50. Which property is used to change the display of an element to a block?</p>
+        <label><input type="radio" name="q50" value="A"> A) display: block;</label><br>
+        <label><input type="radio" name="q50" value="B"> B) block: true;</label><br>
+        <label><input type="radio" name="q50" value="C"> C) element: block;</label><br>
+        <label><input type="radio" name="q50" value="D"> D) display: inline;</label>
+    </div>
+
+    <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+</form>
+
+<div class="result" id="result"></div>
+</div>
+
+<script src="/java/css.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>

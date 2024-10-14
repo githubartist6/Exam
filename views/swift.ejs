@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="swift.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Swift Quiz</h1>
+        <form id="quiz-form">
+            <div class="question" data-aos="zoom-in">
+                <p>1. What is Swift?</p>
+                <input type="radio" name="q1" value="A"> <label>A) A web framework</label><br>
+                <input type="radio" name="q1" value="B"> <label>B) A programming language</label><br>
+                <input type="radio" name="q1" value="C"> <label>C) A database</label><br>
+                <input type="radio" name="q1" value="D"> <label>D) An operating system</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>2. What is the file extension for a Swift source file?</p>
+                <input type="radio" name="q2" value="A"> <label>A) .sw</label><br>
+                <input type="radio" name="q2" value="B"> <label>B) .swift</label><br>
+                <input type="radio" name="q2" value="C"> <label>C) .swi</label><br>
+                <input type="radio" name="q2" value="D"> <label>D) .txt</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>3. Which keyword is used to declare a constant in Swift?</p>
+                <input type="radio" name="q3" value="A"> <label>A) let</label><br>
+                <input type="radio" name="q3" value="B"> <label>B) var</label><br>
+                <input type="radio" name="q3" value="C"> <label>C) const</label><br>
+                <input type="radio" name="q3" value="D"> <label>D) static</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>4. What is the default access level of a class in Swift?</p>
+                <input type="radio" name="q4" value="A"> <label>A) Internal</label><br>
+                <input type="radio" name="q4" value="B"> <label>B) Public</label><br>
+                <input type="radio" name="q4" value="C"> <label>C) Private</label><br>
+                <input type="radio" name="q4" value="D"> <label>D) Fileprivate</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>5. What is the correct way to declare an optional integer in Swift?</p>
+                <input type="radio" name="q5" value="A"> <label>A) var number: Int</label><br>
+                <input type="radio" name="q5" value="B"> <label>B) var number: Int?</label><br>
+                <input type="radio" name="q5" value="C"> <label>C) var number: Optional<Int></label><br>
+                <input type="radio" name="q5" value="D"> <label>D) Both B and C</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>6. What does the 'guard' statement do in Swift?</p>
+                <input type="radio" name="q6" value="A"> <label>A) It checks a condition and exits the scope if it fails.</label><br>
+                <input type="radio" name="q6" value="B"> <label>B) It creates a new variable.</label><br>
+                <input type="radio" name="q6" value="C"> <label>C) It is used for error handling.</label><br>
+                <input type="radio" name="q6" value="D"> <label>D) None of the above.</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>7. How do you define a function in Swift?</p>
+                <input type="radio" name="q7" value="A"> <label>A) func functionName() {}</label><br>
+                <input type="radio" name="q7" value="B"> <label>B) define functionName() {}</label><br>
+                <input type="radio" name="q7" value="C"> <label>C) function functionName() {}</label><br>
+                <input type="radio" name="q7" value="D"> <label>D) fn functionName() {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>8. What is the result of the expression `5 == 5` in Swift?</p>
+                <input type="radio" name="q8" value="A"> <label>A) true</label><br>
+                <input type="radio" name="q8" value="B"> <label>B) false</label><br>
+                <input type="radio" name="q8" value="C"> <label>C) 1</label><br>
+                <input type="radio" name="q8" value="D"> <label>D) 0</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>9. What type of loop is a 'for-in' loop?</p>
+                <input type="radio" name="q9" value="A"> <label>A) Conditional</label><br>
+                <input type="radio" name="q9" value="B"> <label>B) Iterative</label><br>
+                <input type="radio" name="q9" value="C"> <label>C) Infinite</label><br>
+                <input type="radio" name="q9" value="D"> <label>D) Recursive</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>10. What is the purpose of the 'defer' keyword?</p>
+                <input type="radio" name="q10" value="A"> <label>A) To declare a variable</label><br>
+                <input type="radio" name="q10" value="B"> <label>B) To delay execution of a block of code</label><br>
+                <input type="radio" name="q10" value="C"> <label>C) To handle errors</label><br>
+                <input type="radio" name="q10" value="D"> <label>D) To create a class</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>11. What does the 'final' keyword indicate in a class definition?</p>
+                <input type="radio" name="q11" value="A"> <label>A) The class cannot be inherited.</label><br>
+                <input type="radio" name="q11" value="B"> <label>B) The class cannot be instantiated.</label><br>
+                <input type="radio" name="q11" value="C"> <label>C) The class has no properties.</label><br>
+                <input type="radio" name="q11" value="D"> <label>D) The class can be subclassed.</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>12. Which of the following is a tuple in Swift?</p>
+                <input type="radio" name="q12" value="A"> <label>A) var point = (x: 10, y: 20)</label><br>
+                <input type="radio" name="q12" value="B"> <label>B) var point = [10, 20]</label><br>
+                <input type="radio" name="q12" value="C"> <label>C) var point: (Int, Int)</label><br>
+                <input type="radio" name="q12" value="D"> <label>D) Both A and C</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>13. What does 'self' refer to in a class?</p>
+                <input type="radio" name="q13" value="A"> <label>A) The superclass</label><br>
+                <input type="radio" name="q13" value="B"> <label>B) The current instance</label><br>
+                <input type="radio" name="q13" value="C"> <label>C) A global variable</label><br>
+                <input type="radio" name="q13" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>14. How do you create an array in Swift?</p>
+                <input type="radio" name="q14" value="A"> <label>A) var numbers = [1, 2, 3]</label><br>
+                <input type="radio" name="q14" value="B"> <label>B) var numbers: Array = [1, 2, 3]</label><br>
+                <input type="radio" name="q14" value="C"> <label>C) var numbers: [Int] = [1, 2, 3]</label><br>
+                <input type="radio" name="q14" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>15. Which operator is used for optional binding?</p>
+                <input type="radio" name="q15" value="A"> <label>A) if let</label><br>
+                <input type="radio" name="q15" value="B"> <label>B) guard let</label><br>
+                <input type="radio" name="q15" value="C"> <label>C) both A and B</label><br>
+                <input type="radio" name="q15" value="D"> <label>D) none of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>16. What is the main benefit of using closures in Swift?</p>
+                <input type="radio" name="q16" value="A"> <label>A) They can capture and store references to variables and constants from the surrounding context.</label><br>
+                <input type="radio" name="q16" value="B"> <label>B) They can only be used within classes.</label><br>
+                <input type="radio" name="q16" value="C"> <label>C) They are faster than functions.</label><br>
+                <input type="radio" name="q16" value="D"> <label>D) None of the above.</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>17. What is the purpose of the 'override' keyword?</p>
+                <input type="radio" name="q17" value="A"> <label>A) To declare a new class</label><br>
+                <input type="radio" name="q17" value="B"> <label>B) To provide a new implementation of an inherited method</label><br>
+                <input type="radio" name="q17" value="C"> <label>C) To prevent a method from being overridden</label><br>
+                <input type="radio" name="q17" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>18. What does 'nil' represent in Swift?</p>
+                <input type="radio" name="q18" value="A"> <label>A) A null value</label><br>
+                <input type="radio" name="q18" value="B"> <label>B) An optional</label><br>
+                <input type="radio" name="q18" value="C"> <label>C) An uninitialized variable</label><br>
+                <input type="radio" name="q18" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>19. Which of the following is true about Swift enums?</p>
+                <input type="radio" name="q19" value="A"> <label>A) They can have associated values</label><br>
+                <input type="radio" name="q19" value="B"> <label>B) They can have methods</label><br>
+                <input type="radio" name="q19" value="C"> <label>C) They can have computed properties</label><br>
+                <input type="radio" name="q19" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>20. How do you create a computed property?</p>
+                <input type="radio" name="q20" value="A"> <label>A) var property: Type { return value }</label><br>
+                <input type="radio" name="q20" value="B"> <label>B) func property() -> Type { return value }</label><br>
+                <input type="radio" name="q20" value="C"> <label>C) let property: Type = value</label><br>
+                <input type="radio" name="q20" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>21. What is the '@escaping' keyword used for?</p>
+                <input type="radio" name="q21" value="A"> <label>A) To indicate a closure that can outlive the function it was passed to</label><br>
+                <input type="radio" name="q21" value="B"> <label>B) To mark a method as asynchronous</label><br>
+                <input type="radio" name="q21" value="C"> <label>C) To declare an optional closure</label><br>
+                <input type="radio" name="q21" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>22. What is the main purpose of 'typealias' in Swift?</p>
+                <input type="radio" name="q22" value="A"> <label>A) To define a new type</label><br>
+                <input type="radio" name="q22" value="B"> <label>B) To create a synonym for an existing type</label><br>
+                <input type="radio" name="q22" value="C"> <label>C) To define a generic type</label><br>
+                <input type="radio" name="q22" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>23. What is the result of the expression `1.0 + 2.0` in Swift?</p>
+                <input type="radio" name="q23" value="A"> <label>A) 3</label><br>
+                <input type="radio" name="q23" value="B"> <label>B) 3.0</label><br>
+                <input type="radio" name="q23" value="C"> <label>C) "3"</label><br>
+                <input type="radio" name="q23" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>24. How do you create a set in Swift?</p>
+                <input type="radio" name="q24" value="A"> <label>A) var numbers = Set([1, 2, 3])</label><br>
+                <input type="radio" name="q24" value="B"> <label>B) var numbers: [1, 2, 3]</label><br>
+                <input type="radio" name="q24" value="C"> <label>C) var numbers = [Set(1, 2, 3)]</label><br>
+                <input type="radio" name="q24" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>25. What is a closure in Swift?</p>
+                <input type="radio" name="q25" value="A"> <label>A) A block of code that can be passed around</label><br>
+                <input type="radio" name="q25" value="B"> <label>B) A way to create a new variable</label><br>
+                <input type="radio" name="q25" value="C"> <label>C) A way to define a class</label><br>
+                <input type="radio" name="q25" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>26. What does the 'async' keyword indicate?</p>
+                <input type="radio" name="q26" value="A"> <label>A) A function runs synchronously</label><br>
+                <input type="radio" name="q26" value="B"> <label>B) A function can be paused</label><br>
+                <input type="radio" name="q26" value="C"> <label>C) A function has no return value</label><br>
+                <input type="radio" name="q26" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>27. How do you declare an array of strings in Swift?</p>
+                <input type="radio" name="q27" value="A"> <label>A) var names: [String]</label><br>
+                <input type="radio" name="q27" value="B"> <label>B) var names = ["Alice", "Bob"]</label><br>
+                <input type="radio" name="q27" value="C"> <label>C) var names: Array<String></label><br>
+                <input type="radio" name="q27" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>28. What is the output of the following code: `print("Hello, \(name)")` if name is "Alice"?</p>
+                <input type="radio" name="q28" value="A"> <label>A) Hello, Alice</label><br>
+                <input type="radio" name="q28" value="B"> <label>B) Hello, \(name)</label><br>
+                <input type="radio" name="q28" value="C"> <label>C) Hello, name</label><br>
+                <input type="radio" name="q28" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>29. How do you declare a variable with a default value?</p>
+                <input type="radio" name="q29" value="A"> <label>A) var number: Int = 10</label><br>
+                <input type="radio" name="q29" value="B"> <label>B) let number = 10</label><br>
+                <input type="radio" name="q29" value="C"> <label>C) var number = 10</label><br>
+                <input type="radio" name="q29" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>30. Which of the following is a valid way to handle errors in Swift?</p>
+                <input type="radio" name="q30" value="A"> <label>A) Using try-catch blocks</label><br>
+                <input type="radio" name="q30" value="B"> <label>B) Using optional values</label><br>
+                <input type="radio" name="q30" value="C"> <label>C) Using assertions</label><br>
+                <input type="radio" name="q30" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>31. What does the 'inout' keyword do?</p>
+                <input type="radio" name="q31" value="A"> <label>A) It allows a function to modify its argument</label><br>
+                <input type="radio" name="q31" value="B"> <label>B) It declares a closure</label><br>
+                <input type="radio" name="q31" value="C"> <label>C) It indicates a constant value</label><br>
+                <input type="radio" name="q31" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>32. What is the difference between 'struct' and 'class'?</p>
+                <input type="radio" name="q32" value="A"> <label>A) Structs are value types; classes are reference types.</label><br>
+                <input type="radio" name="q32" value="B"> <label>B) Structs cannot have methods; classes can.</label><br>
+                <input type="radio" name="q32" value="C"> <label>C) Classes cannot have properties; structs can.</label><br>
+                <input type="radio" name="q32" value="D"> <label>D) None of the above.</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>33. Which keyword is used to create a subclass in Swift?</p>
+                <input type="radio" name="q33" value="A"> <label>A) subclass</label><br>
+                <input type="radio" name="q33" value="B"> <label>B) extends</label><br>
+                <input type="radio" name="q33" value="C"> <label>C) inherits</label><br>
+                <input type="radio" name="q33" value="D"> <label>D) class</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>34. What is an 'extension' in Swift?</p>
+                <input type="radio" name="q34" value="A"> <label>A) A way to add functionality to an existing type</label><br>
+                <input type="radio" name="q34" value="B"> <label>B) A way to create a new type</label><br>
+                <input type="radio" name="q34" value="C"> <label>C) A way to define a generic type</label><br>
+                <input type="radio" name="q34" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>35. What is a 'protocol' in Swift?</p>
+                <input type="radio" name="q35" value="A"> <label>A) A blueprint of methods and properties</label><br>
+                <input type="radio" name="q35" value="B"> <label>B) A way to create a new type</label><br>
+                <input type="radio" name="q35" value="C"> <label>C) A way to handle errors</label><br>
+                <input type="radio" name="q35" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>36. What is '@objc' used for?</p>
+                <input type="radio" name="q36" value="A"> <label>A) To expose Swift code to Objective-C</label><br>
+                <input type="radio" name="q36" value="B"> <label>B) To create a class</label><br>
+                <input type="radio" name="q36" value="C"> <label>C) To define a method</label><br>
+                <input type="radio" name="q36" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>37. How do you iterate over a dictionary in Swift?</p>
+                <input type="radio" name="q37" value="A"> <label>A) for (key, value) in dictionary</label><br>
+                <input type="radio" name="q37" value="B"> <label>B) for key in dictionary.keys</label><br>
+                <input type="radio" name="q37" value="C"> <label>C) for value in dictionary.values</label><br>
+                <input type="radio" name="q37" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>38. What is '@escaping' used for in Swift?</p>
+                <input type="radio" name="q38" value="A"> <label>A) To indicate that a closure can escape the lifetime of the function</label><br>
+                <input type="radio" name="q38" value="B"> <label>B) To declare a method</label><br>
+                <input type="radio" name="q38" value="C"> <label>C) To define a class</label><br>
+                <input type="radio" name="q38" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>39. What is the output of the following code: `print([1, 2, 3].map { $0 * 2 })`?</p>
+                <input type="radio" name="q39" value="A"> <label>A) [1, 2, 3]</label><br>
+                <input type="radio" name="q39" value="B"> <label>B) [2, 4, 6]</label><br>
+                <input type="radio" name="q39" value="C"> <label>C) [3, 4, 5]</label><br>
+                <input type="radio" name="q39" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>40. What is a 'lazy' property in Swift?</p>
+                <input type="radio" name="q40" value="A"> <label>A) A property that is not initialized until it is accessed</label><br>
+                <input type="radio" name="q40" value="B"> <label>B) A property that is always initialized</label><br>
+                <input type="radio" name="q40" value="C"> <label>C) A property that has a default value</label><br>
+                <input type="radio" name="q40" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>41. What is 'subscript' in Swift?</p>
+                <input type="radio" name="q41" value="A"> <label>A) A way to access elements in a collection</label><br>
+                <input type="radio" name="q41" value="B"> <label>B) A way to declare a function</label><br>
+                <input type="radio" name="q41" value="C"> <label>C) A way to create a new type</label><br>
+                <input type="radio" name="q41" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>42. What is the 'guard' statement used for?</p>
+                <input type="radio" name="q42" value="A"> <label>A) To exit a scope if a condition is not met</label><br>
+                <input type="radio" name="q42" value="B"> <label>B) To define a variable</label><br>
+                <input type="radio" name="q42" value="C"> <label>C) To handle errors</label><br>
+                <input type="radio" name="q42" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>43. What does 'self' refer to in Swift?</p>
+                <input type="radio" name="q43" value="A"> <label>A) The current instance of a class or struct</label><br>
+                <input type="radio" name="q43" value="B"> <label>B) The superclass of a class</label><br>
+                <input type="radio" name="q43" value="C"> <label>C) A global variable</label><br>
+                <input type="radio" name="q43" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>44. How do you declare a variable that can hold an optional value in Swift?</p>
+                <input type="radio" name="q44" value="A"> <label>A) var name: String?</label><br>
+                <input type="radio" name="q44" value="B"> <label>B) var name: Optional<String></label><br>
+                <input type="radio" name="q44" value="C"> <label>C) let name: String!</label><br>
+                <input type="radio" name="q44" value="D"> <label>D) All of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>45. What is a 'static' method in Swift?</p>
+                <input type="radio" name="q45" value="A"> <label>A) A method that belongs to the type itself rather than an instance</label><br>
+                <input type="radio" name="q45" value="B"> <label>B) A method that can be called without creating an instance</label><br>
+                <input type="radio" name="q45" value="C"> <label>C) Both A and B</label><br>
+                <input type="radio" name="q45" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>46. What is 'optional chaining' in Swift?</p>
+                <input type="radio" name="q46" value="A"> <label>A) A way to safely access properties and methods on optional values</label><br>
+                <input type="radio" name="q46" value="B"> <label>B) A way to declare optional variables</label><br>
+                <input type="radio" name="q46" value="C"> <label>C) A way to handle errors</label><br>
+                <input type="radio" name="q46" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>47. What is the result of the expression `5 == 5` in Swift?</p>
+                <input type="radio" name="q47" value="A"> <label>A) true</label><br>
+                <input type="radio" name="q47" value="B"> <label>B) false</label><br>
+                <input type="radio" name="q47" value="C"> <label>C) 1</label><br>
+                <input type="radio" name="q47" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>48. What is a 'computed property' in Swift?</p>
+                <input type="radio" name="q48" value="A"> <label>A) A property that calculates its value based on other properties</label><br>
+                <input type="radio" name="q48" value="B"> <label>B) A property that is constant</label><br>
+                <input type="radio" name="q48" value="C"> <label>C) A property with a default value</label><br>
+                <input type="radio" name="q48" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>49. What is 'type safety' in Swift?</p>
+                <input type="radio" name="q49" value="A"> <label>A) The ability to ensure that a variable holds a value of a specific type</label><br>
+                <input type="radio" name="q49" value="B"> <label>B) The ability to create new types</label><br>
+                <input type="radio" name="q49" value="C"> <label>C) The ability to convert types</label><br>
+                <input type="radio" name="q49" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>50. What is 'concurrency' in Swift?</p>
+                <input type="radio" name="q50" value="A"> <label>A) The ability to run multiple tasks simultaneously</label><br>
+                <input type="radio" name="q50" value="B"> <label>B) The ability to handle errors</label><br>
+                <input type="radio" name="q50" value="C"> <label>C) The ability to create new types</label><br>
+                <input type="radio" name="q50" value="D"> <label>D) None of the above</label>
+            </div>
+            
+            
+            <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+    <script src="/java/swift.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

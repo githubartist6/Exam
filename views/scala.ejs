@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scla Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="scla.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Scala Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the output of `println(1 + 1)` in Scala?</p>
+            <input type="radio" name="q1" value="A"> <label>A) 1</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) 11</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which keyword is used to define a class in Scala?</p>
+            <input type="radio" name="q2" value="A"> <label>A) class</label><br>
+            <input type="radio" name="q2" value="B"> <label>B) object</label><br>
+            <input type="radio" name="q2" value="C"> <label>C) def</label><br>
+            <input type="radio" name="q2" value="D"> <label>D) trait</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. How do you define a function in Scala?</p>
+            <input type="radio" name="q3" value="A"> <label>A) def myFunction() {}</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) function myFunction() {}</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) create myFunction() {}</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) define myFunction() {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. What is the purpose of the `val` keyword in Scala?</p>
+            <input type="radio" name="q4" value="A"> <label>A) To declare a mutable variable</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) To declare an immutable variable</label><br>
+            <input type="radio" name="q4" value="C"> <label>C) To create a function</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) To define a class</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. How do you define a trait in Scala?</p>
+            <input type="radio" name="q5" value="A"> <label>A) trait MyTrait {}</label><br>
+            <input type="radio" name="q5" value="B"> <label>B) define MyTrait {}</label><br>
+            <input type="radio" name="q5" value="C"> <label>C) create MyTrait {}</label><br>
+            <input type="radio" name="q5" value="D"> <label>D) struct MyTrait {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What does the `Option` type in Scala represent?</p>
+            <input type="radio" name="q6" value="A"> <label>A) A value that can be present or absent</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) A mutable variable</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) A collection type</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) A threading mechanism</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. What is the result of `List(1, 2, 3).map(_ * 2)`?</p>
+            <input type="radio" name="q7" value="A"> <label>A) List(2, 4, 6)</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) List(1, 2, 3)</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) List(1, 4, 9)</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. How do you create a new object in Scala?</p>
+            <input type="radio" name="q8" value="A"> <label>A) new MyClass()</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) create MyClass()</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) object MyClass {}</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) def MyClass() {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. What is the purpose of the `case class` in Scala?</p>
+            <input type="radio" name="q9" value="A"> <label>A) To create a mutable class</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) To provide default implementations of methods</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) To define an immutable data structure</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) To create a trait</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. How do you define a for-comprehension in Scala?</p>
+            <input type="radio" name="q10" value="A"> <label>A) for (x <- collection) {}</label><br>
+            <input type="radio" name="q10" value="B"> <label>B) foreach (x in collection) {}</label><br>
+            <input type="radio" name="q10" value="C"> <label>C) for comprehension { x in collection }</label><br>
+            <input type="radio" name="q10" value="D"> <label>D) for(x: Type in collection) {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What is pattern matching in Scala?</p>
+            <input type="radio" name="q11" value="A"> <label>A) A way to match types</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) A way to destructure data</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) A way to create loops</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. How do you handle exceptions in Scala?</p>
+            <input type="radio" name="q12" value="A"> <label>A) Using try-catch blocks</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) Using if-else statements</label><br>
+            <input type="radio" name="q12" value="C"> <label>C) Using match statements</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. What is a companion object in Scala?</p>
+            <input type="radio" name="q13" value="A"> <label>A) An object with the same name as a class</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) An object used for testing</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) A singleton object</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) An interface</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. What is the difference between `var` and `val` in Scala?</p>
+            <input type="radio" name="q14" value="A"> <label>A) `var` is mutable; `val` is immutable</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) `var` is immutable; `val` is mutable</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) Both are mutable</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) Both are immutable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. How do you define a generic type in Scala?</p>
+            <input type="radio" name="q15" value="A"> <label>A) class MyClass[T] {}</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) class MyClass[T: Type] {}</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) create MyClass[T] {}</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) class MyClass(type T) {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. What does the `=>` symbol signify in Scala?</p>
+            <input type="radio" name="q16" value="A"> <label>A) It denotes a function literal</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) It is used for comparisons</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) It defines a class</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) It denotes a type</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. How do you create an immutable collection in Scala?</p>
+            <input type="radio" name="q17" value="A"> <label>A) List(1, 2, 3)</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) var myList = List(1, 2, 3)</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) Array(1, 2, 3)</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) Set(1, 2, 3)</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. What does the `yield` keyword do in Scala?</p>
+            <input type="radio" name="q18" value="A"> <label>A) Returns a value from a loop</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) Ends a function</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) Declares a variable</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) Creates a new thread</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is the result of `Set(1, 2, 3).contains(2)`?</p>
+            <input type="radio" name="q19" value="A"> <label>A) true</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) false</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) 2</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. How do you create a mutable list in Scala?</p>
+            <input type="radio" name="q20" value="A"> <label>A) var myList = List(1, 2, 3)</label><br>
+            <input type="radio" name="q20" value="B"> <label>B) var myList = scala.collection.mutable.ListBuffer(1, 2, 3)</label><br>
+            <input type="radio" name="q20" value="C"> <label>C) myList = List(1, 2, 3)</label><br>
+            <input type="radio" name="q20" value="D"> <label>D) List(1, 2, 3) mutable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. What is the purpose of the `with` keyword in Scala?</p>
+            <input type="radio" name="q21" value="A"> <label>A) To extend a class</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) To mix in traits</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) To declare a function</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) To create an object</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. How do you define an implicit parameter in Scala?</p>
+            <input type="radio" name="q22" value="A"> <label>A) def myFunc(implicit x: Int) {}</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) def myFunc(x: implicit Int) {}</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) implicit def myFunc(x: Int) {}</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) create myFunc(implicit x: Int) {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. What is the purpose of the `sealed` keyword in Scala?</p>
+            <input type="radio" name="q23" value="A"> <label>A) To restrict inheritance</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) To create a singleton</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) To define constants</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) To declare a class</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. How do you create a tuple in Scala?</p>
+            <input type="radio" name="q24" value="A"> <label>A) (1, "Scala")</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) tuple(1, "Scala")</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) Tuple(1, "Scala")</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) (1; "Scala")</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. How do you perform pattern matching with a case class?</p>
+            <input type="radio" name="q25" value="A"> <label>A) match { case MyClass(x) => x }</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) case MyClass(x) {}</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) if(MyClass(x)) {}</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) match MyClass(x) {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. How do you define a primary constructor in Scala?</p>
+            <input type="radio" name="q26" value="A"> <label>A) class MyClass(val x: Int) {}</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) MyClass(x: Int) {}</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) constructor MyClass(val x: Int) {}</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) class MyClass { x: Int }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. What is an `abstract class` in Scala?</p>
+            <input type="radio" name="q27" value="A"> <label>A) A class that cannot be instantiated</label><br>
+            <input type="radio" name="q27" value="B"> <label>B) A class with all methods defined</label><br>
+            <input type="radio" name="q27" value="C"> <label>C) A class with only static methods</label><br>
+            <input type="radio" name="q27" value="D"> <label>D) A class with no members</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. How do you create a `for` loop in Scala?</p>
+            <input type="radio" name="q28" value="A"> <label>A) for (i <- 1 to 10) {}</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) loop (i from 1 to 10) {}</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) foreach (i in 1 to 10) {}</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) create for(i: Int in 1 to 10) {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. What is the purpose of the `trait` in Scala?</p>
+            <input type="radio" name="q29" value="A"> <label>A) To define a class</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) To provide reusable interfaces</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) To manage memory</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) To create a collection</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. What does the `@` symbol denote in Scala?</p>
+            <input type="radio" name="q30" value="A"> <label>A) An annotation</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) A decorator</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) A type</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) A keyword</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>31. How do you create a singleton object in Scala?</p>
+            <input type="radio" name="q31" value="A"> <label>A) object MyObject {}</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) class MyObject {}</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) create MyObject {}</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) singleton MyObject {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. What is an `implicit class` in Scala?</p>
+            <input type="radio" name="q32" value="A"> <label>A) A class that can be instantiated without `new`</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) A class that adds methods to existing types</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) A class with no parameters</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) A class defined inside another class</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. How do you declare a `case object` in Scala?</p>
+            <input type="radio" name="q33" value="A"> <label>A) case object MyObject {}</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) object MyObject {}</label><br>
+            <input type="radio" name="q33" value="C)"> <label>C) MyObject() {}</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) create case object MyObject {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. What is the result of `Map("a" -> 1, "b" -> 2).get("a")`?</p>
+            <input type="radio" name="q34" value="A"> <label>A) Some(1)</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) None</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) 1</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) "a"</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. How do you define a `List` in Scala?</p>
+            <input type="radio" name="q35" value="A"> <label>A) List(1, 2, 3)</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) create List(1, 2, 3)</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) new List(1, 2, 3)</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) List.create(1, 2, 3)</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. What is the output of `println(5.toString)`?</p>
+            <input type="radio" name="q36" value="A"> <label>A) 5</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) "5"</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) 5.0</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. What is the purpose of the `self` keyword in Scala?</p>
+            <input type="radio" name="q37" value="A"> <label>A) To refer to the current instance</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) To create a new object</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) To define a method</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) To manage memory</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. How do you perform a pattern match on a type in Scala?</p>
+            <input type="radio" name="q38" value="A"> <label>A) match { case _: MyType => }</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) if (x.isInstanceOf[MyType]) {}</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) case MyType(x) {}</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) match MyType(x) {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. How do you define an `enum` in Scala?</p>
+            <input type="radio" name="q39" value="A"> <label>A) enum MyEnum { case A, B }</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) object MyEnum { val A, B }</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) class MyEnum { case A, B }</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) define MyEnum { A, B }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What is the output of `Seq(1, 2, 3).reverse`?</p>
+            <input type="radio" name="q40" value="A"> <label>A) Seq(3, 2, 1)</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) Seq(1, 2, 3)</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) List(1, 2, 3)</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) None of the above</label>
+        </div>        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/scala.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

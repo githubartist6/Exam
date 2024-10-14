@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="php.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Php Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What does PHP stand for?</p>
+            <label><input type="radio" name="q1" value="A"> A) Personal Home Page</label><br>
+            <label><input type="radio" name="q1" value="B"> B) Professional Home Page</label><br>
+            <label><input type="radio" name="q1" value="C"> C) PHP: Hypertext Preprocessor</label><br>
+            <label><input type="radio" name="q1" value="D"> D) Private Home Page</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. Which function is used to include the contents of one PHP file into another?</p>
+            <label><input type="radio" name="q2" value="A"> A) include()</label><br>
+            <label><input type="radio" name="q2" value="B"> B) require()</label><br>
+            <label><input type="radio" name="q2" value="C"> C) require_once()</label><br>
+            <label><input type="radio" name="q2" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. How do you define a constant in PHP?</p>
+            <label><input type="radio" name="q3" value="A"> A) constant('NAME', 'value')</label><br>
+            <label><input type="radio" name="q3" value="B"> B) define('NAME', 'value')</label><br>
+            <label><input type="radio" name="q3" value="C"> C) const NAME = 'value'</label><br>
+            <label><input type="radio" name="q3" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. Which superglobal array is used to collect form data?</p>
+            <label><input type="radio" name="q4" value="A"> A) $_GET</label><br>
+            <label><input type="radio" name="q4" value="B"> B) $_POST</label><br>
+            <label><input type="radio" name="q4" value="C"> C) $_REQUEST</label><br>
+            <label><input type="radio" name="q4" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. What is the correct way to start a PHP block?</p>
+            <label><input type="radio" name="q5" value="A"> A) &lt;?php</label><br>
+            <label><input type="radio" name="q5" value="B"> B) &lt;php&gt;</label><br>
+            <label><input type="radio" name="q5" value="C"> C) &lt;?PHP&gt;</label><br>
+            <label><input type="radio" name="q5" value="D"> D) &lt;script language="php"&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What will be the output of the following code?</p>
+            <pre>echo 5 + "10 Little Piggies";</pre>
+            <label><input type="radio" name="q6" value="A"> A) 15</label><br>
+            <label><input type="radio" name="q6" value="B"> B) 5</label><br>
+            <label><input type="radio" name="q6" value="C"> C) 10</label><br>
+            <label><input type="radio" name="q6" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. How can you retrieve the value of a cookie named "user"?</p>
+            <label><input type="radio" name="q7" value="A"> A) $_COOKIE['user']</label><br>
+            <label><input type="radio" name="q7" value="B"> B) $_SESSION['user']</label><br>
+            <label><input type="radio" name="q7" value="C"> C) $_REQUEST['user']</label><br>
+            <label><input type="radio" name="q7" value="D"> D) get_cookie('user')</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. Which of the following is NOT a valid variable name in PHP?</p>
+            <label><input type="radio" name="q8" value="A"> A) $myVar</label><br>
+            <label><input type="radio" name="q8" value="B"> B) $my-var</label><br>
+            <label><input type="radio" name="q8" value="C"> C) $my_var</label><br>
+            <label><input type="radio" name="q8" value="D"> D) $myVar1</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. How do you declare an array in PHP?</p>
+            <label><input type="radio" name="q9" value="A"> A) $array = array();</label><br>
+            <label><input type="radio" name="q9" value="B"> B) $array = {};</label><br>
+            <label><input type="radio" name="q9" value="C"> C) $array = [];</label><br>
+            <label><input type="radio" name="q9" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. Which PHP function is used to send an HTTP header?</p>
+            <label><input type="radio" name="q10" value="A"> A) header()</label><br>
+            <label><input type="radio" name="q10" value="B"> B) http_header()</label><br>
+            <label><input type="radio" name="q10" value="C"> C) send_header()</label><br>
+            <label><input type="radio" name="q10" value="D"> D) set_header()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What will be the output of the following code?</p>
+            <pre>$a = 10; $b = "10"; var_dump($a == $b);</pre>
+            <label><input type="radio" name="q11" value="A"> A) true</label><br>
+            <label><input type="radio" name="q11" value="B"> B) false</label><br>
+            <label><input type="radio" name="q11" value="C"> C) 1</label><br>
+            <label><input type="radio" name="q11" value="D"> D) 0</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. Which function is used to connect to a MySQL database?</p>
+            <label><input type="radio" name="q12" value="A"> A) mysqli_connect()</label><br>
+            <label><input type="radio" name="q12" value="B"> B) mysql_connect()</label><br>
+            <label><input type="radio" name="q12" value="C"> C) db_connect()</label><br>
+            <label><input type="radio" name="q12" value="D"> D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. What is the purpose of the unset() function in PHP?</p>
+            <label><input type="radio" name="q13" value="A"> A) To delete a variable</label><br>
+            <label><input type="radio" name="q13" value="B"> B) To remove a session</label><br>
+            <label><input type="radio" name="q13" value="C"> C) To clear cookies</label><br>
+            <label><input type="radio" name="q13" value="D"> D) To destroy an array</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. Which of the following statements is used to start a session?</p>
+            <label><input type="radio" name="q14" value="A"> A) session_start();</label><br>
+            <label><input type="radio" name="q14" value="B"> B) start_session();</label><br>
+            <label><input type="radio" name="q14" value="C"> C) begin_session();</label><br>
+            <label><input type="radio" name="q14" value="D"> D) open_session();</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. What will the following code output?</p>
+            <pre>echo "Hello" . " World";</pre>
+            <label><input type="radio" name="q15" value="A"> A) Hello World</label><br>
+            <label><input type="radio" name="q15" value="B"> B) HelloWorld</label><br>
+            <label><input type="radio" name="q15" value="C"> C) Hello + World</label><br>
+            <label><input type="radio" name="q15" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. Which PHP function is used to get the length of a string?</p>
+            <label><input type="radio" name="q16" value="A"> A) strlen()</label><br>
+            <label><input type="radio" name="q16" value="B"> B) string_length()</label><br>
+            <label><input type="radio" name="q16" value="C"> C) size_of()</label><br>
+            <label><input type="radio" name="q16" value="D"> D) count()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. How do you comment in PHP?</p>
+            <label><input type="radio" name="q17" value="A"> A) // Comment</label><br>
+            <label><input type="radio" name="q17" value="B"> B) # Comment</label><br>
+            <label><input type="radio" name="q17" value="C"> C) /* Comment */</label><br>
+            <label><input type="radio" name="q17" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. Which operator is used for string concatenation in PHP?</p>
+            <label><input type="radio" name="q18" value="A"> A) &</label><br>
+            <label><input type="radio" name="q18" value="B"> B) .</label><br>
+            <label><input type="radio" name="q18" value="C"> C) +</label><br>
+            <label><input type="radio" name="q18" value="D"> D) |</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What does the isset() function check?</p>
+            <label><input type="radio" name="q19" value="A"> A) If a variable is defined and is not null</label><br>
+            <label><input type="radio" name="q19" value="B"> B) If a variable is an array</label><br>
+            <label><input type="radio" name="q19" value="C"> C) If a variable is empty</label><br>
+            <label><input type="radio" name="q19" value="D"> D) If a variable is numeric</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. Which of the following can be used to handle exceptions in PHP?</p>
+            <label><input type="radio" name="q20" value="A"> A) try/catch</label><br>
+            <label><input type="radio" name="q20" value="B"> B) throw/catch</label><br>
+            <label><input type="radio" name="q20" value="C"> C) if/else</label><br>
+            <label><input type="radio" name="q20" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. What is the output of the following code?</p>
+            <pre>$arr = [1, 2, 3]; echo count($arr);</pre>
+            <label><input type="radio" name="q21" value="A"> A) 2</label><br>
+            <label><input type="radio" name="q21" value="B"> B) 3</label><br>
+            <label><input type="radio" name="q21" value="C"> C) 4</label><br>
+            <label><input type="radio" name="q21" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. How do you create a session variable in PHP?</p>
+            <label><input type="radio" name="q22" value="A"> A) $_SESSION['var'] = value;</label><br>
+            <label><input type="radio" name="q22" value="B"> B) session['var'] = value;</label><br>
+            <label><input type="radio" name="q22" value="C"> C) $var = session(value);</label><br>
+            <label><input type="radio" name="q22" value="D"> D) $var = $_SESSION['var'];</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. What will be the output of the following code?</p>
+            <pre>$x = 5; echo ++$x;</pre>
+            <label><input type="radio" name="q23" value="A"> A) 4</label><br>
+            <label><input type="radio" name="q23" value="B"> B) 5</label><br>
+            <label><input type="radio" name="q23" value="C"> C) 6</label><br>
+            <label><input type="radio" name="q23" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. Which of the following statements is correct about PHP arrays?</p>
+            <label><input type="radio" name="q24" value="A"> A) PHP arrays can only be numeric.</label><br>
+            <label><input type="radio" name="q24" value="B"> B) PHP arrays can only be associative.</label><br>
+            <label><input type="radio" name="q24" value="C"> C) PHP arrays can be both numeric and associative.</label><br>
+            <label><input type="radio" name="q24" value="D"> D) PHP does not support arrays.</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. What is the purpose of the die() function?</p>
+            <label><input type="radio" name="q25" value="A"> A) To end a script</label><br>
+            <label><input type="radio" name="q25" value="B"> B) To terminate a database connection</label><br>
+            <label><input type="radio" name="q25" value="C"> C) To display an error message</label><br>
+            <label><input type="radio" name="q25" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. Which of the following functions can be used to redirect a user to a different page?</p>
+            <label><input type="radio" name="q26" value="A"> A) redirect()</label><br>
+            <label><input type="radio" name="q26" value="B"> B) header()</label><br>
+            <label><input type="radio" name="q26" value="C"> C) move()</label><br>
+            <label><input type="radio" name="q26" value="D"> D) location()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. What will the output of the following code?</p>
+            <pre>$a = "10"; $b = "20"; echo $a + $b;</pre>
+            <label><input type="radio" name="q27" value="A"> A) 30</label><br>
+            <label><input type="radio" name="q27" value="B"> B) 1020</label><br>
+            <label><input type="radio" name="q27" value="C"> C) 10 + 20</label><br>
+            <label><input type="radio" name="q27" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. Which PHP function is used to escape special characters in a string for use in an SQL statement?</p>
+            <label><input type="radio" name="q28" value="A"> A) escape_string()</label><br>
+            <label><input type="radio" name="q28" value="B"> B) mysqli_real_escape_string()</label><br>
+            <label><input type="radio" name="q28" value="C"> C) mysql_escape_string()</label><br>
+            <label><input type="radio" name="q28" value="D"> D) Both B and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. What does the trim() function do?</p>
+            <label><input type="radio" name="q29" value="A"> A) Removes whitespace from the beginning and end of a string</label><br>
+            <label><input type="radio" name="q29" value="B"> B) Trims an array</label><br>
+            <label><input type="radio" name="q29" value="C"> C) Trims a number</label><br>
+            <label><input type="radio" name="q29" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. Which of the following is true about PHP?</p>
+            <label><input type="radio" name="q30" value="A"> A) PHP is a client-side language.</label><br>
+            <label><input type="radio" name="q30" value="B"> B) PHP is a server-side language.</label><br>
+            <label><input type="radio" name="q30" value="C"> C) PHP can be used for desktop applications.</label><br>
+            <label><input type="radio" name="q30" value="D"> D) Both B and C</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. What is the output of the following code?</p>
+            <pre>echo 5 + "10.5";</pre>
+            <label><input type="radio" name="q31" value="A"> A) 15.5</label><br>
+            <label><input type="radio" name="q31" value="B"> B) 15</label><br>
+            <label><input type="radio" name="q31" value="C"> C) 16</label><br>
+            <label><input type="radio" name="q31" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. Which function is used to get the current timestamp in PHP?</p>
+            <label><input type="radio" name="q32" value="A"> A) date()</label><br>
+            <label><input type="radio" name="q32" value="B"> B) time()</label><br>
+            <label><input type="radio" name="q32" value="C"> C) now()</label><br>
+            <label><input type="radio" name="q32" value="D"> D) timestamp()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. How can you reset a session variable in PHP?</p>
+            <label><input type="radio" name="q33" value="A"> A) $_SESSION['var'] = null;</label><br>
+            <label><input type="radio" name="q33" value="B"> B) unset($_SESSION['var']);</label><br>
+            <label><input type="radio" name="q33" value="C"> C) session_reset();</label><br>
+            <label><input type="radio" name="q33" value="D"> D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. Which of the following is a valid way to define an associative array?</p>
+            <label><input type="radio" name="q34" value="A"> A) $arr = array("key" => "value");</label><br>
+            <label><input type="radio" name="q34" value="B"> B) $arr = ["key" => "value"];</label><br>
+            <label><input type="radio" name="q34" value="C"> C) Both A and B</label><br>
+            <label><input type="radio" name="q34" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. What is the purpose of the PHP function htmlspecialchars()?</p>
+            <label><input type="radio" name="q35" value="A"> A) To convert special characters to HTML entities</label><br>
+            <label><input type="radio" name="q35" value="B"> B) To escape strings for SQL queries</label><br>
+            <label><input type="radio" name="q35" value="C"> C) To remove HTML tags from a string</label><br>
+            <label><input type="radio" name="q35" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. What does the function explode() do?</p>
+            <label><input type="radio" name="q36" value="A"> A) Splits a string by a specified delimiter</label><br>
+            <label><input type="radio" name="q36" value="B"> B) Joins array elements into a string</label><br>
+            <label><input type="radio" name="q36" value="C"> C) Converts a string to lowercase</label><br>
+            <label><input type="radio" name="q36" value="D"> D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which function is used to send JSON data in PHP?</p>
+            <label><input type="radio" name="q37" value="A"> A) json_encode()</label><br>
+            <label><input type="radio" name="q37" value="B"> B) json_decode()</label><br>
+            <label><input type="radio" name="q37" value="C"> C) json_send()</label><br>
+            <label><input type="radio" name="q37" value="D"> D) json_output()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. How can you include a file in PHP?</p>
+            <label><input type="radio" name="q38" value="A"> A) include("filename.php");</label><br>
+            <label><input type="radio" name="q38" value="B"> B) import("filename.php");</label><br>
+            <label><input type="radio" name="q38" value="C"> C) require("filename.php");</label><br>
+            <label><input type="radio" name="q38" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. Which of the following is the correct way to start a session?</p>
+            <label><input type="radio" name="q39" value="A"> A) session_start();</label><br>
+            <label><input type="radio" name="q39" value="B"> B) start_session();</label><br>
+            <label><input type="radio" name="q39" value="C"> C) session_begin();</label><br>
+            <label><input type="radio" name="q39" value="D"> D) begin_session();</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. What will the following code output?</p>
+            <pre>$x = "10"; echo $x + 5;</pre>
+            <label><input type="radio" name="q40" value="A"> A) 15</label><br>
+            <label><input type="radio" name="q40" value="B"> A) 105</label><br>
+            <label><input type="radio" name="q40" value="C"> A) 10</label><br>
+            <label><input type="radio" name="q40" value="D"> A) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. What does the function isset() check?</p>
+            <label><input type="radio" name="q41" value="A"> A) If a variable is defined</label><br>
+            <label><input type="radio" name="q41" value="B"> B) If a variable is null</label><br>
+            <label><input type="radio" name="q41" value="C"> C) If a variable is empty</label><br>
+            <label><input type="radio" name="q41" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. What is the correct way to declare a PHP class?</p>
+            <label><input type="radio" name="q42" value="A"> A) class ClassName {}</label><br>
+            <label><input type="radio" name="q42" value="B"> B) define ClassName {}</label><br>
+            <label><input type="radio" name="q42" value="C"> C) new ClassName {}</label><br>
+            <label><input type="radio" name="q42" value="D"> D) Class ClassName {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. What will the following code output?</p>
+            <pre>$array = [1, 2, 3]; echo end($array);</pre>
+            <label><input type="radio" name="q43" value="A"> A) 3</label><br>
+            <label><input type="radio" name="q43" value="B"> B) 1</label><br>
+            <label><input type="radio" name="q43" value="C"> B) 2</label><br>
+            <label><input type="radio" name="q43" value="D"> B) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. How do you get the last element of an array?</p>
+            <label><input type="radio" name="q44" value="A"> A) $array[count($array) - 1];</label><br>
+            <label><input type="radio" name="q44" value="B"> B) end($array);</label><br>
+            <label><input type="radio" name="q44" value="C"> C) last($array);</label><br>
+            <label><input type="radio" name="q44" value="D"> D) Both A and B</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. What is the output of the following code?</p>
+            <pre>$str = "Hello"; $str[0] = "h"; echo $str;</pre>
+            <label><input type="radio" name="q45" value="A"> A) Hello</label><br>
+            <label><input type="radio" name="q45" value="B"> B) hello</label><br>
+            <label><input type="radio" name="q45" value="C"> C) H</label><br>
+            <label><input type="radio" name="q45" value="D"> D) Error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. Which function is used to remove whitespace from the beginning and end of a string?</p>
+            <label><input type="radio" name="q46" value="A"> A) trim()</label><br>
+            <label><input type="radio" name="q46" value="B"> B) remove_spaces()</label><br>
+            <label><input type="radio" name="q46" value="C"> C) strip_whitespace()</label><br>
+            <label><input type="radio" name="q46" value="D"> D) clean_string()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. What is the purpose of the exit() function?</p>
+            <label><input type="radio" name="q47" value="A"> A) To stop script execution</label><br>
+            <label><input type="radio" name="q47" value="B"> B) To terminate the session</label><br>
+            <label><input type="radio" name="q47" value="C"> B) To end a database connection</label><br>
+            <label><input type="radio" name="q47" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. Which of the following is used to create a new array with specified values?</p>
+            <label><input type="radio" name="q48" value="A"> A) array()</label><br>
+            <label><input type="radio" name="q48" value="B"> B) new_array()</label><br>
+            <label><input type="radio" name="q48" value="C"> C) create_array()</label><br>
+            <label><input type="radio" name="q48" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What is the purpose of the include_once() function?</p>
+            <label><input type="radio" name="q49" value="A"> A) To include a file once</label><br>
+            <label><input type="radio" name="q49" value="B"> B) To include a file multiple times</label><br>
+            <label><input type="radio" name="q49" value="C"> C) To require a file once</label><br>
+            <label><input type="radio" name="q49" value="D"> D) Both A and C</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. Which function is used to get the server's information in PHP?</p>
+            <label><input type="radio" name="q50" value="A"> A) $_SERVER</label><br>
+            <label><input type="radio" name="q50" value="B"> B) server_info()</label><br>
+            <label><input type="radio" name="q50" value="C"> C) get_server_info()</label><br>
+            <label><input type="radio" name="q50" value="D"> D) Both A and C</label>
+        </div>
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/php.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

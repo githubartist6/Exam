@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="rust.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Rust Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the output of print(type([]))?</p>
+            <input type="radio" name="q1" value="A"> <label>A) &lt;class 'list'&gt;</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) &lt;class 'tuple'&gt;</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) &lt;class 'dict'&gt;</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) &lt;class 'set'&gt;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. What is the correct way to declare a variable in Rust?</p>
+            <input type="radio" name="q2" value="A"> <label>A) let x: i32 = 10;</label><br>
+            <input type="radio" name="q2" value="B"> <label>B) var x: i32 = 10;</label><br>
+            <input type="radio" name="q2" value="C"> <label>C) x: i32 = 10;</label><br>
+            <input type="radio" name="q2" value="D"> <label>D) define x: i32 = 10;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. Which of the following is used to handle errors in Rust?</p>
+            <input type="radio" name="q3" value="A"> <label>A) try/catch</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) Result</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) Exception</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) Handle</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. What is a trait in Rust?</p>
+            <input type="radio" name="q4" value="A"> <label>A) A class</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) A way to implement polymorphism</label><br>
+            <input type="radio" name="q4" value="C"> <label>C) A function</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) A variable type</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. Which keyword is used to create a new thread in Rust?</p>
+            <input type="radio" name="q5" value="A"> <label>A) start</label><br>
+            <input type="radio" name="q5" value="B"> <label>B) spawn</label><br>
+            <input type="radio" name="q5" value="C"> <label>C) thread</label><br>
+            <input type="radio" name="q5" value="D"> <label>D) new_thread</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. What does the `unsafe` keyword indicate in Rust?</p>
+            <input type="radio" name="q6" value="A"> <label>A) Safe code</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) Code that may cause undefined behavior</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) Code that is optimized</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) Code that is deprecated</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. How do you create a new vector in Rust?</p>
+            <input type="radio" name="q7" value="A"> <label>A) vec![1, 2, 3]</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) new_vec(1, 2, 3)</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) vector![1, 2, 3]</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) list![1, 2, 3]</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. What is a closure in Rust?</p>
+            <input type="radio" name="q8" value="A"> <label>A) A function without a name</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) A type of loop</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) A struct</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) A macro</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. Which of the following is the correct syntax to define a struct in Rust?</p>
+            <input type="radio" name="q9" value="A"> <label>A) struct Point { x: i32, y: i32 }</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) struct Point(x: i32, y: i32)</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) Point { x: i32, y: i32 }</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) define Point { x: i32, y: i32 }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. What is the purpose of the `Copy` trait in Rust?</p>
+            <input type="radio" name="q10" value="A"> <label>A) To allow cloning</label><br>
+            <input type="radio" name="q10" value="B"> <label>B) To enable stack allocation</label><br>
+            <input type="radio" name="q10" value="C"> <label>C) To indicate types that can be duplicated simply</label><br>
+            <input type="radio" name="q10" value="D"> <label>D) To manage memory</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. What is pattern matching used for in Rust?</p>
+            <input type="radio" name="q11" value="A"> <label>A) To create functions</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) To handle different types and values in a concise way</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) To write loops</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) To declare variables</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. How do you import a module in Rust?</p>
+            <input type="radio" name="q12" value="A"> <label>A) use module_name;</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) import module_name;</label><br>
+            <input type="radio" name="q12" value="C"> <label>C) include module_name;</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) require module_name;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. What is the default return type of a function in Rust?</p>
+            <input type="radio" name="q13" value="A"> <label>A) i32</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) ()</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) void</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) None</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. How do you handle ownership in Rust?</p>
+            <input type="radio" name="q14" value="A"> <label>A) By using pointers</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) Through the concept of borrowing</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) With reference counting</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) By using global variables</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. What keyword is used to define a constant in Rust?</p>
+            <input type="radio" name="q15" value="A"> <label>A) constant</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) let</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) const</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) static</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. Which of the following is a valid way to create an iterator in Rust?</p>
+            <input type="radio" name="q16" value="A"> <label>A) let iter = vec.iter();</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) let iter = vec.into_iter();</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) None of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. What is the use of the `cargo` command in Rust?</p>
+            <input type="radio" name="q17" value="A"> <label>A) To compile Rust code</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) To manage dependencies</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) To create new projects</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. How do you define an asynchronous function in Rust?</p>
+            <input type="radio" name="q18" value="A"> <label>A) async fn my_function() {}</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) fn my_function() async {}</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) async my_function() {}</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) define async my_function() {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is the main purpose of the `Box` type in Rust?</p>
+            <input type="radio" name="q19" value="A"> <label>A) To create a mutable variable</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) To allocate data on the heap</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) To create arrays</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) To define constants</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. How do you implement a trait for a struct in Rust?</p>
+            <input type="radio" name="q20" value="A"> <label>A) impl TraitName for StructName {}</label><br>
+            <input type="radio" name="q20" value="B"> <label>B) struct StructName: TraitName {}</label><br>
+            <input type="radio" name="q20" value="C"> <label>C) define TraitName for StructName {}</label><br>
+            <input type="radio" name="q20" value="D"> <label>D) implement TraitName {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. Which of the following types is not a primitive type in Rust?</p>
+            <input type="radio" name="q21" value="A"> <label>A) i32</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) bool</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) String</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) char</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. What is the purpose of the `RefCell` type in Rust?</p>
+            <input type="radio" name="q22" value="A"> <label>A) For mutable borrowing</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) For immutable borrowing</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) For managing lifetimes</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) For static variables</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. How can you create a slice in Rust?</p>
+            <input type="radio" name="q23" value="A"> <label>A) &vec[0..3]</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) vec.slice(0, 3)</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) &vec[..3]</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) slice(&vec[0], &vec[3])</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. What is a macro in Rust?</p>
+            <input type="radio" name="q24" value="A"> <label>A) A way to create functions</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) A way to generate code at compile time</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) A type of struct</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) A way to handle errors</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. What is the purpose of the `match` keyword in Rust?</p>
+            <input type="radio" name="q25" value="A"> <label>A) To create loops</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) To perform pattern matching</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) To handle errors</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) To define functions</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. What is a reference in Rust?</p>
+            <input type="radio" name="q26" value="A"> <label>A) A way to borrow data</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) A pointer to a variable</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) A type of variable</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) A function</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. How do you convert a string slice to a String in Rust?</p>
+            <input type="radio" name="q27" value="A"> <label>A) string_slice.to_string()</label><br>
+            <input type="radio" name="q27" value="B"> <label>B) String::from(string_slice)</label><br>
+            <input type="radio" name="q27" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q27" value="D"> <label>D) convert(string_slice)</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. Which of the following is not a collection type in Rust?</p>
+            <input type="radio" name="q28" value="A"> <label>A) Vec</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) HashMap</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) Array</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) Object</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. What does the `await` keyword do in Rust?</p>
+            <input type="radio" name="q29" value="A"> <label>A) It pauses an async function</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) It starts a new thread</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) It terminates a function</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) It creates a loop</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. What does the `dbg!` macro do in Rust?</p>
+            <input type="radio" name="q30" value="A"> <label>A) It prints the value to the console</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) It debugs code</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) It creates a log file</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) It runs tests</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>31. How do you define a mutable variable in Rust?</p>
+            <input type="radio" name="q31" value="A"> <label>A) let mut x = 5;</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) mut x = 5;</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) var x = 5;</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) define x = 5;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. What is the function of the `Drop` trait in Rust?</p>
+            <input type="radio" name="q32" value="A"> <label>A) To manage memory</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) To clean up resources when an object goes out of scope</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) To create new threads</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) To define constants</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. How do you access an element in a vector in Rust?</p>
+            <input type="radio" name="q33" value="A"> <label>A) vec[index]</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) vec.get(index)</label><br>
+            <input type="radio" name="q33" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) vec.at(index)</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. What is the purpose of the `unsafe` block in Rust?</p>
+            <input type="radio" name="q34" value="A"> <label>A) To allow mutable borrowing</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) To perform operations that may violate Rust's safety guarantees</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) To optimize performance</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) To manage memory manually</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. How do you create an enum in Rust?</p>
+            <input type="radio" name="q35" value="A"> <label>A) enum Color { Red, Green, Blue }</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) enum Color: Red, Green, Blue;</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) Color { Red, Green, Blue }</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) define Color { Red, Green, Blue }</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. What does the `?` operator do in Rust?</p>
+            <input type="radio" name="q36" value="A"> <label>A) It unwraps an Option or Result</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) It handles errors automatically</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) It creates a new variable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. What is the purpose of the `match` statement in Rust?</p>
+            <input type="radio" name="q37" value="A"> <label>A) To perform arithmetic</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) To handle control flow based on pattern matching</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) To create loops</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) To define structs</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. What is the result of trying to borrow a mutable reference while having an immutable reference?</p>
+            <input type="radio" name="q38" value="A"> <label>A) It compiles successfully</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) It causes a runtime error</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) It causes a compile-time error</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) It creates a new variable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. What is a lifetime in Rust?</p>
+            <input type="radio" name="q39" value="A"> <label>A) The duration of a variable's existence</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) The time a program runs</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) The time taken by a function to execute</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) The duration of a thread</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. How do you declare a constant with a specific type in Rust?</p>
+            <input type="radio" name="q40" value="A"> <label>A) const MY_CONSTANT: i32 = 10;</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) let MY_CONSTANT: i32 = 10;</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) define MY_CONSTANT: i32 = 10;</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) constant MY_CONSTANT: i32 = 10;</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. What is the purpose of the `panic!` macro in Rust?</p>
+            <input type="radio" name="q41" value="A"> <label>A) To log messages</label><br>
+            <input type="radio" name="q41" value="B"> <label>B) To terminate the program with an error</label><br>
+            <input type="radio" name="q41" value="C"> <label>C) To create new threads</label><br>
+            <input type="radio" name="q41" value="D"> <label>D) To handle exceptions</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. How do you create a new thread in Rust?</p>
+            <input type="radio" name="q42" value="A"> <label>A) thread::spawn(|| {});</label><br>
+            <input type="radio" name="q42" value="B"> <label>B) spawn(thread || {});</label><br>
+            <input type="radio" name="q42" value="C"> <label>C) new thread { };</label><br>
+            <input type="radio" name="q42" value="D"> <label>D) create thread { };</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. What does the `as` keyword do in Rust?</p>
+            <input type="radio" name="q43" value="A"> <label>A) It casts types</label><br>
+            <input type="radio" name="q43" value="B"> <label>B) It defines aliases</label><br>
+            <input type="radio" name="q43" value="C"> <label>C) It creates new variables</label><br>
+            <input type="radio" name="q43" value="D"> <label>D) It generates macros</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. How do you handle errors in Rust?</p>
+            <input type="radio" name="q44" value="A"> <label>A) Using try-catch blocks</label><br>
+            <input type="radio" name="q44" value="B"> <label>B) Using Result and Option types</label><br>
+            <input type="radio" name="q44" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q44" value="D"> <label>D) Using error codes</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. What is the purpose of the `Result` type in Rust?</p>
+            <input type="radio" name="q45" value="A"> <label>A) To handle errors and success</label><br>
+            <input type="radio" name="q45" value="B"> <label>B) To store collections</label><br>
+            <input type="radio" name="q45" value="C"> <label>C) To define constants</label><br>
+            <input type="radio" name="q45" value="D"> <label>D) To manage memory</label><br>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. What is the primary purpose of the `Copy` trait in Rust?</p>
+            <input type="radio" name="q46" value="A"> <label>A) To create deep copies of data</label><br>
+            <input type="radio" name="q46" value="B"> <label>B) To define how values are passed</label><br>
+            <input type="radio" name="q46" value="C"> <label>C) To allow types to be copied by value</label><br>
+            <input type="radio" name="q46" value="D"> <label>D) To manage memory</label><br>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. How do you define a module in Rust?</p>
+            <input type="radio" name="q47" value="A"> <label>A) mod my_module {}</label><br>
+            <input type="radio" name="q47" value="B"> <label>B) module my_module {}</label><br>
+            <input type="radio" name="q47" value="C"> <label>C) define my_module {}</label><br>
+            <input type="radio" name="q47" value="D"> <label>D) create my_module {}</label><br>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. What is the purpose of the `move` keyword in Rust?</p>
+            <input type="radio" name="q48" value="A"> <label>A) To transfer ownership of values</label><br>
+            <input type="radio" name="q48" value="B"> <label>B) To borrow values</label><br>
+            <input type="radio" name="q48" value="C"> <label>C) To create mutable variables</label><br>
+            <input type="radio" name="q48" value="D"> <label>D) To define constants</label><br>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What is the result of a failed borrow in Rust?</p>
+            <input type="radio" name="q49" value="A"> <label>A) It causes a compile-time error</label><br>
+            <input type="radio" name="q49" value="B"> <label>B) It causes a runtime error</label><br>
+            <input type="radio" name="q49" value="C"> <label>C) It creates a new variable</label><br>
+            <input type="radio" name="q49" value="D"> <label>D) It has no effect</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. How do you create a trait in Rust?</p>
+            <input type="radio" name="q50" value="A"> <label>A) trait MyTrait {}</label><br>
+            <input type="radio" name="q50" value="B"> <label>B) define MyTrait {}</label><br>
+            <input type="radio" name="q50" value="C"> <label>C) create MyTrait {}</label><br>
+            <input type="radio" name="q50" value="D"> <label>D) struct MyTrait {}</label><br>
+        </div>
+        
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/rust.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

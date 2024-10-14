@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golang Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="golang.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Golang Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is Go?</p>
+            <label><input type="radio" name="q1" value="A"> A) A compiled programming language</label><br>
+            <label><input type="radio" name="q1" value="B"> B) A scripting language</label><br>
+            <label><input type="radio" name="q1" value="C"> C) A markup language</label><br>
+            <label><input type="radio" name="q1" value="D"> D) An interpreted language</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>2. Who developed the Go programming language?</p>
+            <label><input type="radio" name="q2" value="A"> A) Microsoft</label><br>
+            <label><input type="radio" name="q2" value="B"> B) Google</label><br>
+            <label><input type="radio" name="q2" value="C"> C) Apple</label><br>
+            <label><input type="radio" name="q2" value="D"> D) IBM</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>3. What is the file extension for Go source files?</p>
+            <label><input type="radio" name="q3" value="A"> A) .go</label><br>
+            <label><input type="radio" name="q3" value="B"> B) .golang</label><br>
+            <label><input type="radio" name="q3" value="C"> C) .g</label><br>
+            <label><input type="radio" name="q3" value="D"> D) .gocode</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>4. How do you declare a variable in Go?</p>
+            <label><input type="radio" name="q4" value="A"> A) var x int</label><br>
+            <label><input type="radio" name="q4" value="B"> B) int x</label><br>
+            <label><input type="radio" name="q4" value="C"> C) x := int</label><br>
+            <label><input type="radio" name="q4" value="D"> D) declare x int</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>5. What is the zero value of an `int` in Go?</p>
+            <label><input type="radio" name="q5" value="A"> A) 0</label><br>
+            <label><input type="radio" name="q5" value="B"> B) null</label><br>
+            <label><input type="radio" name="q5" value="C"> C) -1</label><br>
+            <label><input type="radio" name="q5" value="D"> D) undefined</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>6. Name three basic data types in Go.</p>
+            <label><input type="radio" name="q6" value="A"> A) int, string, bool</label><br>
+            <label><input type="radio" name="q6" value="B"> B) number, text, flag</label><br>
+            <label><input type="radio" name="q6" value="C"> C) integer, char, float</label><br>
+            <label><input type="radio" name="q6" value="D"> A) byte, list, set</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>7. How do you define a constant in Go?</p>
+            <label><input type="radio" name="q7" value="A"> A) const PI = 3.14</label><br>
+            <label><input type="radio" name="q7" value="B"> B) constant PI = 3.14</label><br>
+            <label><input type="radio" name="q7" value="C"> C) let PI = 3.14</label><br>
+            <label><input type="radio" name="q7" value="D"> D) var PI = 3.14</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>8. What is a slice in Go?</p>
+            <label><input type="radio" name="q8" value="A"> A) A fixed-size array</label><br>
+            <label><input type="radio" name="q8" value="B"> B) A dynamically-sized array</label><br>
+            <label><input type="radio" name="q8" value="C"> C) A string</label><br>
+            <label><input type="radio" name="q8" value="D"> D) A map</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>9. How do you create an array in Go?</p>
+            <label><input type="radio" name="q9" value="A"> A) var arr [5]int</label><br>
+            <label><input type="radio" name="q9" value="B"> B) arr := [5]int{}</label><br>
+            <label><input type="radio" name="q9" value="C"> C) arr = new </label><br>
+            <label><input type="radio" name="q9" value="D"> D) array arr [5]int</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>10. Explain the difference between an array and a slice.</p>
+            <label><input type="radio" name="q10" value="A"> A) Arrays have fixed size; slices are dynamic</label><br>
+            <label><input type="radio" name="q10" value="B"> B) Arrays are mutable; slices are not</label><br>
+            <label><input type="radio" name="q10" value="C"> C) Slices can only store strings; arrays can store any type</label><br>
+            <label><input type="radio" name="q10" value="D"> D) Both are the same</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>11. How do you write a conditional statement in Go?</p>
+            <label><input type="radio" name="q11" value="A"> A) if (x > 0) {}</label><br>
+            <label><input type="radio" name="q11" value="B"> B) if x > 0 {} </label><br>
+            <label><input type="radio" name="q11" value="C"> C) if x > 0 then {} </label><br>
+            <label><input type="radio" name="q11" value="D"> D) if x > 0: {} </label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>12. What loop constructs are available in Go?</p>
+            <label><input type="radio" name="q12" value="A"> A) for, while, do-while</label><br>
+            <label><input type="radio" name="q12" value="B"> B) for</label><br>
+            <label><input type="radio" name="q12" value="C"> C) while</label><br>
+            <label><input type="radio" name="q12" value="D"> D) foreach</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>13. How do you exit a loop in Go?</p>
+            <label><input type="radio" name="q13" value="A"> A) break</label><br>
+            <label><input type="radio" name="q13" value="B"> B) exit</label><br>
+            <label><input type="radio" name="q13" value="C"> C) stop</label><br>
+            <label><input type="radio" name="q13" value="D"> D) continue</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>14. What is a `switch` statement in Go?</p>
+            <label><input type="radio" name="q14" value="A"> A) A way to handle multiple conditions</label><br>
+            <label><input type="radio" name="q14" value="B"> B) A type of loop</label><br>
+            <label><input type="radio" name="q14" value="C"> C) A way to declare variables</label><br>
+            <label><input type="radio" name="q14" value="D"> D) A type of function</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>15. Can you use `fallthrough` in a `switch` statement?</p>
+            <label><input type="radio" name="q15" value="A"> A) Yes</label><br>
+            <label><input type="radio" name="q15" value="B"> B) No</label><br>
+            <label><input type="radio" name="q15" value="C"> C) Only in the default case</label><br>
+            <label><input type="radio" name="q15" value="D"> D) Only with numbers</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>16. How do you declare a function in Go?</p>
+            <label><input type="radio" name="q16" value="A"> A) func myFunction() {}</label><br>
+            <label><input type="radio" name="q16" value="B"> B) function myFunction() {}</label><br>
+            <label><input type="radio" name="q16" value="C"> C) declare myFunction() {}</label><br>
+            <label><input type="radio" name="q16" value="D"> D) myFunction() {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>17. What are variadic functions in Go?</p>
+            <label><input type="radio" name="q17" value="A"> A) Functions that can take a variable number of arguments</label><br>
+            <label><input type="radio" name="q17" value="B"> B) Functions that return multiple values</label><br>
+            <label><input type="radio" name="q17" value="C"> C) Functions that can only take one argument</label><br>
+            <label><input type="radio" name="q17" value="D"> D) Functions that are recursive</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>18. How do you return multiple values from a function in Go?</p>
+            <label><input type="radio" name="q18" value="A"> A) return x, y</label><br>
+            <label><input type="radio" name="q18" value="B"> B) return (x, y)</label><br>
+            <label><input type="radio" name="q18" value="C"> C) return {x, y}</label><br>
+            <label><input type="radio" name="q18" value="D"> D) return x and y</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is a deferred function call?</p>
+            <label><input type="radio" name="q19" value="A"> A) A function that runs at the end of the program</label><br>
+            <label><input type="radio" name="q19" value="B"> B) A function that runs after the surrounding function completes</label><br>
+            <label><input type="radio" name="q19" value="C"> C) A function that runs on a separate thread</label><br>
+            <label><input type="radio" name="q19" value="D"> B) A function that cannot return values</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>20. How does the `defer` keyword work?</p>
+            <label><input type="radio" name="q20" value="A"> A) It allows a function to run before the main function</label><br>
+            <label><input type="radio" name="q20" value="B"> B) It postpones the execution of a function until the surrounding function returns</label><br>
+            <label><input type="radio" name="q20" value="C"> C) It creates a new goroutine</label><br>
+            <label><input type="radio" name="q20" value="D"> B) It makes a function asynchronous</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>21. How do you define a struct in Go?</p>
+            <label><input type="radio" name="q21" value="A"> A) type Person struct { Name string }</label><br>
+            <label><input type="radio" name="q21" value="B"> B) struct Person { Name string } </label><br>
+            <label><input type="radio" name="q21" value="C"> C) Person { Name string } </label><br>
+            <label><input type="radio" name="q21" value="D"> D) type struct Person { Name string } </label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>22. What is the purpose of interfaces in Go?</p>
+            <label><input type="radio" name="q22" value="A"> A) To define a blueprint for struct types</label><br>
+            <label><input type="radio" name="q22" value="B"> B) To create multiple inheritance</label><br>
+            <label><input type="radio" name="q22" value="C"> C) To manage memory</label><br>
+            <label><input type="radio" name="q22" value="D"> D) To implement data hiding</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>23. Can a struct implement multiple interfaces?</p>
+            <label><input type="radio" name="q23" value="A"> A) Yes</label><br>
+            <label><input type="radio" name="q23" value="B"> B) No</label><br>
+            <label><input type="radio" name="q23" value="C"> C) Only if they are compatible</label><br>
+            <label><input type="radio" name="q23" value="D"> D) Only one interface at a time</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>24. How do you embed one struct in another?</p>
+            <label><input type="radio" name="q24" value="A"> A) struct Outer { Inner } </label><br>
+            <label><input type="radio" name="q24" value="B"> B) struct Outer { Inner: Inner } </label><br>
+            <label><input type="radio" name="q24" value="C"> C) type Outer struct { Inner Inner } </label><br>
+            <label><input type="radio" name="q24" value="D"> D) embed Outer { Inner } </label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>25. What is type assertion in Go?</p>
+            <label><input type="radio" name="q25" value="A"> A) A way to convert a variable to a specific type</label><br>
+            <label><input type="radio" name="q25" value="B"> B) A way to declare new types</label><br>
+            <label><input type="radio" name="q25" value="C"> C) A method for error handling</label><br>
+            <label><input type="radio" name="q25" value="D"> D) A type of generics</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>26. What is a goroutine?</p>
+            <label><input type="radio" name="q26" value="A"> A) A lightweight thread managed by Go runtime</label><br>
+            <label><input type="radio" name="q26" value="B"> B) A blocking function</label><br>
+            <label><input type="radio" name="q26" value="C"> C) A special type of variable</label><br>
+            <label><input type="radio" name="q26" value="D"> D) A data structure</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>27. How do you start a goroutine in Go?</p>
+            <label><input type="radio" name="q27" value="A"> A) go myFunction()</label><br>
+            <label><input type="radio" name="q27" value="B"> B) start myFunction()</label><br>
+            <label><input type="radio" name="q27" value="C"> C) run myFunction()</label><br>
+            <label><input type="radio" name="q27" value="D"> D) execute myFunction()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>28. What is a channel in Go?</p>
+            <label><input type="radio" name="q28" value="A"> A) A way to synchronize goroutines</label><br>
+            <label><input type="radio" name="q28" value="B"> B) A data structure</label><br>
+            <label><input type="radio" name="q28" value="C"> C) A function type</label><br>
+            <label><input type="radio" name="q28" value="D"> D) A type of variable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>29. How do you send and receive data from a channel?</p>
+            <label><input type="radio" name="q29" value="A"> A) ch <- value / value = <-ch</label><br>
+            <label><input type="radio" name="q29" value="B"> B) ch.send(value) / ch.receive()</label><br>
+            <label><input type="radio" name="q29" value="C"> C) ch.add(value) / ch.get()</label><br>
+            <label><input type="radio" name="q29" value="D"> D) ch(value) / ch.value()</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>30. What is a buffered channel?</p>
+            <label><input type="radio" name="q30" value="A"> A) A channel that has a capacity</label><br>
+            <label><input type="radio" name="q30" value="B"> B) A channel that cannot hold values</label><br>
+            <label><input type="radio" name="q30" value="C"> C) A channel that blocks when full</label><br>
+            <label><input type="radio" name="q30" value="D"> D) A channel that is not thread-safe</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>31. How do you handle errors in Go?</p>
+            <label><input type="radio" name="q31" value="A"> A) Using the error type</label><br>
+            <label><input type="radio" name="q31" value="B"> B) Using try-catch</label><br>
+            <label><input type="radio" name="q31" value="C"> C) Using exceptions</label><br>
+            <label><input type="radio" name="q31" value="D"> D) Using if statements</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>32. What does the `error` type represent in Go?</p>
+            <label><input type="radio" name="q32" value="A"> A) A built-in type for error handling</label><br>
+            <label><input type="radio" name="q32" value="B"> B) A custom type for all errors</label><br>
+            <label><input type="radio" name="q32" value="C"> C) A function type</label><br>
+            <label><input type="radio" name="q32" value="D"> D) A type for only runtime errors</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>33. How do you create a custom error in Go?</p>
+            <label><input type="radio" name="q33" value="A"> A) type MyError struct {}</label><br>
+            <label><input type="radio" name="q33" value="B"> B) MyError := errors.New("message")</label><br>
+            <label><input type="radio" name="q33" value="C"> C) fmt.Errorf("message")</label><br>
+            <label><input type="radio" name="q33" value="D"> D) type error MyError {}</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>34. What is the purpose of `panic` and `recover`?</p>
+            <label><input type="radio" name="q34" value="A"> A) For error handling</label><br>
+            <label><input type="radio" name="q34" value="B"> B) To stop the execution of a program</label><br>
+            <label><input type="radio" name="q34" value="C"> C) To allow a function to return to the caller</label><br>
+            <label><input type="radio" name="q34" value="D"> D) For resource cleanup</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>35. When should you use `panic`?</p>
+            <label><input type="radio" name="q35" value="A"> A) For unrecoverable errors</label><br>
+            <label><input type="radio" name="q35" value="B"> B) For handling all errors</label><br>
+            <label><input type="radio" name="q35" value="C"> C) For normal control flow</label><br>
+            <label><input type="radio" name="q35" value="D"> D) For runtime checks</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>36. How do you create a new package in Go?</p>
+            <label><input type="radio" name="q36" value="A"> A) By creating a new folder with a .go file</label><br>
+            <label><input type="radio" name="q36" value="B"> B) By using the `go package` command</label><br>
+            <label><input type="radio" name="q36" value="C"> C) By declaring `package name` at the top of a file</label><br>
+            <label><input type="radio" name="q36" value="D"> D) All of the above</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>37. What is the purpose of the `import` statement?</p>
+            <label><input type="radio" name="q37" value="A"> A) To include external packages</label><br>
+            <label><input type="radio" name="q37" value="B"> B) To create a new variable</label><br>
+            <label><input type="radio" name="q37" value="C"> C) To define a constant</label><br>
+            <label><input type="radio" name="q37" value="D"> D) To define a struct</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>38. How do you manage dependencies in Go?</p>
+            <label><input type="radio" name="q38" value="A"> A) Using go modules</label><br>
+            <label><input type="radio" name="q38" value="B"> B) Using package managers</label><br>
+            <label><input type="radio" name="q38" value="C"> C) By copying files manually</label><br>
+            <label><input type="radio" name="q38" value="D"> D) By using imports only</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>39. What is a Go module?</p>
+            <label><input type="radio" name="q39" value="A"> A) A way to manage dependencies and versions</label><br>
+            <label><input type="radio" name="q39" value="B"> B) A package</label><br>
+            <label><input type="radio" name="q39" value="C"> C) A type of variable</label><br>
+            <label><input type="radio" name="q39" value="D"> D) A built-in library</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>40. How do you initialize a new module?</p>
+            <label><input type="radio" name="q40" value="A"> A) go init</label><br>
+            <label><input type="radio" name="q40" value="B"> B) go mod init</label><br>
+            <label><input type="radio" name="q40" value="C"> C) go module create</label><br>
+            <label><input type="radio" name="q40" value="D"> D) go start module</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>41. What are closures in Go?</p>
+            <label><input type="radio" name="q41" value="A"> A) Functions that capture their surrounding state</label><br>
+            <label><input type="radio" name="q41" value="B"> B) Functions that are recursive</label><br>
+            <label><input type="radio" name="q41" value="C"> C) Functions that cannot return values</label><br>
+            <label><input type="radio" name="q41" value="D"> D) Functions that only take parameters</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>42. How does garbage collection work in Go?</p>
+            <label><input type="radio" name="q42" value="A"> A) Automatically frees memory that is no longer needed</label><br>
+            <label><input type="radio" name="q42" value="B"> B) Requires manual intervention</label><br>
+            <label><input type="radio" name="q42" value="C"> C) Only works for local variables</label><br>
+            <label><input type="radio" name="q42" value="D"> D) Works only with pointers</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>43. How do you manage concurrency in Go?</p>
+            <label><input type="radio" name="q43" value="A"> A) Using goroutines and channels</label><br>
+            <label><input type="radio" name="q43" value="B"> B) Using threads</label><br>
+            <label><input type="radio" name="q43" value="C"> C) Using locks only</label><br>
+            <label><input type="radio" name="q43" value="D"> D) Using only async functions</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>44. What is a select statement in Go?</p>
+            <label><input type="radio" name="q44" value="A"> A) A way to handle multiple channel operations</label><br>
+            <label><input type="radio" name="q44" value="B"> B) A way to define multiple variables</label><br>
+            <label><input type="radio" name="q44" value="C"> C) A function for error handling</label><br>
+            <label><input type="radio" name="q44" value="D"> D) A type of loop</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>45. How do you terminate a goroutine?</p>
+            <label><input type="radio" name="q45" value="A"> A) By returning from the function</label><br>
+            <label><input type="radio" name="q45" value="B"> B) By calling stop()</label><br>
+            <label><input type="radio" name="q45" value="C"> C) By using the `exit` keyword</label><br>
+            <label><input type="radio" name="q45" value="D"> D) By throwing an error</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>46. What is an anonymous function in Go?</p>
+            <label><input type="radio" name="q46" value="A"> A) A function without a name</label><br>
+            <label><input type="radio" name="q46" value="B"> B) A function that cannot return values</label><br>
+            <label><input type="radio" name="q46" value="C"> C) A function with multiple names</label><br>
+            <label><input type="radio" name="q46" value="D"> D) A function defined inside a struct</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>47. What is a method in Go?</p>
+            <label><input type="radio" name="q47" value="A"> A) A function with a receiver</label><br>
+            <label><input type="radio" name="q47" value="B"> B) A built-in function</label><br>
+            <label><input type="radio" name="q47" value="C"> C) A function that cannot return values</label><br>
+            <label><input type="radio" name="q47" value="D"> D) A function that takes no arguments</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>48. How do you define a method for a struct in Go?</p>
+            <label><input type="radio" name="q48" value="A"> A) func (p Person) myMethod() {}</label><br>
+            <label><input type="radio" name="q48" value="B"> B) myMethod(p Person) {}</label><br>
+            <label><input type="radio" name="q48" value="C"> A method myMethod(p Person) {}</label><br>
+            <label><input type="radio" name="q48" value="D"> B) myMethod() { Person p } </label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>49. What is a receiver in Go?</p>
+            <label><input type="radio" name="q49" value="A"> A) The type that a method is associated with</label><br>
+            <label><input type="radio" name="q49" value="B"> B) A parameter of a method</label><br>
+            <label><input type="radio" name="q49" value="C"> C) The return value of a method</label><br>
+            <label><input type="radio" name="q49" value="D"> D) A global variable</label>
+        </div>
+        
+        <div class="question" data-aos="zoom-in">
+            <p>50. Can you define methods for built-in types in Go?</p>
+            <label><input type="radio" name="q50" value="A"> A) Yes</label><br>
+            <label><input type="radio" name="q50" value="B"> B) No</label><br>
+            <label><input type="radio" name="q50" value="C"> C) Only for int</label><br>
+            <label><input type="radio" name="q50" value="D"> D) Only for float</label>
+        </div>
+
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/golang.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

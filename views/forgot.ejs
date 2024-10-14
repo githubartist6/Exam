@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="forgot.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Forgot Password</h1>
+        <form accept="/forgot" id="forgot-password-form" method="post">
+            <% if (error) { %>
+                <p class="error-message">
+                    <%= error %>
+                </p>
+            <% } %>
+            <input type="email" name="email" id="contact" placeholder="Enter your email"
+                title="Enter your favouriteBook" required>
+
+            <input type="text" name="book" id="contact" placeholder="Enter your favourite Book"
+                title="Enter your favouriteBook" required>
+                <button type="submit" class="btn">Save</button>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

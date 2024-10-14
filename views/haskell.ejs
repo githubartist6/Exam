@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haskell Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="haskell.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Haskell Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What is the output of <code>1 + 1</code>?</p>
+            <input type="radio" name="q1" value="A"> <label>A) 1</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) 3</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>2. What does the <code>map</code> function do?</p>
+            <input type="radio" name="q2" value="A"> <label>A) Applies a function to each element of a list</label><br>
+            <input type="radio" name="q2" value="B"> <label>B) Combines two lists</label><br>
+            <input type="radio" name="q2" value="C"> <label>C) Filters a list</label><br>
+            <input type="radio" name="q2" value="D"> <label>D) Reverses a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>3. What is the type of the expression <code>length [1,2,3]</code>?</p>
+            <input type="radio" name="q3" value="A"> <label>A) Int</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) [Int]</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) Bool</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) Char</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>4. What is a Monad in Haskell?</p>
+            <input type="radio" name="q4" value="A"> <label>A) A type class for computations</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) A data structure</label><br>
+            <input type="radio" name="q4" value="C"> <label>C) A syntax extension</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) A built-in function</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>5. What does the <code>foldl</code> function do?</p>
+            <input type="radio" name="q5" value="A"> <label>A) Left folds a list</label><br>
+            <input type="radio" name="q5" value="B"> <label>B) Right folds a list</label><br>
+            <input type="radio" name="q5" value="C"> <label>C) Concatenates lists</label><br>
+            <input type="radio" name="q5" value="D"> <label>D) Sorts a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>6. What is the output of <code>map (+1) [1,2,3]</code>?</p>
+            <input type="radio" name="q6" value="A"> <label>A) [1,2,3]</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) [2,3,4]</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) [3,4,5]</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>7. What does the <code>filter</code> function do?</p>
+            <input type="radio" name="q7" value="A"> <label>A) Returns elements that satisfy a condition</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) Applies a function to each element</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) Combines two lists</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) Reverses a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>8. What is a type class?</p>
+            <input type="radio" name="q8" value="A"> <label>A) A way to define types</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) A collection of types that share common functionality</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) A synonym for a data type</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) A built-in function</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>9. What does the <code>head</code> function do?</p>
+            <input type="radio" name="q9" value="A"> <label>A) Returns the first element of a list</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) Returns the last element of a list</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) Returns the length of a list</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) Reverses a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>10. What is the output of <code>concat [[1,2], [3,4]]</code>?</p>
+            <input type="radio" name="q10" value="A"> <label>A) [1,2,3,4]</label><br>
+            <input type="radio" name="q10" value="B"> <label>B) [[1,2,3,4]]</label><br>
+            <input type="radio" name="q10" value="C"> <label>C) [1,2]</label><br>
+            <input type="radio" name="q10" value="D"> <label>D) Error</label>
+        </div>
+
+        <!-- Add additional questions up to 50 here -->
+
+        <div class="question" data-aos="zoom-in">
+            <p>11. What is the result of <code>1 `div` 0</code>?</p>
+            <input type="radio" name="q11" value="A"> <label>A) 0</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) 1</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) Infinity</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>12. How do you define a list in Haskell?</p>
+            <input type="radio" name="q12" value="A"> <label>A) [1, 2, 3]</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) (1, 2, 3)</label><br>
+            <input type="radio" name="q12" value="C"> <label>C) {1, 2, 3}</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) <1, 2, 3></label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>13. What is a tuple in Haskell?</p>
+            <input type="radio" name="q13" value="A"> <label>A) A fixed-size collection of elements</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) A dynamic array</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) A synonym for a list</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) A built-in function</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>14. What is lazy evaluation?</p>
+            <input type="radio" name="q14" value="A"> <label>A) Evaluation of expressions is deferred until their results are needed</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) All expressions are evaluated immediately</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) Functions are executed in a strict order</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>15. What is the output of <code>length ""</code>?</p>
+            <input type="radio" name="q15" value="A"> <label>A) 0</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) 1</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) Error</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) Undefined</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>16. How do you create a function in Haskell?</p>
+            <input type="radio" name="q16" value="A"> <label>A) funcName = ...</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) funcName : ...</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) def funcName: ...</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) function funcName = ...</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>17. What does the <code>tail</code> function do?</p>
+            <input type="radio" name="q17" value="A"> <label>A) Returns all but the first element of a list</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) Returns the first element of a list</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) Returns the last element of a list</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) Returns the length of a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>18. What is currying in Haskell?</p>
+            <input type="radio" name="q18" value="A"> <label>A) Transforming a function that takes multiple arguments into a sequence of functions</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) Creating a function with default arguments</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) A type of data structure</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) A syntax error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>19. What is the purpose of the <code>let</code> keyword?</p>
+            <input type="radio" name="q19" value="A"> <label>A) To define local variables</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) To create loops</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) To define global variables</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) To import modules</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>20. What is the output of <code>5 `mod` 2</code>?</p>
+            <input type="radio" name="q20" value="A"> <label>A) 1</label><br>
+            <input type="radio" name="q20" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q20" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q20" value="D"> <label>D) Error</label>
+        </div>
+
+        <!-- Add questions 21 to 50 here, following the same structure -->
+
+        <div class="question" data-aos="zoom-in">
+            <p>21. What does the <code>zip</code> function do?</p>
+            <input type="radio" name="q21" value="A"> <label>A) Combines two lists into a list of pairs</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) Sorts a list</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) Reverses a list</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) Filters a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>22. What is the output of <code>take 3 [1,2,3,4]</code>?</p>
+            <input type="radio" name="q22" value="A"> <label>A) [1,2,3]</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) [1,2,3,4]</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) [4]</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>23. What is the purpose of the <code>main</code> function in Haskell?</p>
+            <input type="radio" name="q23" value="A"> <label>A) Entry point of the program</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) To define global variables</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) To import modules</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) To define data types</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>24. What is a higher-order function?</p>
+            <input type="radio" name="q24" value="A"> <label>A) A function that takes another function as an argument</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) A function that returns a function</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) Both A and B</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>25. What does the <code>reverse</code> function do?</p>
+            <input type="radio" name="q25" value="A"> <label>A) Reverses a list</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) Sorts a list</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) Returns the first element of a list</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>26. What does the <code>takeWhile</code> function do?</p>
+            <input type="radio" name="q26" value="A"> <label>A) Takes elements from a list while a condition is true</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) Takes a fixed number of elements from a list</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) Reverses a list</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) Filters a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>27. How do you define a data type in Haskell?</p>
+            <input type="radio" name="q27" value="A"> <label>A) data TypeName = ...</label><br>
+            <input type="radio" name="q27" value="B"> <label>B) define TypeName = ...</label><br>
+            <input type="radio" name="q27" value="C"> <label>C) type TypeName = ...</label><br>
+            <input type="radio" name="q27" value="D"> <label>D) function TypeName = ...</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>28. What does the <code>fst</code> function do?</p>
+            <input type="radio" name="q28" value="A"> <label>A) Returns the first element of a tuple</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) Returns the second element of a tuple</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) Returns the length of a tuple</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) Returns all elements of a tuple</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>29. What does the <code>snd</code> function do?</p>
+            <input type="radio" name="q29" value="A"> <label>A) Returns the first element of a tuple</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) Returns the second element of a tuple</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) Returns the length of a tuple</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) Returns all elements of a tuple</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>30. What is the purpose of the <code>import</code> statement?</p>
+            <input type="radio" name="q30" value="A"> <label>A) To include modules</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) To define global variables</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) To create loops</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) To define data types</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. What does the <code>elem</code> function do?</p>
+            <input type="radio" name="q31" value="A"> <label>A) Checks if an element is in a list</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) Returns the first element of a list</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) Returns the last element of a list</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) Filters a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>32. What is the output of <code>sum [1,2,3]</code>?</p>
+            <input type="radio" name="q32" value="A"> <label>A) 6</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) 3</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>33. What does the <code>scanl</code> function do?</p>
+            <input type="radio" name="q33" value="A"> <label>A) Produces a list of successive reduced values from the left</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) Combines two lists</label><br>
+            <input type="radio" name="q33" value="C"> <label>C) Filters a list</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) Sorts a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>34. How do you define a recursive function in Haskell?</p>
+            <input type="radio" name="q34" value="A"> <label>A) By calling itself in its definition</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) By using a loop</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) By using the <code>let</code> keyword</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) By using the <code>def</code> keyword</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>35. What does the <code>last</code> function do?</p>
+            <input type="radio" name="q35" value="A"> <label>A) Returns the last element of a list</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) Returns the first element of a list</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) Returns the length of a list</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) Returns all elements of a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>36. What is a list comprehension?</p>
+            <input type="radio" name="q36" value="A"> <label>A) A concise way to create lists</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) A function that returns a list</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) A type of loop</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) A built-in function</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>37. What does the <code>takeWhile</code> function do?</p>
+            <input type="radio" name="q37" value="A"> <label>A) Takes elements from a list while a condition is true</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) Takes a fixed number of elements from a list</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) Reverses a list</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) Filters a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>38. What does the <code>sort</code> function do?</p>
+            <input type="radio" name="q38" value="A"> <label>A) Sorts a list</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) Filters a list</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) Reverses a list</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>39. What does the <code>words</code> function do?</p>
+            <input type="radio" name="q39" value="A"> <label>A) Splits a string into a list of words</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) Joins a list of strings into a single string</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) Counts the number of words in a string</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>40. What is the purpose of the <code>show</code> function?</p>
+            <input type="radio" name="q40" value="A"> <label>A) Converts a value to a string</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) Converts a string to a value</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) Joins two strings</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>41. What does the <code>filter</code> function do?</p>
+            <input type="radio" name="q41" value="A"> <label>A) Filters a list based on a condition</label><br>
+            <input type="radio" name="q41" value="B"> <label>B) Sorts a list</label><br>
+            <input type="radio" name="q41" value="C"> <label>C) Reverses a list</label><br>
+            <input type="radio" name="q41" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>42. What does the <code>concat</code> function do?</p>
+            <input type="radio" name="q42" value="A"> <label>A) Joins a list of lists into a single list</label><br>
+            <input type="radio" name="q42" value="B"> <label>B) Splits a list into individual elements</label><br>
+            <input type="radio" name="q42" value="C"> <label>C) Sorts a list</label><br>
+            <input type="radio" name="q42" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>43. What does the <code>intercalate</code> function do?</p>
+            <input type="radio" name="q43" value="A"> <label>A) Joins a list of strings with a separator</label><br>
+            <input type="radio" name="q43" value="B"> <label>B) Splits a string into words</label><br>
+            <input type="radio" name="q43" value="C"> <label>C) Sorts a list</label><br>
+            <input type="radio" name="q43" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>44. What is the purpose of the <code>let</code> binding?</p>
+            <input type="radio" name="q44" value="A"> <label>A) To define local variables</label><br>
+            <input type="radio" name="q44" value="B"> <label>B) To define global variables</label><br>
+            <input type="radio" name="q44" value="C"> <label>C) To create loops</label><br>
+            <input type="radio" name="q44" value="D"> <label>D) To import modules</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>45. What does the <code>map</code> function do?</p>
+            <input type="radio" name="q45" value="A"> <label>A) Applies a function to each element of a list</label><br>
+            <input type="radio" name="q45" value="B"> <label>B) Sorts a list</label><br>
+            <input type="radio" name="q45" value="C"> <label>C) Filters a list</label><br>
+            <input type="radio" name="q45" value="D"> <label>D) None of the above</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>46. What is the output of <code>length [1,2,3]</code>?</p>
+            <input type="radio" name="q46" value="A"> <label>A) 3</label><br>
+            <input type="radio" name="q46" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q46" value="C"> <label>C) 0</label><br>
+            <input type="radio" name="q46" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>47. What does the <code>scanr</code> function do?</p>
+            <input type="radio" name="q47" value="A"> <label>A) Produces a list of successive reduced values from the right</label><br>
+            <input type="radio" name="q47" value="B"> <label>B) Combines two lists</label><br>
+            <input type="radio" name="q47" value="C"> <label>C) Filters a list</label><br>
+            <input type="radio" name="q47" value="D"> <label>D) Sorts a list</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>48. What is the purpose of the <code>import</code> statement?</p>
+            <input type="radio" name="q48" value="A"> <label>A) To include modules</label><br>
+            <input type="radio" name="q48" value="B"> <label>B) To define global variables</label><br>
+            <input type="radio" name="q48" value="C"> <label>C) To create loops</label><br>
+            <input type="radio" name="q48" value="D"> <label>D) To define data types</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>49. What is the output of <code>maximum [1,2,3]</code>?</p>
+            <input type="radio" name="q49" value="A"> <label>A) 3</label><br>
+            <input type="radio" name="q49" value="B"> <label>B) 2</label><br>
+            <input type="radio" name="q49" value="C"> <label>C) 1</label><br>
+            <input type="radio" name="q49" value="D"> <label>D) Error</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>50. What does the <code>any</code> function do?</p>
+            <input type="radio" name="q50" value="A"> <label>A) Checks if any elements in a list satisfy a condition</label><br>
+            <input type="radio" name="q50" value="B"> <label>B) Returns the first element of a list</label><br>
+            <input type="radio" name="q50" value="C"> <label>C) Returns the length of a list</label><br>
+            <input type="radio" name="q50" value="D"> <label>D) Filters a list</label>
+        </div>
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/haskell.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

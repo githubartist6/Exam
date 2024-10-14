@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <!-- Sign Up Screen -->
+    <div class="screen" id="sign-up-screen">
+        <h1>Create Your Account</h1>
+        <!-- Display error message if exists -->
+        <% if (error) { %>
+            <p class="error-message">
+                <%= error %>
+            </p>
+            <% } %>
+                <form action="/signup" method="post">
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"
+                        title="Enter your FullNmae">
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                        title="Enter your email i'd">
+                    <input type="number" name="phone" id="phone" placeholder="Enter your phone no"
+                        title="Enter your phone number">
+                    <input type="password" name="password" id="password" placeholder="Enter your Password"
+                        title="Enter your passsword">
+                    <label for="book">Remember this, it will come in handy when resetting the password</label>
+                    <input type="text" name="book" id="book" placeholder="Enter your favourite Book"
+                        title="Enter your favouriteBook">
+
+                    <button type="submit" class="btn"> Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="https://exam-6c8l.onrender.com/">Login</a></p>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

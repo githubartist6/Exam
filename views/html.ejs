@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="html.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>HTML Quiz</h1>
+        <form id="quiz-form">
+            <div class="question" data-aos="zoom-in">
+                <p>1. Which tag represents a heading in HTML?</p>
+                <input type="radio" name="q1" value="A"> <label>A) &lt;title&gt;</label><br>
+                <input type="radio" name="q1" value="B"> <label>B) &lt;head&gt;</label><br>
+                <input type="radio" name="q1" value="C"> <label>C) &lt;h1&gt;</label><br>
+                <input type="radio" name="q1" value="D"> <label>D) &lt;header&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>2. Which tag is used to create a link?</p>
+                <input type="radio" name="q2" value="A"> <label>A) &lt;link&gt;</label><br>
+                <input type="radio" name="q2" value="B"> <label>B) &lt;a&gt;</label><br>
+                <input type="radio" name="q2" value="C"> <label>C) &lt;href&gt;</label><br>
+                <input type="radio" name="q2" value="D"> <label>D) &lt;url&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>3. Which tag is used to display an image?</p>
+                <input type="radio" name="q3" value="A"> <label>A) &lt;image&gt;</label><br>
+                <input type="radio" name="q3" value="B"> <label>B) &lt;img&gt;</label><br>
+                <input type="radio" name="q3" value="C"> <label>C) &lt;picture&gt;</label><br>
+                <input type="radio" name="q3" value="D"> <label>D) &lt;src&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>4. Which tag is used to create a paragraph?</p>
+                <input type="radio" name="q4" value="A"> <label>A) &lt;p&gt;</label><br>
+                <input type="radio" name="q4" value="B"> <label>B) &lt;para&gt;</label><br>
+                <input type="radio" name="q4" value="C"> <label>C) &lt;paragraph&gt;</label><br>
+                <input type="radio" name="q4" value="D"> <label>D) &lt;text&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>5. Which tag is used for an unordered list?</p>
+                <input type="radio" name="q5" value="A"> <label>A) &lt;ul&gt;</label><br>
+                <input type="radio" name="q5" value="B"> <label>B) &lt;ol&gt;</label><br>
+                <input type="radio" name="q5" value="C"> <label>C) &lt;list&gt;</label><br>
+                <input type="radio" name="q5" value="D"> <label>D) &lt;li&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>6. Which tag is used to create a form?</p>
+                <input type="radio" name="q6" value="A"> <label>A) &lt;form&gt;</label><br>
+                <input type="radio" name="q6" value="B"> <label>B) &lt;input&gt;</label><br>
+                <input type="radio" name="q6" value="C"> <label>C) &lt;submit&gt;</label><br>
+                <input type="radio" name="q6" value="D"> <label>D) &lt;fieldset&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>7. Which tag is used for a span?</p>
+                <input type="radio" name="q7" value="A"> <label>A) &lt;span&gt;</label><br>
+                <input type="radio" name="q7" value="B"> <label>B) &lt;div&gt;</label><br>
+                <input type="radio" name="q7" value="C"> <label>C) &lt;block&gt;</label><br>
+                <input type="radio" name="q7" value="D"> <label>D) &lt;inline&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>8. Which tag represents the largest level of heading?</p>
+                <input type="radio" name="q8" value="A"> <label>A) &lt;h6&gt;</label><br>
+                <input type="radio" name="q8" value="B"> <label>B) &lt;h5&gt;</label><br>
+                <input type="radio" name="q8" value="C"> <label>C) &lt;h1&gt;</label><br>
+                <input type="radio" name="q8" value="D"> <label>D) &lt;h3&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>9. Which tag is used to display a video file?</p>
+                <input type="radio" name="q9" value="A"> <label>A) &lt;video&gt;</label><br>
+                <input type="radio" name="q9" value="B"> <label>B) &lt;media&gt;</label><br>
+                <input type="radio" name="q9" value="C"> <label>C) &lt;movie&gt;</label><br>
+                <input type="radio" name="q9" value="D"> <label>D) &lt;film&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>10. Which tag is used to create a table?</p>
+                <input type="radio" name="q10" value="A"> <label>A) &lt;table&gt;</label><br>
+                <input type="radio" name="q10" value="B"> <label>B) &lt;tr&gt;</label><br>
+                <input type="radio" name="q10" value="C"> <label>C) &lt;td&gt;</label><br>
+                <input type="radio" name="q10" value="D"> <label>D) &lt;tbody&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>11. Which tag is used to create an image map?</p>
+                <input type="radio" name="q11" value="A"> <label>A) &lt;map&gt;</label><br>
+                <input type="radio" name="q11" value="B"> <label>B) &lt;area&gt;</label><br>
+                <input type="radio" name="q11" value="C"> <label>C) &lt;img&gt;</label><br>
+                <input type="radio" name="q11" value="D"> <label>D) &lt;link&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>12. Which tag is used to link a programming script?</p>
+                <input type="radio" name="q12" value="A"> <label>A) &lt;script&gt;</label><br>
+                <input type="radio" name="q12" value="B"> <label>B) &lt;link&gt;</label><br>
+                <input type="radio" name="q12" value="C"> <label>C) &lt;style&gt;</label><br>
+                <input type="radio" name="q12" value="D"> <label>D) &lt;code&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>13. Which tag indicates the basic structure of an HTML document?</p>
+                <input type="radio" name="q13" value="A"> <label>A) &lt;html&gt;</label><br>
+                <input type="radio" name="q13" value="B"> <label>B) &lt;body&gt;</label><br>
+                <input type="radio" name="q13" value="C"> <label>C) &lt;head&gt;</label><br>
+                <input type="radio" name="q13" value="D"> <label>D) &lt;doctype&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>14. Which tag is used for a text area in a form?</p>
+                <input type="radio" name="q14" value="A"> <label>A) &lt;input type="text"&gt;</label><br>
+                <input type="radio" name="q14" value="B"> <label>B) &lt;textarea&gt;</label><br>
+                <input type="radio" name="q14" value="C"> <label>C) &lt;field&gt;</label><br>
+                <input type="radio" name="q14" value="D"> <label>D) &lt;text&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>15. Which tag is used to create a button?</p>
+                <input type="radio" name="q15" value="A"> <label>A) &lt;button&gt;</label><br>
+                <input type="radio" name="q15" value="B"> <label>B) &lt;input type="button"&gt;</label><br>
+                <input type="radio" name="q15" value="C"> <label>C) &lt;click&gt;</label><br>
+                <input type="radio" name="q15" value="D"> <label>D) Both A and B</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>16. Which tag represents a block-level element?</p>
+                <input type="radio" name="q16" value="A"> <label>A) &lt;span&gt;</label><br>
+                <input type="radio" name="q16" value="B"> <label>B) &lt;div&gt;</label><br>
+                <input type="radio" name="q16" value="C"> <label>C) &lt;p&gt;</label><br>
+                <input type="radio" name="q16" value="D"> <label>D) All of the above</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>17. Which tag is used for a line break?</p>
+                <input type="radio" name="q17" value="A"> <label>A) &lt;break&gt;</label><br>
+                <input type="radio" name="q17" value="B"> <label>B) &lt;br&gt;</label><br>
+                <input type="radio" name="q17" value="C"> <label>C) &lt;line&gt;</label><br>
+                <input type="radio" name="q17" value="D"> <label>D) &lt;newline&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>18. Which tag represents a main section?</p>
+                <input type="radio" name="q18" value="A"> <label>A) &lt;section&gt;</label><br>
+                <input type="radio" name="q18" value="B"> <label>B) &lt;main&gt;</label><br>
+                <input type="radio" name="q18" value="C"> <label>C) &lt;article&gt;</label><br>
+                <input type="radio" name="q18" value="D"> <label>D) &lt;header&gt;</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>19. Which tag is used for embedding content?</p>
+                <input type="radio" name="q19" value="A"> <label>A) &lt;embed&gt;</label><br>
+                <input type="radio" name="q19" value="B"> <label>B) &lt;object&gt;</label><br>
+                <input type="radio" name="q19" value="C"> <label>C) &lt;iframe&gt;</label><br>
+                <input type="radio" name="q19" value="D"> <label>D) All of the above</label>
+            </div>
+            <div class="question" data-aos="zoom-in">
+                <p>20. Which tag is used to change the color of links?</p>
+                <input type="radio" name="q20" value="A"> <label>A) &lt;color&gt;</label><br>
+                <input type="radio" name="q20" value="B"> <label>B) &lt;style&gt;</label><br>
+                <input type="radio" name="q20" value="C"> <label>C) &lt;css&gt;</label><br>
+                <input type="radio" name="q20" value="D"> <label>D) &lt;a&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>21. Which tag is used to create a checkbox?</p>
+                <input type="radio" name="q1" value="A"> <label>A) &lt;check&gt;</label><br>
+                <input type="radio" name="q1" value="B"> <label>B) &lt;checkbox&gt;</label><br>
+                <input type="radio" name="q1" value="C"> <label>C) &lt;input type="checkbox"&gt;</label><br>
+                <input type="radio" name="q1" value="D"> <label>D) &lt;option&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>22. Which attribute is used to specify the URL of a link?</p>
+                <input type="radio" name="q2" value="A"> <label>A) href</label><br>
+                <input type="radio" name="q2" value="B"> <label>B) src</label><br>
+                <input type="radio" name="q2" value="C"> <label>C) url</label><br>
+                <input type="radio" name="q2" value="D"> <label>D) link</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>23. Which tag is used to create a dropdown list?</p>
+                <input type="radio" name="q3" value="A"> <label>A) &lt;select&gt;</label><br>
+                <input type="radio" name="q3" value="B"> <label>B) &lt;list&gt;</label><br>
+                <input type="radio" name="q3" value="C"> <label>C) &lt;dropdown&gt;</label><br>
+                <input type="radio" name="q3" value="D"> <label>D) &lt;input&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>24. Which tag is used to create a footer in an HTML document?</p>
+                <input type="radio" name="q4" value="A"> <label>A) &lt;footer&gt;</label><br>
+                <input type="radio" name="q4" value="B"> <label>B) &lt;bottom&gt;</label><br>
+                <input type="radio" name="q4" value="C"> <label>C) &lt;section&gt;</label><br>
+                <input type="radio" name="q4" value="D"> <label>D) &lt;aside&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>25. Which tag is used for inline text styles?</p>
+                <input type="radio" name="q5" value="A"> <label>A) &lt;style&gt;</label><br>
+                <input type="radio" name="q5" value="B"> <label>B) &lt;span&gt;</label><br>
+                <input type="radio" name="q5" value="C"> <label>C) &lt;div&gt;</label><br>
+                <input type="radio" name="q5" value="D"> <label>D) &lt;section&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>26. Which attribute is used to specify the character set in HTML?</p>
+                <input type="radio" name="q6" value="A"> <label>A) charset</label><br>
+                <input type="radio" name="q6" value="B"> <label>B) encoding</label><br>
+                <input type="radio" name="q6" value="C"> <label>C) type</label><br>
+                <input type="radio" name="q6" value="D"> <label>D) character</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>27. Which tag is used to define an HTML table row?</p>
+                <input type="radio" name="q7" value="A"> <label>A) &lt;tr&gt;</label><br>
+                <input type="radio" name="q7" value="B"> <label>B) &lt;td&gt;</label><br>
+                <input type="radio" name="q7" value="C"> <label>C) &lt;th&gt;</label><br>
+                <input type="radio" name="q7" value="D"> <label>D) &lt;table&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>28. Which tag is used to create a navigation menu?</p>
+                <input type="radio" name="q8" value="A"> <label>A) &lt;menu&gt;</label><br>
+                <input type="radio" name="q8" value="B"> <label>B) &lt;nav&gt;</label><br>
+                <input type="radio" name="q8" value="C"> <label>C) &lt;list&gt;</label><br>
+                <input type="radio" name="q8" value="D"> <label>D) &lt;link&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>29. Which tag is used to add a comment in HTML?</p>
+                <input type="radio" name="q9" value="A"> <label>A) &lt;comment&gt;</label><br>
+                <input type="radio" name="q9" value="B"> <label>B) &lt;!-- comment --&gt;</label><br>
+                <input type="radio" name="q9" value="C"> <label>C) &lt;note&gt;</label><br>
+                <input type="radio" name="q9" value="D"> <label>D) &lt;info&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>30. Which tag is used to define a bold text?</p>
+                <input type="radio" name="q10" value="A"> <label>A) &lt;bold&gt;</label><br>
+                <input type="radio" name="q10" value="B"> <label>B) &lt;b&gt;</label><br>
+                <input type="radio" name="q10" value="C"> <label>C) &lt;strong&gt;</label><br>
+                <input type="radio" name="q10" value="D"> <label>D) Both B and C</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>31. Which tag is used to define the main content of an HTML document?</p>
+                <input type="radio" name="q11" value="A"> <label>A) &lt;main&gt;</label><br>
+                <input type="radio" name="q11" value="B"> <label>B) &lt;content&gt;</label><br>
+                <input type="radio" name="q11" value="C"> <label>C) &lt;body&gt;</label><br>
+                <input type="radio" name="q11" value="D"> <label>D) &lt;section&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>32. Which tag is used to create an input field for text?</p>
+                <input type="radio" name="q12" value="A"> <label>A) &lt;input type="text"&gt;</label><br>
+                <input type="radio" name="q12" value="B"> <label>B) &lt;text&gt;</label><br>
+                <input type="radio" name="q12" value="C"> <label>C) &lt;field&gt;</label><br>
+                <input type="radio" name="q12" value="D"> <label>D) &lt;textarea&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>33. Which tag is used to display a horizontal line?</p>
+                <input type="radio" name="q13" value="A"> <label>A) &lt;hr&gt;</label><br>
+                <input type="radio" name="q13" value="B"> <label>B) &lt;line&gt;</label><br>
+                <input type="radio" name="q13" value="C"> <label>C) &lt;break&gt;</label><br>
+                <input type="radio" name="q13" value="D"> <label>D) &lt;divider&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>34. Which tag is used to group inline elements?</p>
+                <input type="radio" name="q14" value="A"> <label>A) &lt;div&gt;</label><br>
+                <input type="radio" name="q14" value="B"> <label>B) &lt;section&gt;</label><br>
+                <input type="radio" name="q14" value="C"> <label>C) &lt;span&gt;</label><br>
+                <input type="radio" name="q14" value="D"> <label>D) &lt;block&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>35. Which tag is used to define a header in an HTML document?</p>
+                <input type="radio" name="q15" value="A"> <label>A) &lt;header&gt;</label><br>
+                <input type="radio" name="q15" value="B"> <label>B) &lt;top&gt;</label><br>
+                <input type="radio" name="q15" value="C"> <label>C) &lt;nav&gt;</label><br>
+                <input type="radio" name="q15" value="D"> <label>D) &lt;footer&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>36. Which tag is used for defining a quote?</p>
+                <input type="radio" name="q16" value="A"> <label>A) &lt;quote&gt;</label><br>
+                <input type="radio" name="q16" value="B"> <label>B) &lt;blockquote&gt;</label><br>
+                <input type="radio" name="q16" value="C"> <label>C) &lt;q&gt;</label><br>
+                <input type="radio" name="q16" value="D"> <label>D) Both B and C</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>37. Which tag is used to specify an external stylesheet?</p>
+                <input type="radio" name="q17" value="A"> <label>A) &lt;style&gt;</label><br>
+                <input type="radio" name="q17" value="B"> <label>B) &lt;link&gt;</label><br>
+                <input type="radio" name="q17" value="C"> <label>C) &lt;css&gt;</label><br>
+                <input type="radio" name="q17" value="D"> <label>D) &lt;script&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>38. Which attribute is used to set the width of an image?</p>
+                <input type="radio" name="q18" value="A"> <label>A) size</label><br>
+                <input type="radio" name="q18" value="B"> <label>B) width</label><br>
+                <input type="radio" name="q18" value="C"> <label>C) dimension</label><br>
+                <input type="radio" name="q18" value="D"> <label>D) height</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>39. Which tag is used for defining the content of the document?</p>
+                <input type="radio" name="q19" value="A"> <label>A) &lt;body&gt;</label><br>
+                <input type="radio" name="q19" value="B"> <label>B) &lt;html&gt;</label><br>
+                <input type="radio" name="q19" value="C"> <label>C) &lt;content&gt;</label><br>
+                <input type="radio" name="q19" value="D"> <label>D) &lt;document&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>40. Which tag is used to define a list item?</p>
+                <input type="radio" name="q20" value="A"> <label>A) &lt;li&gt;</label><br>
+                <input type="radio" name="q20" value="B"> <label>B) &lt;item&gt;</label><br>
+                <input type="radio" name="q20" value="C"> <label>C) &lt;list&gt;</label><br>
+                <input type="radio" name="q20" value="D"> <label>D) &lt;ul&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>41. Which tag is used to specify an HTML document's character set?</p>
+                <input type="radio" name="q21" value="A"> <label>A) &lt;meta charset="UTF-8"&gt;</label><br>
+                <input type="radio" name="q21" value="B"> <label>B) &lt;meta type="charset"&gt;</label><br>
+                <input type="radio" name="q21" value="C"> <label>C) &lt;character&gt;</label><br>
+                <input type="radio" name="q21" value="D"> <label>D) &lt;meta&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>42. Which tag is used to create a description list?</p>
+                <input type="radio" name="q22" value="A"> <label>A) &lt;dl&gt;</label><br>
+                <input type="radio" name="q22" value="B"> <label>B) &lt;list&gt;</label><br>
+                <input type="radio" name="q22" value="C"> <label>C) &lt;description&gt;</label><br>
+                <input type="radio" name="q22" value="D"> <label>D) &lt;item&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>43. Which attribute is used to specify that an input field is required?</p>
+                <input type="radio" name="q23" value="A"> <label>A) required</label><br>
+                <input type="radio" name="q23" value="B"> <label>B) necessary</label><br>
+                <input type="radio" name="q23" value="C"> <label>C) &lt;input&gt;</label><br>
+                <input type="radio" name="q23" value="D"> <label>D) &lt;validate&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>44. Which tag is used to create an audio element?</p>
+                <input type="radio" name="q24" value="A"> <label>A) &lt;audio&gt;</label><br>
+                <input type="radio" name="q24" value="B"> <label>B) &lt;music&gt;</label><br>
+                <input type="radio" name="q24" value="C"> <label>C) &lt;sound&gt;</label><br>
+                <input type="radio" name="q24" value="D"> <label>D) &lt;play&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>45. Which attribute is used to specify an image's alternative text?</p>
+                <input type="radio" name="q25" value="A"> <label>A) alt</label><br>
+                <input type="radio" name="q25" value="B"> <label>B) title</label><br>
+                <input type="radio" name="q25" value="C"> <label>C) src</label><br>
+                <input type="radio" name="q25" value="D"> <label>D) text</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>46. Which tag is used to define a hyperlink that opens in a new tab?</p>
+                <input type="radio" name="q26" value="A"> <label>A) &lt;a target="_blank"&gt;</label><br>
+                <input type="radio" name="q26" value="B"> <label>B) &lt;a new&gt;</label><br>
+                <input type="radio" name="q26" value="C"> <label>C) &lt;link&gt;</label><br>
+                <input type="radio" name="q26" value="D"> <label>D) &lt;url&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>47. Which tag is used for an inline frame?</p>
+                <input type="radio" name="q27" value="A"> <label>A) &lt;iframe&gt;</label><br>
+                <input type="radio" name="q27" value="B"> <label>B) &lt;frame&gt;</label><br>
+                <input type="radio" name="q27" value="C"> <label>C) &lt;embed&gt;</label><br>
+                <input type="radio" name="q27" value="D"> <label>D) &lt;object&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>48. Which tag is used to create a data list?</p>
+                <input type="radio" name="q28" value="A"> <label>A) &lt;datalist&gt;</label><br>
+                <input type="radio" name="q28" value="B"> <label>B) &lt;list&gt;</label><br>
+                <input type="radio" name="q28" value="C"> <label>C) &lt;input&gt;</label><br>
+                <input type="radio" name="q28" value="D"> <label>D) &lt;options&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>49. Which tag is used to create a semantic section?</p>
+                <input type="radio" name="q29" value="A"> <label>A) &lt;div&gt;</label><br>
+                <input type="radio" name="q29" value="B"> <label>B) &lt;section&gt;</label><br>
+                <input type="radio" name="q29" value="C"> <label>C) &lt;article&gt;</label><br>
+                <input type="radio" name="q29" value="D"> <label>D) &lt;main&gt;</label>
+            </div>
+
+            <div class="question" data-aos="zoom-in">
+                <p>50. Which tag is used to include a favicon?</p>
+                <input type="radio" name="q30" value="A"> <label>A) &lt;icon&gt;</label><br>
+                <input type="radio" name="q30" value="B"> <label>B) &lt;link rel="icon"&gt;</label><br>
+                <input type="radio" name="q30" value="C"> <label>C) &lt;favicon&gt;</label><br>
+                <input type="radio" name="q30" value="D"> <label>D) &lt;image&gt;</label>
+            </div>
+            
+            <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+    <script src="/java/html.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

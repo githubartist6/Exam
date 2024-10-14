@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="shell.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Shell Quiz</h1>
+    <form id="quiz-form">
+        <div class="question" data-aos="zoom-in">
+            <p>1. What command is used to list files in a directory?</p>
+            <input type="radio" name="q1" value="A"> <label>A) ls</label><br>
+            <input type="radio" name="q1" value="B"> <label>B) dir</label><br>
+            <input type="radio" name="q1" value="C"> <label>C) list</label><br>
+            <input type="radio" name="q1" value="D"> <label>D) show</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>2. How do you change a directory?</p>
+            <input type="radio" name="q2" value="A"> <label>A) cd</label><br>
+            <input type="radio" name="q2" value="B"> <label>B) chdir</label><br>
+            <input type="radio" name="q2" value="C"> <label>C) change</label><br>
+            <input type="radio" name="q2" value="D"> <label>D) move</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>3. Which command is used to copy files?</p>
+            <input type="radio" name="q3" value="A"> <label>A) cp</label><br>
+            <input type="radio" name="q3" value="B"> <label>B) copy</label><br>
+            <input type="radio" name="q3" value="C"> <label>C) mv</label><br>
+            <input type="radio" name="q3" value="D"> <label>D) duplicate</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>4. What command is used to remove files?</p>
+            <input type="radio" name="q4" value="A"> <label>A) rm</label><br>
+            <input type="radio" name="q4" value="B"> <label>B) del</label><br>
+            <input type="radio" name="q4" value="C"> <label>C) remove</label><br>
+            <input type="radio" name="q4" value="D"> <label>D) erase</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>5. How do you display the contents of a file?</p>
+            <input type="radio" name="q5" value="A"> <label>A) cat</label><br>
+            <input type="radio" name="q5" value="B"> <label>B) show</label><br>
+            <input type="radio" name="q5" value="C"> <label>C) display</label><br>
+            <input type="radio" name="q5" value="D"> <label>D) open</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>6. What command is used to create a new directory?</p>
+            <input type="radio" name="q6" value="A"> <label>A) mkdir</label><br>
+            <input type="radio" name="q6" value="B"> <label>B) newdir</label><br>
+            <input type="radio" name="q6" value="C"> <label>C) createdir</label><br>
+            <input type="radio" name="q6" value="D"> <label>D) dircreate</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>7. How do you view the current working directory?</p>
+            <input type="radio" name="q7" value="A"> <label>A) pwd</label><br>
+            <input type="radio" name="q7" value="B"> <label>B) currentdir</label><br>
+            <input type="radio" name="q7" value="C"> <label>C) whereami</label><br>
+            <input type="radio" name="q7" value="D"> <label>D) dir</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>8. What command is used to move files?</p>
+            <input type="radio" name="q8" value="A"> <label>A) mv</label><br>
+            <input type="radio" name="q8" value="B"> <label>B) move</label><br>
+            <input type="radio" name="q8" value="C"> <label>C) cp</label><br>
+            <input type="radio" name="q8" value="D"> <label>D) transfer</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>9. How do you display hidden files?</p>
+            <input type="radio" name="q9" value="A"> <label>A) ls -a</label><br>
+            <input type="radio" name="q9" value="B"> <label>B) ls -l</label><br>
+            <input type="radio" name="q9" value="C"> <label>C) dir -h</label><br>
+            <input type="radio" name="q9" value="D"> <label>D) show hidden</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>10. Which command is used to find the location of a command?</p>
+            <input type="radio" name="q10" value="A"> <label>A) which</label><br>
+            <input type="radio" name="q10" value="B"> <label>B) where</label><br>
+            <input type="radio" name="q10" value="C"> <label>C) locate</label><br>
+            <input type="radio" name="q10" value="D"> <label>D) path</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>11. What does the command `chmod` do?</p>
+            <input type="radio" name="q11" value="A"> <label>A) Change file permissions</label><br>
+            <input type="radio" name="q11" value="B"> <label>B) Change file ownership</label><br>
+            <input type="radio" name="q11" value="C"> <label>C) Change file name</label><br>
+            <input type="radio" name="q11" value="D"> <label>D) Change file type</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>12. How do you search for a specific string in a file?</p>
+            <input type="radio" name="q12" value="A"> <label>A) grep</label><br>
+            <input type="radio" name="q12" value="B"> <label>B) find</label><br>
+            <input type="radio" name="q12" value="C) search</label><br>
+            <input type="radio" name="q12" value="D"> <label>D) locate</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>13. What command is used to view the contents of a text file one screen at a time?</p>
+            <input type="radio" name="q13" value="A"> <label>A) more</label><br>
+            <input type="radio" name="q13" value="B"> <label>B) less</label><br>
+            <input type="radio" name="q13" value="C"> <label>C) view</label><br>
+            <input type="radio" name="q13" value="D"> <label>D) cat</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>14. Which command is used to download files from the internet?</p>
+            <input type="radio" name="q14" value="A"> <label>A) wget</label><br>
+            <input type="radio" name="q14" value="B"> <label>B) download</label><br>
+            <input type="radio" name="q14" value="C"> <label>C) fetch</label><br>
+            <input type="radio" name="q14" value="D"> <label>D) get</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>15. What command is used to display system information?</p>
+            <input type="radio" name="q15" value="A"> <label>A) uname</label><br>
+            <input type="radio" name="q15" value="B"> <label>B) info</label><br>
+            <input type="radio" name="q15" value="C"> <label>C) sysinfo</label><br>
+            <input type="radio" name="q15" value="D"> <label>D) system</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>16. What command is used to display the disk usage of a directory?</p>
+            <input type="radio" name="q16" value="A"> <label>A) du</label><br>
+            <input type="radio" name="q16" value="B"> <label>B) df</label><br>
+            <input type="radio" name="q16" value="C"> <label>C) diskusage</label><br>
+            <input type="radio" name="q16" value="D"> <label>D) size</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>17. How do you terminate a process in Unix?</p>
+            <input type="radio" name="q17" value="A"> <label>A) kill</label><br>
+            <input type="radio" name="q17" value="B"> <label>B) stop</label><br>
+            <input type="radio" name="q17" value="C"> <label>C) end</label><br>
+            <input type="radio" name="q17" value="D"> <label>D) terminate</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>18. What does the command `ping` do?</p>
+            <input type="radio" name="q18" value="A"> <label>A) Check network connectivity</label><br>
+            <input type="radio" name="q18" value="B"> <label>B) Send a file</label><br>
+            <input type="radio" name="q18" value="C"> <label>C) Display network configuration</label><br>
+            <input type="radio" name="q18" value="D"> <label>D) Download a file</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>19. Which command is used to update the package list in Ubuntu?</p>
+            <input type="radio" name="q19" value="A"> <label>A) sudo apt update</label><br>
+            <input type="radio" name="q19" value="B"> <label>B) apt-get refresh</label><br>
+            <input type="radio" name="q19" value="C"> <label>C) update</label><br>
+            <input type="radio" name="q19" value="D"> <label>D) pkg update</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>20. How do you extract a tar.gz file?</p>
+            <input type="radio" name="q20" value="A"> <label>A) tar -xzf</label><br>
+            <input type="radio" name="q20" value="B"> <label>B) unzip</label><br>
+            <input type="radio" name="q20" value="C"> <label>C) extract</label><br>
+            <input type="radio" name="q20" value="D"> <label>D) untar</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>21. What command is used to display running processes?</p>
+            <input type="radio" name="q21" value="A"> <label>A) ps</label><br>
+            <input type="radio" name="q21" value="B"> <label>B) top</label><br>
+            <input type="radio" name="q21" value="C"> <label>C) processes</label><br>
+            <input type="radio" name="q21" value="D"> <label>D) run</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>22. What command is used to monitor system performance in real-time?</p>
+            <input type="radio" name="q22" value="A"> <label>A) top</label><br>
+            <input type="radio" name="q22" value="B"> <label>B) monitor</label><br>
+            <input type="radio" name="q22" value="C"> <label>C) performance</label><br>
+            <input type="radio" name="q22" value="D"> <label>D) stats</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>23. How do you display the manual for a command?</p>
+            <input type="radio" name="q23" value="A"> <label>A) man</label><br>
+            <input type="radio" name="q23" value="B"> <label>B) help</label><br>
+            <input type="radio" name="q23" value="C"> <label>C) command --help</label><br>
+            <input type="radio" name="q23" value="D"> <label>D) info</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>24. Which command is used to compress files?</p>
+            <input type="radio" name="q24" value="A"> <label>A) gzip</label><br>
+            <input type="radio" name="q24" value="B"> <label>B) zip</label><br>
+            <input type="radio" name="q24" value="C"> <label>C) compress</label><br>
+            <input type="radio" name="q24" value="D"> <label>D) pack</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>25. How do you check disk space usage?</p>
+            <input type="radio" name="q25" value="A"> <label>A) df</label><br>
+            <input type="radio" name="q25" value="B"> <label>B) du</label><br>
+            <input type="radio" name="q25" value="C"> <label>C) space</label><br>
+            <input type="radio" name="q25" value="D"> <label>D) diskspace</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>26. What command is used to send a file to a printer?</p>
+            <input type="radio" name="q26" value="A"> <label>A) lpr</label><br>
+            <input type="radio" name="q26" value="B"> <label>B) print</label><br>
+            <input type="radio" name="q26" value="C"> <label>C) lp</label><br>
+            <input type="radio" name="q26" value="D"> <label>D) send</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>27. How do you check the version of the operating system?</p>
+            <input type="radio" name="q27" value="A"> <label>A) uname -a</label><br>
+            <input type="radio" name="q27" value="B"> <label>B) version</label><br>
+            <input type="radio" name="q27" value="C"> <label>C) osversion</label><br>
+            <input type="radio" name="q27" value="D"> <label>D) sysversion</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>28. What command is used to set environment variables?</p>
+            <input type="radio" name="q28" value="A"> <label>A) export</label><br>
+            <input type="radio" name="q28" value="B"> <label>B) set</label><br>
+            <input type="radio" name="q28" value="C"> <label>C) env</label><br>
+            <input type="radio" name="q28" value="D"> <label>D) variable</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>29. How do you clear the terminal screen?</p>
+            <input type="radio" name="q29" value="A"> <label>A) clear</label><br>
+            <input type="radio" name="q29" value="B"> <label>B) cls</label><br>
+            <input type="radio" name="q29" value="C"> <label>C) clean</label><br>
+            <input type="radio" name="q29" value="D"> <label>D) reset</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>30. What command is used to download packages in Ubuntu?</p>
+            <input type="radio" name="q30" value="A"> <label>A) apt-get install</label><br>
+            <input type="radio" name="q30" value="B"> <label>B) install</label><br>
+            <input type="radio" name="q30" value="C"> <label>C) get</label><br>
+            <input type="radio" name="q30" value="D"> <label>D) pkg install</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>31. What command is used to get help for a command?</p>
+            <input type="radio" name="q31" value="A"> <label>A) help</label><br>
+            <input type="radio" name="q31" value="B"> <label>B) man</label><br>
+            <input type="radio" name="q31" value="C"> <label>C) command --help</label><br>
+            <input type="radio" name="q31" value="D"> <label>D) guide</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>32. Which command is used to check network configuration?</p>
+            <input type="radio" name="q32" value="A"> <label>A) ifconfig</label><br>
+            <input type="radio" name="q32" value="B"> <label>B) netconfig</label><br>
+            <input type="radio" name="q32" value="C"> <label>C) config</label><br>
+            <input type="radio" name="q32" value="D"> <label>D) network</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>33. What command is used to change the owner of a file?</p>
+            <input type="radio" name="q33" value="A"> <label>A) chown</label><br>
+            <input type="radio" name="q33" value="B"> <label>B) changeowner</label><br>
+            <input type="radio" name="q33" value="C"> <label>C) owner</label><br>
+            <input type="radio" name="q33" value="D"> <label>D) modifyowner</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>34. How do you create an empty file?</p>
+            <input type="radio" name="q34" value="A"> <label>A) touch</label><br>
+            <input type="radio" name="q34" value="B"> <label>B) create</label><br>
+            <input type="radio" name="q34" value="C"> <label>C) newfile</label><br>
+            <input type="radio" name="q34" value="D"> <label>D) makefile</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>35. What command is used to read from standard input?</p>
+            <input type="radio" name="q35" value="A"> <label>A) cat</label><br>
+            <input type="radio" name="q35" value="B"> <label>B) input</label><br>
+            <input type="radio" name="q35" value="C"> <label>C) read</label><br>
+            <input type="radio" name="q35" value="D"> <label>D) stdin</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>36. How do you show the last lines of a file?</p>
+            <input type="radio" name="q36" value="A"> <label>A) tail</label><br>
+            <input type="radio" name="q36" value="B"> <label>B) last</label><br>
+            <input type="radio" name="q36" value="C"> <label>C) end</label><br>
+            <input type="radio" name="q36" value="D"> <label>D) showlast</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>37. Which command is used to view the contents of a compressed file?</p>
+            <input type="radio" name="q37" value="A"> <label>A) zcat</label><br>
+            <input type="radio" name="q37" value="B"> <label>B) unzip</label><br>
+            <input type="radio" name="q37" value="C"> <label>C) view</label><br>
+            <input type="radio" name="q37" value="D"> <label>D) cat</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>38. What command is used to synchronize files between two locations?</p>
+            <input type="radio" name="q38" value="A"> <label>A) rsync</label><br>
+            <input type="radio" name="q38" value="B"> <label>B) sync</label><br>
+            <input type="radio" name="q38" value="C"> <label>C) copy</label><br>
+            <input type="radio" name="q38" value="D"> <label>D) mirror</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>39. What command is used to print the environment variables?</p>
+            <input type="radio" name="q39" value="A"> <label>A) env</label><br>
+            <input type="radio" name="q39" value="B"> <label>B) printenv</label><br>
+            <input type="radio" name="q39" value="C"> <label>C) echo</label><br>
+            <input type="radio" name="q39" value="D"> <label>D) showenv</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>40. How do you check if a file exists?</p>
+            <input type="radio" name="q40" value="A"> <label>A) test</label><br>
+            <input type="radio" name="q40" value="B"> <label>B) exists</label><br>
+            <input type="radio" name="q40" value="C"> <label>C) check</label><br>
+            <input type="radio" name="q40" value="D"> <label>D) find</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>41. What command is used to remove a directory?</p>
+            <input type="radio" name="q41" value="A"> <label>A) rmdir</label><br>
+            <input type="radio" name="q41" value="B"> <label>B) deldir</label><br>
+            <input type="radio" name="q41" value="C"> <label>C) removedir</label><br>
+            <input type="radio" name="q41" value="D"> <label>D) erasedir</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>42. How do you display the history of commands?</p>
+            <input type="radio" name="q42" value="A"> <label>A) history</label><br>
+            <input type="radio" name="q42" value="B"> <label>B) commands</label><br>
+            <input type="radio" name="q42" value="C"> <label>C) past</label><br>
+            <input type="radio" name="q42" value="D"> <label>D) log</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>43. How do you run a command in the background?</p>
+            <input type="radio" name="q43" value="A"> <label>A) command &</label><br>
+            <input type="radio" name="q43" value="B"> <label>B) background command</label><br>
+            <input type="radio" name="q43" value="C"> <label>C) bg</label><br>
+            <input type="radio" name="q43" value="D"> <label>D) run in background</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>44. What command is used to schedule a task?</p>
+            <input type="radio" name="q44" value="A"> <label>A) cron</label><br>
+            <input type="radio" name="q44" value="B"> <label>B) at</label><br>
+            <input type="radio" name="q44" value="C"> <label>C) schedule</label><br>
+            <input type="radio" name="q44" value="D"> <label>D) task</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>45. How do you search for a string in a file?</p>
+            <input type="radio" name="q45" value="A"> <label>A) grep</label><br>
+            <input type="radio" name="q45" value="B"> <label>B) find</label><br>
+            <input type="radio" name="q45" value="C"> <label>C) search</label><br>
+            <input type="radio" name="q45" value="D"> <label>D) locate</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>46. How do you change the permissions of a file?</p>
+            <input type="radio" name="q46" value="A"> <label>A) chmod</label><br>
+            <input type="radio" name="q46" value="B"> <label>B) perm</label><br>
+            <input type="radio" name="q46" value="C"> <label>C) chown</label><br>
+            <input type="radio" name="q46" value="D"> <label>D) permissions</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>47. How do you display the contents of a file?</p>
+            <input type="radio" name="q47" value="A"> <label>A) cat</label><br>
+            <input type="radio" name="q47" value="B"> <label>B) view</label><br>
+            <input type="radio" name="q47" value="C"> <label>C) open</label><br>
+            <input type="radio" name="q47" value="D"> <label>D) readfile</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>48. What command is used to find the location of a command?</p>
+            <input type="radio" name="q48" value="A"> <label>A) which</label><br>
+            <input type="radio" name="q48" value="B"> <label>B) whereis</label><br>
+            <input type="radio" name="q48" value="C"> <label>C) locate</label><br>
+            <input type="radio" name="q48" value="D"> <label>D) command</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>49. What command is used to check for broken links?</p>
+            <input type="radio" name="q49" value="A"> <label>A) find</label><br>
+            <input type="radio" name="q49" value="B"> <label>B) checklinks</label><br>
+            <input type="radio" name="q49" value="C"> <label>C) linkcheck</label><br>
+            <input type="radio" name="q49" value="D"> <label>D) link</label>
+        </div>
+
+        <div class="question" data-aos="zoom-in">
+            <p>50. What command is used to view the content of a file in reverse order?</p>
+            <input type="radio" name="q50" value="A"> <label>A) tac</label><br>
+            <input type="radio" name="q50" value="B"> <label>B) rev</label><br>
+            <input type="radio" name="q50" value="C"> <label>C)back</label><br>
+            <input type="radio" name="q50" value="D"> <label>D) reverse</label>
+        </div>
+        
+
+        <button type="button" class="submit-button" onclick="calculateScore()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+
+
+
+    <script src="/java/shell.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

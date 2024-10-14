@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotlin Quiz</title>
+    <link rel="shortcut icon" sizes="64x64" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="kotlin.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Kotlin Quiz</h1>
+        <form id="quiz-form">
+            <div class="question" data-aos="zoom-in">
+                <p>1. What type of programming language is Kotlin?</p>
+                <input type="radio" name="q1" value="A"> <label>A) Compiled</label><br>
+                <input type="radio" name="q1" value="B"> <label>B) Interpreted</label><br>
+                <input type="radio" name="q1" value="C"> <label>C) Markup</label><br>
+                <input type="radio" name="q1" value="D"> <label>D) Assembly</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>2. Who is the official developer of Kotlin?</p>
+                <input type="radio" name="q2" value="A"> <label>A) Google</label><br>
+                <input type="radio" name="q2" value="B"> <label>B) JetBrains</label><br>
+                <input type="radio" name="q2" value="C"> <label>C) Microsoft</label><br>
+                <input type="radio" name="q2" value="D"> <label>D) Oracle</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>3. What is the primary purpose of Kotlin?</p>
+                <input type="radio" name="q3" value="A"> <label>A) Web Development</label><br>
+                <input type="radio" name="q3" value="B"> <label>B) Android Development</label><br>
+                <input type="radio" name="q3" value="C"> <label>C) Game Development</label><br>
+                <input type="radio" name="q3" value="D"> <label>D) Data Science</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>4. How is a data class defined in Kotlin?</p>
+                <input type="radio" name="q4" value="A"> <label>A) class MyClass {}</label><br>
+                <input type="radio" name="q4" value="B"> <label>B) data class MyClass {}</label><br>
+                <input type="radio" name="q4" value="C"> <label>C) class data MyClass {}</label><br>
+                <input type="radio" name="q4" value="D"> <label>D) class MyDataClass {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>5. What is the term for nullable types in Kotlin?</p>
+                <input type="radio" name="q5" value="A"> <label>A) Nullable</label><br>
+                <input type="radio" name="q5" value="B"> <label>B) Optional</label><br>
+                <input type="radio" name="q5" value="C"> <label>C) Undefined</label><br>
+                <input type="radio" name="q5" value="D"> <label>D) Empty</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>6. Which keyword is used to declare a variable in Kotlin?</p>
+                <input type="radio" name="q6" value="A"> <label>A) var</label><br>
+                <input type="radio" name="q6" value="B"> <label>B) val</label><br>
+                <input type="radio" name="q6" value="C"> <label>C) let</label><br>
+                <input type="radio" name="q6" value="D"> <label>D) const</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>7. Which keyword is used for a read-only variable in Kotlin?</p>
+                <input type="radio" name="q7" value="A"> <label>A) var</label><br>
+                <input type="radio" name="q7" value="B"> <label>B) val</label><br>
+                <input type="radio" name="q7" value="C"> <label>C) const</label><br>
+                <input type="radio" name="q7" value="D"> <label>D) static</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>8. How do you declare a function in Kotlin?</p>
+                <input type="radio" name="q8" value="A"> <label>A) function myFunction() {}</label><br>
+                <input type="radio" name="q8" value="B"> <label>B) fun myFunction() {}</label><br>
+                <input type="radio" name="q8" value="C"> <label>C) def myFunction() {}</label><br>
+                <input type="radio" name="q8" value="D"> <label>D) void myFunction() {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>9. Which function is used to get the length of a string in Kotlin?</p>
+                <input type="radio" name="q9" value="A"> <label>A) size()</label><br>
+                <input type="radio" name="q9" value="B"> <label>B) length()</label><br>
+                <input type="radio" name="q9" value="C"> <label>C) count()</label><br>
+                <input type="radio" name="q9" value="D"> <label>D) sizeOf()</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>10. What type of data structure is used to create a list in Kotlin?</p>
+                <input type="radio" name="q10" value="A"> <label>A) List</label><br>
+                <input type="radio" name="q10" value="B"> <label>B) ArrayList</label><br>
+                <input type="radio" name="q10" value="C"> <label>C) Vector</label><br>
+                <input type="radio" name="q10" value="D"> <label>D) Set</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>11. How is a higher-order function created in Kotlin?</p>
+                <input type="radio" name="q11" value="A"> <label>A) fun myFunction(f: (Int) -> Int) {}</label><br>
+                <input type="radio" name="q11" value="B"> <label>B) fun myFunction(f: Int -> Int) {}</label><br>
+                <input type="radio" name="q11" value="C"> <label>C) fun myFunction(f: (Int) => Int) {}</label><br>
+                <input type="radio" name="q11" value="D"> <label>D) fun myFunction(f: Int): Int {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>12. What do you call a situation where nothing exists in Kotlin?</p>
+                <input type="radio" name="q12" value="A"> <label>A) None</label><br>
+                <input type="radio" name="q12" value="B"> <label>B) Null</label><br>
+                <input type="radio" name="q12" value="C"> <label>C) Undefined</label><br>
+                <input type="radio" name="q12" value="D"> <label>D) Empty</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>13. How is a property defined in Kotlin?</p>
+                <input type="radio" name="q13" value="A"> <label>A) property myProperty: Int</label><br>
+                <input type="radio" name="q13" value="B"> <label>B) var myProperty: Int</label><br>
+                <input type="radio" name="q13" value="C"> <label>C) val myProperty: Int</label><br>
+                <input type="radio" name="q13" value="D"> <label>D) field myProperty: Int</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>14. What does the Elvis operator (?:) do in Kotlin?</p>
+                <input type="radio" name="q14" value="A"> <label>A) Returns the first non-null value</label><br>
+                <input type="radio" name="q14" value="B"> <label>B) Throws an exception</label><br>
+                <input type="radio" name="q14" value="C"> <label>C) Performs a comparison</label><br>
+                <input type="radio" name="q14" value="D"> <label>D) Concatenates strings</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>15. How does the 'when' statement in Kotlin function?</p>
+                <input type="radio" name="q15" value="A"> <label>A) switch-case</label><br>
+                <input type="radio" name="q15" value="B"> <label>B) if-else</label><br>
+                <input type="radio" name="q15" value="C"> <label>C) for loop</label><br>
+                <input type="radio" name="q15" value="D"> <label>D) try-catch</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>16. Which keyword is used to throw an error in Kotlin?</p>
+                <input type="radio" name="q16" value="A"> <label>A) throw</label><br>
+                <input type="radio" name="q16" value="B"> <label>B) raise</label><br>
+                <input type="radio" name="q16" value="C"> <label>C) error</label><br>
+                <input type="radio" name="q16" value="D"> <label>D) exception</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>17. What are inline functions in Kotlin?</p>
+                <input type="radio" name="q17" value="A"> <label>A) Functions defined directly in the main function</label><br>
+                <input type="radio" name="q17" value="B"> <label>B) Functions that are expanded at the call site</label><br>
+                <input type="radio" name="q17" value="C"> <label>C) Anonymous functions</label><br>
+                <input type="radio" name="q17" value="D"> <label>D) Functions with no return type</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>18. How is a constructor defined in Kotlin?</p>
+                <input type="radio" name="q18" value="A"> <label>A) constructor() {}</label><br>
+                <input type="radio" name="q18" value="B"> <label>B) init {}</label><br>
+                <input type="radio" name="q18" value="C"> <label>C) class MyClass {}</label><br>
+                <input type="radio" name="q18" value="D"> <label>D) MyClass() {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>19. How do you create a list with specific elements in Kotlin?</p>
+                <input type="radio" name="q19" value="A"> <label>A) listOf(1, 2, 3)</label><br>
+                <input type="radio" name="q19" value="B"> <label>B) arrayOf(1, 2, 3)</label><br>
+                <input type="radio" name="q19" value="C"> <label>C) mutableListOf(1, 2, 3)</label><br>
+                <input type="radio" name="q19" value="D"> <label>D) createList(1, 2, 3)</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>20. How is equality checked for objects in Kotlin?</p>
+                <input type="radio" name="q20" value="A"> <label>A) ==</label><br>
+                <input type="radio" name="q20" value="B"> <label>B) =</label><br>
+                <input type="radio" name="q20" value="C"> <label>C) equals()</label><br>
+                <input type="radio" name="q20" value="D"> <label>D) isEqual()</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>21. How do you define an interface in Kotlin?</p>
+                <input type="radio" name="q21" value="A"> <label>A) interface MyInterface {}</label><br>
+                <input type="radio" name="q21" value="B"> <label>B) class MyInterface {}</label><br>
+                <input type="radio" name="q21" value="C"> <label>C) abstract class MyInterface {}</label><br>
+                <input type="radio" name="q21" value="D"> <label>D) enum class MyInterface {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>22. What are extension functions in Kotlin?</p>
+                <input type="radio" name="q22" value="A"> <label>A) Functions that extend existing classes with new functionality</label><br>
+                <input type="radio" name="q22" value="B"> <label>B) Functions that can only be used within an object</label><br>
+                <input type="radio" name="q22" value="C"> <label>C) Anonymous functions</label><br>
+                <input type="radio" name="q22" value="D"> <label>D) Functions that create new classes</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>23. How do you define a non-null type in Kotlin?</p>
+                <input type="radio" name="q23" value="A"> <label>A) String</label><br>
+                <input type="radio" name="q23" value="B"> <label>B) String?</label><br>
+                <input type="radio" name="q23" value="C"> <label>C) String!!</label><br>
+                <input type="radio" name="q23" value="D"> <label>D) String!!?</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>24. What keyword is used to make a property read-only?</p>
+                <input type="radio" name="q24" value="A"> <label>A) val</label><br>
+                <input type="radio" name="q24" value="B"> <label>B) var</label><br>
+                <input type="radio" name="q24" value="C"> <label>C) const</label><br>
+                <input type="radio" name="q24" value="D"> <label>D) readonly</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>25. How is an asynchronous function defined in Kotlin?</p>
+                <input type="radio" name="q25" value="A"> <label>A) async fun myFunction() {}</label><br>
+                <input type="radio" name="q25" value="B"> <label>B) suspend fun myFunction() {}</label><br>
+                <input type="radio" name="q25" value="C"> <label>C) thread fun myFunction() {}</label><br>
+                <input type="radio" name="q25" value="D"> <label>D) background fun myFunction() {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>26. How is the filter function used in Kotlin?</p>
+                <input type="radio" name="q26" value="A"> <label>A) list.filter { it > 0 }</label><br>
+                <input type="radio" name="q26" value="B"> <label>B) list.where { it > 0 }</label><br>
+                <input type="radio" name="q26" value="C"> <label>C) list.find { it > 0 }</label><br>
+                <input type="radio" name="q26" value="D"> <label>D) list.select { it > 0 }</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>27. What type of function is used to modify the length in Kotlin?</p>
+                <input type="radio" name="q27" value="A"> <label>A) map()</label><br>
+                <input type="radio" name="q27" value="B"> <label>B) modify()</label><br>
+                <input type="radio" name="q27" value="C"> <label>C) transform()</label><br>
+                <input type="radio" name="q27" value="D"> <label>D) change()</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>28. What type of structure is a collection in Kotlin?</p>
+                <input type="radio" name="q28" value="A"> <label>A) Only lists</label><br>
+                <input type="radio" name="q28" value="B"> <label>B) Lists, sets, and maps</label><br>
+                <input type="radio" name="q28" value="C"> <label>C) Only maps</label><br>
+                <input type="radio" name="q28" value="D"> <label>D) Only arrays</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>29. How do you start a thread in Kotlin?</p>
+                <input type="radio" name="q29" value="A"> <label>A) Thread.start()</label><br>
+                <input type="radio" name="q29" value="B"> <label>B) runThread()</label><br>
+                <input type="radio" name="q29" value="C"> <label>C) async {}</label><br>
+                <input type="radio" name="q29" value="D"> <label>D) launch {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>30. What is the purpose of 'companion objects' in Kotlin?</p>
+                <input type="radio" name="q30" value="A"> <label>A) To create static members</label><br>
+                <input type="radio" name="q30" value="B"> <label>B) To define interfaces</label><br>
+                <input type="radio" name="q30" value="C"> <label>C) To create data classes</label><br>
+                <input type="radio" name="q30" value="D"> <label>D) To create nested classes</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>31. How is a sealed class declared in Kotlin?</p>
+                <input type="radio" name="q31" value="A"> <label>A) sealed class MyClass {}</label><br>
+                <input type="radio" name="q31" value="B"> <label>B) class MyClass sealed {}</label><br>
+                <input type="radio" name="q31" value="C"> <label>C) MyClass sealed class {}</label><br>
+                <input type="radio" name="q31" value="D"> <label>D) sealed MyClass class {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>32. What does 'lateinit' do in Kotlin?</p>
+                <input type="radio" name="q32" value="A"> <label>A) Declares a variable that cannot be initialized</label><br>
+                <input type="radio" name="q32" value="B"> <label>B) Allows a variable to be initialized later</label><br>
+                <input type="radio" name="q32" value="C"> <label>C) Makes a variable optional</label><br>
+                <input type="radio" name="q32" value="D"> <label>D) Declares a constant</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>33. How do you perform type casting in Kotlin?</p>
+                <input type="radio" name="q33" value="A"> <label>A) as</label><br>
+                <input type="radio" name="q33" value="B"> <label>B) cast</label><br>
+                <input type="radio" name="q33" value="C"> <label>C) typeOf</label><br>
+                <input type="radio" name="q33" value="D"> <label>D) instanceof</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>34. How do you define a lambda expression in Kotlin?</p>
+                <input type="radio" name="q34" value="A"> <label>A) { param -> body }</label><br>
+                <input type="radio" name="q34" value="B"> <label>B) (param) => body</label><br>
+                <input type="radio" name="q34" value="C"> <label>C) { body(param) }</label><br>
+                <input type="radio" name="q34" value="D"> <label>D) lambda(param) { body }</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>35. What is the purpose of the 'apply' function in Kotlin?</p>
+                <input type="radio" name="q35" value="A"> <label>A) To run a block of code in the context of an object</label><br>
+                <input type="radio" name="q35" value="B"> <label>B) To create a new instance</label><br>
+                <input type="radio" name="q35" value="C"> <label>C) To return a value</label><br>
+                <input type="radio" name="q35" value="D"> <label>D) To declare a variable</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>36. How do you handle exceptions in Kotlin?</p>
+                <input type="radio" name="q36" value="A"> <label>A) try-catch</label><br>
+                <input type="radio" name="q36" value="B"> <label>B) handle()</label><br>
+                <input type="radio" name="q36" value="C"> <label>C) error()</label><br>
+                <input type="radio" name="q36" value="D"> <label>D) onError()</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>37. How is a coroutine launched in Kotlin?</p>
+                <input type="radio" name="q37" value="A"> <label>A) startCoroutine {}</label><br>
+                <input type="radio" name="q37" value="B"> <label>B) launch {}</label><br>
+                <input type="radio" name="q37" value="C"> <label>C) async {}</label><br>
+                <input type="radio" name="q37" value="D"> <label>D) runBlocking {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>38. What is a companion object in Kotlin?</p>
+                <input type="radio" name="q38" value="A"> <label>A) A singleton object tied to a class</label><br>
+                <input type="radio" name="q38" value="B"> <label>B) A global object</label><br>
+                <input type="radio" name="q38" value="C"> <label>C) A class-level property</label><br>
+                <input type="radio" name="q38" value="D"> <label>D) An anonymous object</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>39. What is the main use of the 'with' function in Kotlin?</p>
+                <input type="radio" name="q39" value="A"> <label>A) To run a block of code in the context of an object</label><br>
+                <input type="radio" name="q39" value="B"> <label>B) To define a variable</label><br>
+                <input type="radio" name="q39" value="C"> <label>C) To create a new instance</label><br>
+                <input type="radio" name="q39" value="D"> <label>D) To return a value</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>40. How do you create a custom exception in Kotlin?</p>
+                <input type="radio" name="q40" value="A"> <label>A) class MyException : Exception() {}</label><br>
+                <input type="radio" name="q40" value="B"> <label>B) throw MyException {}</label><br>
+                <input type="radio" name="q40" value="C"> <label>C) custom MyException() {}</label><br>
+                <input type="radio" name="q40" value="D"> <label>D) MyException() {}</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>41. What is the purpose of the 'let' function in Kotlin?</p>
+                <input type="radio" name="q41" value="A"> <label>A) To run a block of code only if the variable is not null</label><br>
+                <input type="radio" name="q41" value="B"> <label>B) To declare a variable</label><br>
+                <input type="radio" name="q41" value="C"> <label>C) To transform data</label><br>
+                <input type="radio" name="q41" value="D"> <label>D) To create a new object</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>42. How do you use the 'map' function in Kotlin?</p>
+                <input type="radio" name="q42" value="A"> <label>A) list.map { it * 2 }</label><br>
+                <input type="radio" name="q42" value="B"> <label>B) list.transform { it * 2 }</label><br>
+                <input type="radio" name="q42" value="C"> <label>C) list.modify { it * 2 }</label><br>
+                <input type="radio" name="q42" value="D"> <label>D) list.change { it * 2 }</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>43. What is the function of the 'take' method in Kotlin?</p>
+                <input type="radio" name="q43" value="A"> <label>A) To return a subset of elements from a collection</label><br>
+                <input type="radio" name="q43" value="B"> <label>B) To modify the collection</label><br>
+                <input type="radio" name="q43" value="C"> <label>C) To filter elements</label><br>
+                <input type="radio" name="q43" value="D"> <label>D) To sort the collection</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>44. How do you declare a variable in Kotlin?</p>
+                <input type="radio" name="q44" value="A"> <label>A) var myVar = 10</label><br>
+                <input type="radio" name="q44" value="B"> <label>B) let myVar = 10</label><br>
+                <input type="radio" name="q44" value="C"> <label>C) declare myVar = 10</label><br>
+                <input type="radio" name="q44" value="D"> <label>D) create myVar = 10</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>45. What is a 'data class' in Kotlin?</p>
+                <input type="radio" name="q45" value="A"> <label>A) A class that holds data</label><br>
+                <input type="radio" name="q45" value="B"> <label>B) A class that cannot be instantiated</label><br>
+                <input type="radio" name="q45" value="C"> <label>C) A class that can only contain one property</label><br>
+                <input type="radio" name="q45" value="D"> <label>D) A class used for UI components</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>46. How do you handle nullable types in Kotlin?</p>
+                <input type="radio" name="q46" value="A"> <label>A) By using '!!'</label><br>
+                <input type="radio" name="q46" value="B"> <label>B) By using '?.'</label><br>
+                <input type="radio" name="q46" value="C"> <label>C) Both A and B</label><br>
+                <input type="radio" name="q46" value="D"> <label>D) By using '?.?' </label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>47. What is the primary purpose of the 'also' function in Kotlin?</p>
+                <input type="radio" name="q47" value="A"> <label>A) To perform additional operations on an object</label><br>
+                <input type="radio" name="q47" value="B"> <label>B) To create a new instance</label><br>
+                <input type="radio" name="q47" value="C"> <label>C) To return a value</label><br>
+                <input type="radio" name="q47" value="D"> <label>D) To declare a variable</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>48. How do you create a HashMap in Kotlin?</p>
+                <input type="radio" name="q48" value="A"> <label>A) HashMap() {}</label><br>
+                <input type="radio" name="q48" value="B"> <label>B) mapOf()</label><br>
+                <input type="radio" name="q48" value="C"> <label>C) HashMapOf()</label><br>
+                <input type="radio" name="q48" value="D"> <label>D) HashMap.create()</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>49. How do you create a new instance of a class in Kotlin?</p>
+                <input type="radio" name="q49" value="A"> <label>A) MyClass()</label><br>
+                <input type="radio" name="q49" value="B"> <label>B) new MyClass()</label><br>
+                <input type="radio" name="q49" value="C"> <label>C) MyClass.new()</label><br>
+                <input type="radio" name="q49" value="D"> <label>D) create MyClass()</label>
+            </div>
+            
+            <div class="question" data-aos="zoom-in">
+                <p>50. How do you declare a nested class in Kotlin?</p>
+                <input type="radio" name="q50" value="A"> <label>A) class OuterClass { class InnerClass {}}</label><br>
+                <input type="radio" name="q50" value="B"> <label>B) class OuterClass { InnerClass() {}}</label><br>
+                <input type="radio" name="q50" value="C"> <label>C) class OuterClass : InnerClass {}</label><br>
+                <input type="radio" name="q50" value="D"> <label>D) class InnerClass inside OuterClass {}</label>
+            </div>
+            
+            
+            <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+    <script src="/java/kotlin.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
