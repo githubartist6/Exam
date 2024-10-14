@@ -23,10 +23,6 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.error-message {
-    color: red;
-}
-
 h1 {
     color: #ffffff;
     font-size: 25px;
@@ -51,7 +47,7 @@ input {
     margin-top: 5px;
 }
 .error-message {
-    color: rgb(0, 0, 0); /* or any color you prefer */
+    color: red; /* or any color you prefer */
     margin: 0px;
     padding: 0px;
 }
