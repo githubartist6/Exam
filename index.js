@@ -109,11 +109,6 @@ app.get("/matlab", (req, res) => {
     res.render("matlab.ejs");
 });
 
-// men
-app.get("/men", (req, res) => {
-    res.render("men.ejs");
-});
-
 // newpassword
 app.get("/newpassword", (req, res) => {
     res.render("newpassword", { error: null });
